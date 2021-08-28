@@ -11,28 +11,33 @@ sudo apt-get install -y git nano
 sudo apt-get install -y openmpi-doc openmpi-bin libopenmpi-dev libopenblas-dev
 
 # Step 3.1 own utilities
+
+# jetsonstats
 sudo -H pip3 install -U jetson-stats
-sudo add-apt-repository ppa:gnome-terminator
+
+# terminator
+sudo add-apt-repository -y ppa:gnome-terminator
 sudo apt-get update -y
 sudo apt-get install -y terminator
 
-sudo apt-get install -y docker-compose
-
-sudo apt-get install -y v4l-utils
-
+# docker stuff
+sudo apt-get install -y docker-compose 
 sudo groupadd docker
 sudo usermod -aG docker $USER
 docker run hello-world
 
+# camera stuff
+sudo apt-get install -y v4l-utils
+cd ~/dev; git clone https://github.com/JetsonHacksNano/CSI-Camera.git
+
+# VScode
 mkdir -p ~/dev;cd dev
 git clone https://github.com/JetsonHacksNano/installVSCode.git
 cd installVSCode
 ./installVSCodeWithPython.sh
 
-cd dev
-git clone https://github.com/JetsonHacksNano/CSI-Camera.git
-cd dev
-git clone https://github.com/jetsonhacks/installROS2.git
+# ROS2 local
+cd dev; git clone https://github.com/jetsonhacks/installROS2.git
 
 # Step 4
 cd ~
