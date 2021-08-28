@@ -20,6 +20,7 @@ Start part 1
 ```
 ./install_dc_jp4_v2p1.sh
 ```
+hint: part 1 requires one input from you right near the beginning to confirm restart of the docker aservice after uptdating.
 
 ## 2 Reboot
 ```
