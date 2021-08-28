@@ -1,5 +1,5 @@
 # diyrobocars_install_jp46
-Automates (partly) the installation described at [donkeycar.com](https://docs.donkeycar.com/guide/robot_sbc/setup_jetson_nano/) install scripts for a Jetson Nano JP 4.6.
+Automates (partly) the installation described at [donkeycar.com](https://docs.donkeycar.com/guide/robot_sbc/setup_jetson_nano/) for a Jetson Nano JP 4.6.
 
 ## Prerequisites
 
