@@ -11,7 +11,7 @@ cd diyrobocars_install_jp46
 
 ## 1 Preparation
 
-Log the installation for debugging purposes (thx to @Naisy for this great tip :-)
+Log the installation for debugging purposes. (thx to @Naisy for this great tip :-)
 ```
 script install_dc_jp46_p1.log
 ```
@@ -27,6 +27,10 @@ sudo reboot
 ```
 
 ## 3 Installation
+Log the installation for debugging purposes.
+```
+script install_dc_jp46_p2.log
+```
 ```
 ./install_dc_jp4_v2p2.sh
 ```
