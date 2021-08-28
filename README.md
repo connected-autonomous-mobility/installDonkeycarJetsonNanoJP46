@@ -13,12 +13,12 @@ cd diyrobocars_install_jp46
 
 Log the installation for debugging purposes. (thx to @Naisy for this great tip :-)
 ```
-script install_dc_jp46_p1.log
+script install_part1.log
 ```
 
 Execute installation script part 1
 ```
-./install_dc_jp4_v2p1.sh
+./install_part1.sh
 ```
 hint: part 1 requires one input from you right near the beginning to confirm restart of the docker aservice after uptdating.
 
@@ -30,11 +30,11 @@ sudo reboot
 ## 3 Installation
 Log the installation for debugging purposes.
 ```
-script install_dc_jp46_p2.log
+script install_part2.log
 ```
 Execute installation script part 2
 ```
-./install_dc_jp4_v2p2.sh
+./install_part2.sh
 ```
 Terminate logging
 ```
