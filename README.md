@@ -16,7 +16,7 @@ Log the installation for debugging purposes. (thx to @Naisy for this great tip :
 script install_dc_jp46_p1.log
 ```
 
-Start part 1
+Installation part 1
 ```
 ./install_dc_jp4_v2p1.sh
 ```
@@ -32,6 +32,7 @@ Log the installation for debugging purposes.
 ```
 script install_dc_jp46_p2.log
 ```
+Installation part 2
 ```
 ./install_dc_jp4_v2p2.sh
 ```
