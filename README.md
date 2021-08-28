@@ -35,3 +35,7 @@ script install_dc_jp46_p2.log
 ```
 ./install_dc_jp4_v2p2.sh
 ```
+Terminate logging
+```
+exit
+````
