@@ -14,6 +14,7 @@ sudo apt-get install -y openmpi-doc openmpi-bin libopenmpi-dev libopenblas-dev
 
 # jetsonstats
 sudo -H pip3 install -U jetson-stats
+sudo systemctl restart jetson_stats.service
 
 # terminator
 sudo add-apt-repository -y ppa:gnome-terminator
