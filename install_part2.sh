@@ -22,7 +22,7 @@ python setup.py install
 cd ../
 
 pip3 install pyfiglet prettytable kivy plotly imgaug packaging docopt
-pip3 uninstall -y opencv-python #  fix thx to @naisy, Jetson has already installed OpenCv
+pip3 uninstall -y opencv-python #  fix thx to @naisy, Jetson has already installed OpenCV and generic does not work on Jetson
 
 # Step 6
 cd ~/projects
