@@ -9,7 +9,7 @@ Automates (partly) the installation described at [donkeycar.com](https://docs.do
 Prepare SD-card with the latest Nvidia JetPack version (JP 4.6) for Jetson Nano following [donkeycar.com](https://docs.donkeycar.com/guide/robot_sbc/setup_jetson_nano/), do your first time boot and clone the repo.
 ```
 git clone https://github.com/connected-autonomous-mobility/installDonkeycarJetsonNanoJP46.git
-cd diyrobocars_install_jp46
+cd installDonkeycarJetsonNanoJP46
 ```
 
 ## 1 Preparation
