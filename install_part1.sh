@@ -12,10 +12,6 @@ sudo apt-get install -y openmpi-doc openmpi-bin libopenmpi-dev libopenblas-dev
 
 # Step 3.1 own utilities
 
-# jetsonstats
-sudo -H pip3 install -U jetson-stats
-sudo systemctl restart jetson_stats.service
-
 # terminator
 sudo add-apt-repository -y ppa:gnome-terminator
 sudo apt-get update -y
@@ -39,7 +35,17 @@ cd installVSCode
 ./installVSCodeWithPython.sh
 
 # ROS2 local
-cd dev; git clone https://github.com/jetsonhacks/installROS2.git
+cd ~/dev; git clone https://github.com/jetsonhacks/installROS2.git
+# ./installROS2
+
+# jetsonstats
+sudo -H pip3 install -U jetson-stats
+sudo systemctl restart jetson_stats.service
+
+# increase swap space to 4GB
+cd ~/dev; git clone https://github.com/JetsonHacksNano/resizeSwapMemory.git
+cd resizeSwapMemory
+./setSwapMemorySize.sh -g 4
 
 # Step 4
 cd ~
