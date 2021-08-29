@@ -41,6 +41,10 @@ pip3 install -e .[nano]
 sudo apt-get install -y python-dev libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev libsmpeg-dev python-numpy subversion libportmidi-dev ffmpeg libswscale-dev libavformat-dev libavcodec-dev libfreetype6-dev
 pip3 install pygame
 
+# lidar stuff
+pip3 install glob2
+pip3 install Adafruit_CircuitPython_RPLIDAR
+
 # cleaning up
 sudo apt autoremove -y
 
