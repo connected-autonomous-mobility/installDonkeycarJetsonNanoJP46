@@ -22,6 +22,7 @@ python setup.py install
 cd ../
 
 pip3 install pyfiglet prettytable kivy plotly imgaug packaging docopt
+pip3 uninstall -y opencv-python #  fix thx to @naisy, Jetson has already installed OpenCv
 
 # Step 6
 cd ~/projects
