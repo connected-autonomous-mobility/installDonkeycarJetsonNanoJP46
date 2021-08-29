@@ -1,6 +1,9 @@
 # installDonkeycarJetsonNanoJP46
 Automates (partly) the installation described at [donkeycar.com](https://docs.donkeycar.com/guide/robot_sbc/setup_jetson_nano/) for a Jetson Nano JP 4.6.
 
+*128GB*
+![](media/JetsonNanoJP46_infos.png)
+
 ## Prerequisites
 
 Prepare SD-card with the latest Nvidia JetPack version (JP 4.6) for Jetson Nano following [donkeycar.com](https://docs.donkeycar.com/guide/robot_sbc/setup_jetson_nano/), do your first time boot and clone the repo.

@@ -47,6 +47,22 @@ cd ~/dev; git clone https://github.com/JetsonHacksNano/resizeSwapMemory.git
 cd resizeSwapMemory
 ./setSwapMemorySize.sh -g 4
 
+# bluetooth & ps3 controller stuff
+## libs
+#sudo apt-get install -y libpcap-dev
+#sudo apt-get install -y libcap-dev
+
+## python-prctl
+#cd ~/dev; git clone http://github.com/seveas/python-prctl
+#cd python-prctl/
+#python3 setup.py build
+#sudo python3 setup.py install
+
+## bluetooth-autoconnect
+#cd ~/dev; git clone https://github.com/jrouleau/bluetooth-autoconnect.git; cd bluetooth-autoconnect
+#sudo cp bluetooth-autoconnect cp /usr/bin/ # better /usr/local/bin but the service file needs to be changed in that case
+#sudo systemctl enable bluetooth-autoconnect
+
 # Step 4
 cd ~
 pip3 install virtualenv
