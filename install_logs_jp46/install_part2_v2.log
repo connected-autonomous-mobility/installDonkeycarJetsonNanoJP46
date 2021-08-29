@@ -1,1051 +1,0 @@
-Script started on 2021-08-28 14:33:40+0200
-bash: env/bin/activate: No such file or directory
-]0;rainer@jetsonautoware46n5: ~/dev/diyrobocars_install_jp46[01;32mrainer@jetsonautoware46n5[00m:[01;34m~/dev/diyrobocars_install_jp46[00m$ ./install_part2.sh
-bash: ./install_part2.sh: Permission denied
-]0;rainer@jetsonautoware46n5: ~/dev/diyrobocars_install_jp46[01;32mrainer@jetsonautoware46n5[00m:[01;34m~/dev/diyrobocars_install_jp46[00m$ ./install_part2.sh[Kchmod +x install_part.*
-chmod: cannot access 'install_part.*': No such file or directory
-]0;rainer@jetsonautoware46n5: ~/dev/diyrobocars_install_jp46[01;32mrainer@jetsonautoware46n5[00m:[01;34m~/dev/diyrobocars_install_jp46[00m$ chmod +x install_part.*[C[1P*
-]0;rainer@jetsonautoware46n5: ~/dev/diyrobocars_install_jp46[01;32mrainer@jetsonautoware46n5[00m:[01;34m~/dev/diyrobocars_install_jp46[00m$ chmod +x install_part*.*[5P./install_part2.sh
-Requirement already satisfied: pip in /home/rainer/env/lib/python3.6/site-packages (21.2.3)
-Collecting pip
-  Using cached pip-21.2.4-py3-none-any.whl (1.6 MB)
-Requirement already satisfied: testresources in /usr/local/lib/python3.6/dist-packages (2.0.1)
-Requirement already satisfied: setuptools in /home/rainer/env/lib/python3.6/site-packages (57.4.0)
-Requirement already satisfied: pbr>=1.8 in /usr/local/lib/python3.6/dist-packages (from testresources) (5.6.0)
-Installing collected packages: pip
-  Attempting uninstall: pip
-    Found existing installation: pip 21.2.3
-    Uninstalling pip-21.2.3:
-      Successfully uninstalled pip-21.2.3
-Successfully installed pip-21.2.4
-Requirement already satisfied: futures==3.1.1 in /usr/local/lib/python3.6/dist-packages (3.1.1)
-Collecting protobuf==3.12.2
-  Using cached protobuf-3.12.2-py2.py3-none-any.whl (443 kB)
-Collecting pybind11==2.5.0
-  Using cached pybind11-2.5.0-py2.py3-none-any.whl (296 kB)
-Requirement already satisfied: six>=1.9 in /usr/local/lib/python3.6/dist-packages (from protobuf==3.12.2) (1.15.0)
-Requirement already satisfied: setuptools in /home/rainer/env/lib/python3.6/site-packages (from protobuf==3.12.2) (57.4.0)
-Installing collected packages: pybind11, protobuf
-  Attempting uninstall: pybind11
-    Found existing installation: pybind11 2.7.1
-    Not uninstalling pybind11 at /usr/local/lib/python3.6/dist-packages, outside environment /home/rainer/env
-    Can't uninstall 'pybind11'. No files were found to uninstall.
-  Attempting uninstall: protobuf
-    Found existing installation: protobuf 3.17.3
-    Not uninstalling protobuf at /usr/local/lib/python3.6/dist-packages, outside environment /home/rainer/env
-    Can't uninstall 'protobuf'. No files were found to uninstall.
-Successfully installed protobuf-3.12.2 pybind11-2.5.0
-Collecting cython==0.29.21
-  Using cached Cython-0.29.21-py2.py3-none-any.whl (974 kB)
-Collecting pyserial
-  Using cached pyserial-3.5-py2.py3-none-any.whl (90 kB)
-Installing collected packages: pyserial, cython
-Successfully installed cython-0.29.21 pyserial-3.5
-Requirement already satisfied: future==0.18.2 in /usr/local/lib/python3.6/dist-packages (0.18.2)
-Collecting mock==4.0.2
-  Using cached mock-4.0.2-py3-none-any.whl (28 kB)
-Requirement already satisfied: h5py==2.10.0 in /usr/local/lib/python3.6/dist-packages (2.10.0)
-Requirement already satisfied: keras_preprocessing==1.1.2 in /usr/local/lib/python3.6/dist-packages (1.1.2)
-Requirement already satisfied: keras_applications==1.0.8 in /usr/local/lib/python3.6/dist-packages (1.0.8)
-Collecting gast==0.3.3
-  Using cached gast-0.3.3-py2.py3-none-any.whl (9.7 kB)
-Requirement already satisfied: numpy>=1.7 in /usr/local/lib/python3.6/dist-packages (from h5py==2.10.0) (1.19.4)
-Requirement already satisfied: six in /usr/local/lib/python3.6/dist-packages (from h5py==2.10.0) (1.15.0)
-Installing collected packages: mock, gast
-  Attempting uninstall: mock
-    Found existing installation: mock 3.0.5
-    Not uninstalling mock at /usr/local/lib/python3.6/dist-packages, outside environment /home/rainer/env
-    Can't uninstall 'mock'. No files were found to uninstall.
-  Attempting uninstall: gast
-    Found existing installation: gast 0.4.0
-    Not uninstalling gast at /usr/local/lib/python3.6/dist-packages, outside environment /home/rainer/env
-    Can't uninstall 'gast'. No files were found to uninstall.
-[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-tensorflow 2.5.0+nv21.8 requires gast==0.4.0, but you have gast 0.3.3 which is incompatible.[0m
-Successfully installed gast-0.3.3 mock-4.0.2
-Collecting absl-py==0.9.0
-  Using cached absl_py-0.9.0-py3-none-any.whl
-Collecting py-cpuinfo==7.0.0
-  Using cached py_cpuinfo-7.0.0-py3-none-any.whl
-Collecting psutil==5.7.2
-  Using cached psutil-5.7.2-cp36-cp36m-linux_aarch64.whl
-Collecting portpicker==1.3.1
-  Using cached portpicker-1.3.1-py3-none-any.whl
-Requirement already satisfied: six in /usr/local/lib/python3.6/dist-packages (1.15.0)
-Collecting six
-  Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
-Collecting requests==2.24.0
-  Using cached requests-2.24.0-py2.py3-none-any.whl (61 kB)
-Collecting astor==0.8.1
-  Using cached astor-0.8.1-py2.py3-none-any.whl (27 kB)
-Requirement already satisfied: termcolor==1.1.0 in /usr/local/lib/python3.6/dist-packages (1.1.0)
-Requirement already satisfied: wrapt==1.12.1 in /usr/local/lib/python3.6/dist-packages (1.12.1)
-Requirement already satisfied: google-pasta==0.2.0 in /usr/local/lib/python3.6/dist-packages (0.2.0)
-Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from requests==2.24.0) (2018.1.18)
-Requirement already satisfied: idna<3,>=2.5 in /usr/lib/python3/dist-packages (from requests==2.24.0) (2.6)
-Requirement already satisfied: chardet<4,>=3.0.2 in /usr/lib/python3/dist-packages (from requests==2.24.0) (3.0.4)
-Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/lib/python3/dist-packages (from requests==2.24.0) (1.22)
-Installing collected packages: six, requests, py-cpuinfo, psutil, portpicker, astor, absl-py
-  Attempting uninstall: six
-    Found existing installation: six 1.15.0
-    Not uninstalling six at /usr/local/lib/python3.6/dist-packages, outside environment /home/rainer/env
-    Can't uninstall 'six'. No files were found to uninstall.
-  Attempting uninstall: requests
-    Found existing installation: requests 2.26.0
-    Not uninstalling requests at /usr/local/lib/python3.6/dist-packages, outside environment /home/rainer/env
-    Can't uninstall 'requests'. No files were found to uninstall.
-  Attempting uninstall: absl-py
-    Found existing installation: absl-py 0.12.0
-    Not uninstalling absl-py at /usr/local/lib/python3.6/dist-packages, outside environment /home/rainer/env
-    Can't uninstall 'absl-py'. No files were found to uninstall.
-[31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
-tensorflow 2.5.0+nv21.8 requires absl-py==0.12.0, but you have absl-py 0.9.0 which is incompatible.
-tensorflow 2.5.0+nv21.8 requires gast==0.4.0, but you have gast 0.3.3 which is incompatible.
-tensorflow 2.5.0+nv21.8 requires six~=1.15.0, but you have six 1.16.0 which is incompatible.[0m
-Successfully installed absl-py-0.9.0 astor-0.8.1 portpicker-1.3.1 psutil-5.7.2 py-cpuinfo-7.0.0 requests-2.24.0 six-1.16.0
-Collecting gdown
-  Using cached gdown-3.13.0.tar.gz (9.3 kB)
-  Installing build dependencies ... [?25l- \ | / done
-[?25h  Getting requirements to build wheel ... [?25l- \ done
-[?25h    Preparing wheel metadata ... [?25l- \ done
-[?25hRequirement already satisfied: requests[socks]>=2.12.0 in /home/rainer/env/lib/python3.6/site-packages (from gdown) (2.24.0)
-Requirement already satisfied: six in /home/rainer/env/lib/python3.6/site-packages (from gdown) (1.16.0)
-Collecting tqdm
-  Using cached tqdm-4.62.2-py2.py3-none-any.whl (76 kB)
-Requirement already satisfied: filelock in /usr/local/lib/python3.6/dist-packages (from gdown) (3.0.12)
-Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from requests[socks]>=2.12.0->gdown) (2018.1.18)
-Requirement already satisfied: chardet<4,>=3.0.2 in /usr/lib/python3/dist-packages (from requests[socks]>=2.12.0->gdown) (3.0.4)
-Requirement already satisfied: idna<3,>=2.5 in /usr/lib/python3/dist-packages (from requests[socks]>=2.12.0->gdown) (2.6)
-Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/lib/python3/dist-packages (from requests[socks]>=2.12.0->gdown) (1.22)
-Collecting PySocks!=1.5.7,>=1.5.6
-  Using cached PySocks-1.7.1-py3-none-any.whl (16 kB)
-Building wheels for collected packages: gdown
-  Building wheel for gdown (PEP 517) ... [?25l- \ | done
-[?25h  Created wheel for gdown: filename=gdown-3.13.0-py3-none-any.whl size=9033 sha256=6c47cebac195e7442b7728eb243592c5aa80d21632f5a2df93c8f28b8d7e8990
-  Stored in directory: /home/rainer/.cache/pip/wheels/6a/87/bd/09b16161b149fd6711ac76b5420d78ed58bd6a320e892117c3
-Successfully built gdown
-Installing collected packages: PySocks, tqdm, gdown
-Successfully installed PySocks-1.7.1 gdown-3.13.0 tqdm-4.62.2
-Looking in indexes: https://pypi.org/simple, https://developer.download.nvidia.com/compute/redist/jp/v46
-Requirement already satisfied: tensorflow in /usr/local/lib/python3.6/dist-packages (2.5.0+nv21.8)
-Requirement already satisfied: grpcio~=1.34.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow) (1.34.1)
-Requirement already satisfied: flatbuffers~=1.12.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow) (1.12)
-Requirement already satisfied: typing-extensions~=3.7.4 in /usr/local/lib/python3.6/dist-packages (from tensorflow) (3.7.4.3)
-Requirement already satisfied: wheel~=0.35 in /home/rainer/env/lib/python3.6/site-packages (from tensorflow) (0.37.0)
-Requirement already satisfied: h5py~=2.10.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow) (2.10.0)
-Requirement already satisfied: tensorflow-estimator<2.6.0,>=2.5.0rc0 in /usr/local/lib/python3.6/dist-packages (from tensorflow) (2.5.0)
-Requirement already satisfied: astunparse~=1.6.3 in /usr/local/lib/python3.6/dist-packages (from tensorflow) (1.6.3)
-Requirement already satisfied: google-pasta~=0.2 in /usr/local/lib/python3.6/dist-packages (from tensorflow) (0.2.0)
-Requirement already satisfied: keras-preprocessing~=1.1.2 in /usr/local/lib/python3.6/dist-packages (from tensorflow) (1.1.2)
-Requirement already satisfied: tensorboard~=2.5 in /usr/local/lib/python3.6/dist-packages (from tensorflow) (2.6.0)
-Requirement already satisfied: keras-nightly~=2.5.0.dev in /usr/local/lib/python3.6/dist-packages (from tensorflow) (2.5.0.dev2021032900)
-Collecting absl-py==0.12.0
-  Using cached absl_py-0.12.0-py3-none-any.whl (129 kB)
-Requirement already satisfied: numpy~=1.19.2 in /usr/local/lib/python3.6/dist-packages (from tensorflow) (1.19.4)
-Requirement already satisfied: opt-einsum~=3.3.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow) (3.3.0)
-Requirement already satisfied: termcolor~=1.1.0 in /usr/local/lib/python3.6/dist-packages (from tensorflow) (1.1.0)
-Collecting gast==0.4.0
-  Using cached gast-0.4.0-py3-none-any.whl (9.8 kB)
-Requirement already satisfied: wrapt~=1.12.1 in /usr/local/lib/python3.6/dist-packages (from tensorflow) (1.12.1)
-Collecting six~=1.15.0
-  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)
-Requirement already satisfied: protobuf>=3.9.2 in /home/rainer/env/lib/python3.6/site-packages (from tensorflow) (3.12.2)
-Requirement already satisfied: setuptools in /home/rainer/env/lib/python3.6/site-packages (from protobuf>=3.9.2->tensorflow) (57.4.0)
-Requirement already satisfied: werkzeug>=0.11.15 in /usr/local/lib/python3.6/dist-packages (from tensorboard~=2.5->tensorflow) (2.0.1)
-Requirement already satisfied: google-auth<2,>=1.6.3 in /usr/local/lib/python3.6/dist-packages (from tensorboard~=2.5->tensorflow) (1.35.0)
-Requirement already satisfied: markdown>=2.6.8 in /usr/local/lib/python3.6/dist-packages (from tensorboard~=2.5->tensorflow) (3.3.4)
-Requirement already satisfied: requests<3,>=2.21.0 in /home/rainer/env/lib/python3.6/site-packages (from tensorboard~=2.5->tensorflow) (2.24.0)
-Requirement already satisfied: tensorboard-data-server<0.7.0,>=0.6.0 in /usr/local/lib/python3.6/dist-packages (from tensorboard~=2.5->tensorflow) (0.6.1)
-Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in /usr/local/lib/python3.6/dist-packages (from tensorboard~=2.5->tensorflow) (1.8.0)
-Requirement already satisfied: google-auth-oauthlib<0.5,>=0.4.1 in /usr/local/lib/python3.6/dist-packages (from tensorboard~=2.5->tensorflow) (0.4.5)
-Requirement already satisfied: pyasn1-modules>=0.2.1 in /usr/local/lib/python3.6/dist-packages (from google-auth<2,>=1.6.3->tensorboard~=2.5->tensorflow) (0.2.8)
-Requirement already satisfied: rsa<5,>=3.1.4 in /usr/local/lib/python3.6/dist-packages (from google-auth<2,>=1.6.3->tensorboard~=2.5->tensorflow) (4.7.2)
-Requirement already satisfied: cachetools<5.0,>=2.0.0 in /usr/local/lib/python3.6/dist-packages (from google-auth<2,>=1.6.3->tensorboard~=2.5->tensorflow) (4.2.2)
-Requirement already satisfied: requests-oauthlib>=0.7.0 in /usr/local/lib/python3.6/dist-packages (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard~=2.5->tensorflow) (1.3.0)
-Requirement already satisfied: importlib-metadata in /usr/local/lib/python3.6/dist-packages (from markdown>=2.6.8->tensorboard~=2.5->tensorflow) (4.7.1)
-Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /usr/local/lib/python3.6/dist-packages (from pyasn1-modules>=0.2.1->google-auth<2,>=1.6.3->tensorboard~=2.5->tensorflow) (0.4.8)
-Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from requests<3,>=2.21.0->tensorboard~=2.5->tensorflow) (2018.1.18)
-Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/lib/python3/dist-packages (from requests<3,>=2.21.0->tensorboard~=2.5->tensorflow) (1.22)
-Requirement already satisfied: idna<3,>=2.5 in /usr/lib/python3/dist-packages (from requests<3,>=2.21.0->tensorboard~=2.5->tensorflow) (2.6)
-Requirement already satisfied: chardet<4,>=3.0.2 in /usr/lib/python3/dist-packages (from requests<3,>=2.21.0->tensorboard~=2.5->tensorflow) (3.0.4)
-Requirement already satisfied: oauthlib>=3.0.0 in /usr/local/lib/python3.6/dist-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard~=2.5->tensorflow) (3.1.1)
-Requirement already satisfied: dataclasses in /usr/local/lib/python3.6/dist-packages (from werkzeug>=0.11.15->tensorboard~=2.5->tensorflow) (0.8)
-Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.6/dist-packages (from importlib-metadata->markdown>=2.6.8->tensorboard~=2.5->tensorflow) (3.5.0)
-Installing collected packages: six, absl-py, gast
-  Attempting uninstall: six
-    Found existing installation: six 1.16.0
-    Uninstalling six-1.16.0:
-      Successfully uninstalled six-1.16.0
-  Attempting uninstall: absl-py
-    Found existing installation: absl-py 0.9.0
-    Uninstalling absl-py-0.9.0:
-      Successfully uninstalled absl-py-0.9.0
-  Attempting uninstall: gast
-    Found existing installation: gast 0.3.3
-    Uninstalling gast-0.3.3:
-      Successfully uninstalled gast-0.3.3
-Successfully installed absl-py-0.12.0 gast-0.4.0 six-1.15.0
---2021-08-28 14:35:28--  https://nvidia.box.com/shared/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl
-Resolving nvidia.box.com (nvidia.box.com)... 185.235.236.197
-Connecting to nvidia.box.com (nvidia.box.com)|185.235.236.197|:443... connected.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: /public/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl [following]
---2021-08-28 14:35:28--  https://nvidia.box.com/public/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl
-Reusing existing connection to nvidia.box.com:443.
-HTTP request sent, awaiting response... 301 Moved Permanently
-Location: https://nvidia.app.box.com/public/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl [following]
---2021-08-28 14:35:29--  https://nvidia.app.box.com/public/static/p57jwntv436lfrd78inwl7iml6p13fzh.whl
-Resolving nvidia.app.box.com (nvidia.app.box.com)... 185.235.236.201
-Connecting to nvidia.app.box.com (nvidia.app.box.com)|185.235.236.201|:443... connected.
-HTTP request sent, awaiting response... 302 Found
-Location: https://public.boxcloud.com/d/1/b1!8B9BNik8zvm41bgU3gbOoTB17Zp5JCy8ydQ3Lw4oT6gmNqTKGXboLNmdvQ2ANo8CtM7r-4iEhIJsHF5kBEPyCt1NGde9QqcDEve5Z25Fa4_KjzV6j-lZbk78eMpeAgK2Dqz0fJfdj9vkgXmTwnx2LgasK7dZBrU5ElIlBGHTl0pQf2bnbKr2Spq8VRufkGxdQ2K_Io0ACYvzZHVww--sW_BurDqJ25-QtEvIvHgu1r_dkzxSlcBO8DHld6qX_dYL9mYiQJXfCvqjQPlucHFX5O87GkakP1YyxbaU6xa331iJMiieiIkW_EY0nS6zS1v-qz-NoALlzc2Q6FDrH6VB5OCMTL_DUw1xBCfiF4EQ2y3Ls1ILz3COw5zteJYTOcHUj_7WFDgIb4SDGqz2PilRiosxH84ynIt5bsB8e2j8gFcnk8ntZ4xjBLUNMfFvLPh9MyoY16N3TV6Qw_kxIl9w-isVycBRauDdd9TzQZLjQsJEcey3gNW0wHXKOefvfgtSsnjLbOfsxe_JVj6Nyk3U0hUWT4Rm_VcUzROUhaVLSxMBmQAvjMVL7hUGPSclCLb4FVhYqJIr0-pFH9-OUkZZsMhp27HgpzwLox-FIWAWdjH-hAwyFpTCHOzSDjoJdKro6rW5gJBhYnJN9APYm0lLOhrxFJm7ZPC5u0l7kudDYGEYogV9kFMzU4clM_hCxrtj68r622sqUusZkU8apyKin0oVjg--k0M3Zn5j72NLKU0oPF-YnXpisIY8fvW5Hm321vSX-E1TLj9A0RDk-YBHiOAbggA1qUZSldXvaIrzRhHrc0WKS8mP8kyktDaVveCoNyVQaEY-RYOWiWWUs_ubU39Nef1aMPFnrz8qxgVZ7cG8gtpoHVtGv2IWvjyIXHo1fqpfCULstfkJIDXE2axDCoNZYl8T16ICExGQS4recqxUOtBhq6j3wrQZWpTv6NMT9sMK0MTXUzr-aeLPIzot82cRvemmVspUCoboOcn0_-fE3Ck1EASRIFrA9Kt0YL-ktvEYLhz-hndLMB5WkW39b1A4woEN4oGLazVdixJhGB5y13JihclMFWsKe_vqxu5YnTsRAaffLyBmG207r6DMibUaGyDWfj7HVbhojAINjFWgMbLGONtFw46OrbrPdVBsO8YniI3KkCn43ObPIT8-4rL-bjoGvbSoDfGOsNOibdZ0PPHAYoEVxZ3yypI0ipg2pekdyzT9wRr4tFRS5iHh4QfFdxE7LtoYGIPTv67J5YHUc0wmTFLoZ1zk01cMEg6SValG1AA9W6f-xc8INgGQLsP2deJmx6heYS2faMUG3RHLXqtlUGD3dRAmR2OAyNvU8ILVixbDfmwTLKlR-qc5HjQxFxy4_9mtWjLH8Ueh3OpH2hY7VbcdbLJbFqHYFZGylytGi46IBq51f1TqyTjkJsZAzOnBqyZrjX7-jin43X1jBsRxatfgso81dN9Fac8Bh0Hqo7H8NS4./download [following]
---2021-08-28 14:35:29--  https://public.boxcloud.com/d/1/b1!8B9BNik8zvm41bgU3gbOoTB17Zp5JCy8ydQ3Lw4oT6gmNqTKGXboLNmdvQ2ANo8CtM7r-4iEhIJsHF5kBEPyCt1NGde9QqcDEve5Z25Fa4_KjzV6j-lZbk78eMpeAgK2Dqz0fJfdj9vkgXmTwnx2LgasK7dZBrU5ElIlBGHTl0pQf2bnbKr2Spq8VRufkGxdQ2K_Io0ACYvzZHVww--sW_BurDqJ25-QtEvIvHgu1r_dkzxSlcBO8DHld6qX_dYL9mYiQJXfCvqjQPlucHFX5O87GkakP1YyxbaU6xa331iJMiieiIkW_EY0nS6zS1v-qz-NoALlzc2Q6FDrH6VB5OCMTL_DUw1xBCfiF4EQ2y3Ls1ILz3COw5zteJYTOcHUj_7WFDgIb4SDGqz2PilRiosxH84ynIt5bsB8e2j8gFcnk8ntZ4xjBLUNMfFvLPh9MyoY16N3TV6Qw_kxIl9w-isVycBRauDdd9TzQZLjQsJEcey3gNW0wHXKOefvfgtSsnjLbOfsxe_JVj6Nyk3U0hUWT4Rm_VcUzROUhaVLSxMBmQAvjMVL7hUGPSclCLb4FVhYqJIr0-pFH9-OUkZZsMhp27HgpzwLox-FIWAWdjH-hAwyFpTCHOzSDjoJdKro6rW5gJBhYnJN9APYm0lLOhrxFJm7ZPC5u0l7kudDYGEYogV9kFMzU4clM_hCxrtj68r622sqUusZkU8apyKin0oVjg--k0M3Zn5j72NLKU0oPF-YnXpisIY8fvW5Hm321vSX-E1TLj9A0RDk-YBHiOAbggA1qUZSldXvaIrzRhHrc0WKS8mP8kyktDaVveCoNyVQaEY-RYOWiWWUs_ubU39Nef1aMPFnrz8qxgVZ7cG8gtpoHVtGv2IWvjyIXHo1fqpfCULstfkJIDXE2axDCoNZYl8T16ICExGQS4recqxUOtBhq6j3wrQZWpTv6NMT9sMK0MTXUzr-aeLPIzot82cRvemmVspUCoboOcn0_-fE3Ck1EASRIFrA9Kt0YL-ktvEYLhz-hndLMB5WkW39b1A4woEN4oGLazVdixJhGB5y13JihclMFWsKe_vqxu5YnTsRAaffLyBmG207r6DMibUaGyDWfj7HVbhojAINjFWgMbLGONtFw46OrbrPdVBsO8YniI3KkCn43ObPIT8-4rL-bjoGvbSoDfGOsNOibdZ0PPHAYoEVxZ3yypI0ipg2pekdyzT9wRr4tFRS5iHh4QfFdxE7LtoYGIPTv67J5YHUc0wmTFLoZ1zk01cMEg6SValG1AA9W6f-xc8INgGQLsP2deJmx6heYS2faMUG3RHLXqtlUGD3dRAmR2OAyNvU8ILVixbDfmwTLKlR-qc5HjQxFxy4_9mtWjLH8Ueh3OpH2hY7VbcdbLJbFqHYFZGylytGi46IBq51f1TqyTjkJsZAzOnBqyZrjX7-jin43X1jBsRxatfgso81dN9Fac8Bh0Hqo7H8NS4./download
-Resolving public.boxcloud.com (public.boxcloud.com)... 185.235.236.200
-Connecting to public.boxcloud.com (public.boxcloud.com)|185.235.236.200|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 290193522 (277M) [application/octet-stream]
-Saving to: ‘p57jwntv436lfrd78inwl7iml6p13fzh.whl’
-
-             p57jwntv436l   0%[                                   ]       0  --.-KB/s                           p57jwntv436lf   0%[                                   ] 211,95K   743KB/s                          p57jwntv436lfr   0%[                                   ]   1,22M  2,14MB/s                         p57jwntv436lfrd   1%[                                   ]   3,08M  3,68MB/s                        p57jwntv436lfrd7   2%[                                   ]   6,10M  5,89MB/s                       p57jwntv436lfrd78   3%[>                                  ]   8,62M  6,97MB/s                      p57jwntv436lfrd78i   3%[>                                  ]  11,05M  7,63MB/s                     p57jwntv436lfrd78in   4%[>                                  ]  13,36M  8,10MB/s                    p57jwntv436lfrd78inw   5%[=>                                 ]  15,92M  8,61MB/s                   p57jwntv436lfrd78inwl   6%[=>                                 ]  18,07M  8,82MB/s                  p57jwntv436lfrd78inwl7   7%[=>                                 ]  20,49M  9,11MB/s                 p57jwntv436lfrd78inwl7i   8%[=>                                 ]  23,18M  9,46MB/s                p57jwntv436lfrd78inwl7im   9%[==>                                ]  25,09M  9,47MB/s               p57jwntv436lfrd78inwl7iml  10%[==>                                ]  27,75M  9,74MB/s               57jwntv436lfrd78inwl7iml6  10%[==>                                ]  30,03M  9,85MB/s    eta 25s    7jwntv436lfrd78inwl7iml6p  11%[===>                               ]  32,08M  10,3MB/s    eta 25s    jwntv436lfrd78inwl7iml6p1  12%[===>                               ]  34,66M  10,9MB/s    eta 25s    wntv436lfrd78inwl7iml6p13  13%[===>                               ]  37,16M  11,6MB/s    eta 25s    ntv436lfrd78inwl7iml6p13f  14%[===>                               ]  39,49M  11,8MB/s    eta 25s    tv436lfrd78inwl7iml6p13fz  15%[====>                              ]  42,15M  11,9MB/s    eta 23s    v436lfrd78inwl7iml6p13fzh  15%[====>                              ]  44,11M  11,7MB/s    eta 23s    436lfrd78inwl7iml6p13fzh.  16%[====>                              ]  46,32M  11,6MB/s    eta 23s    36lfrd78inwl7iml6p13fzh.w  17%[=====>                             ]  48,90M  11,7MB/s    eta 23s    6lfrd78inwl7iml6p13fzh.wh  18%[=====>                             ]  51,07M  11,6MB/s    eta 23s    lfrd78inwl7iml6p13fzh.whl  19%[=====>                             ]  53,41M  11,6MB/s    eta 21s    frd78inwl7iml6p13fzh.whl   20%[======>                            ]  55,88M  11,6MB/s    eta 21s    rd78inwl7iml6p13fzh.whl    20%[======>                            ]  58,03M  11,5MB/s    eta 21s    d78inwl7iml6p13fzh.whl     21%[======>                            ]  60,37M  11,5MB/s    eta 21s    78inwl7iml6p13fzh.whl      22%[======>                            ]  62,79M  11,5MB/s    eta 21s    8inwl7iml6p13fzh.whl       23%[=======>                           ]  64,97M  11,5MB/s    eta 20s    inwl7iml6p13fzh.whl        24%[=======>                           ]  67,39M  11,5MB/s    eta 20s    nwl7iml6p13fzh.whl         25%[=======>                           ]  69,70M  11,5MB/s    eta 20s    wl7iml6p13fzh.whl          25%[========>                          ]  71,87M  11,4MB/s    eta 20s    l7iml6p13fzh.whl           26%[========>                          ]  74,11M  11,4MB/s    eta 20s    7iml6p13fzh.whl            27%[========>                          ]  76,61M  11,4MB/s    eta 19s    iml6p13fzh.whl             28%[========>                          ]  78,80M  11,4MB/s    eta 19s    ml6p13fzh.whl              29%[=========>                         ]  80,92M  11,4MB/s    eta 19s    l6p13fzh.whl               30%[=========>                         ]  83,20M  11,3MB/s    eta 19s    6p13fzh.whl                30%[=========>                         ]  85,32M  11,3MB/s    eta 19s    p13fzh.whl                 31%[==========>                        ]  87,81M  11,3MB/s    eta 17s    13fzh.whl                  32%[==========>                        ]  90,06M  11,3MB/s    eta 17s    3fzh.whl                   33%[==========>                        ]  92,16M  11,2MB/s    eta 17s    fzh.whl                    34%[==========>                        ]  94,65M  11,3MB/s    eta 17s    zh.whl                     34%[===========>                       ]  96,71M  11,2MB/s    eta 17s    h.whl                      35%[===========>                       ]  99,09M  11,2MB/s    eta 16s    .whl                       36%[===========>                       ] 101,55M  11,3MB/s    eta 16s    whl                        37%[============>                      ] 103,87M  11,3MB/s    eta 16s    hl                         38%[============>                      ] 105,88M  11,2MB/s    eta 16s    l                          39%[============>                      ] 108,45M  11,4MB/s    eta 16s                               39%[============>                      ] 110,65M  11,3MB/s    eta 15s                            p  40%[=============>                     ] 112,81M  11,3MB/s    eta 15s                           p5  41%[=============>                     ] 114,66M  11,2MB/s    eta 15s                          p57  42%[=============>                     ] 117,13M  11,3MB/s    eta 15s                         p57j  43%[==============>                    ] 119,28M  11,3MB/s    eta 15s                        p57jw  43%[==============>                    ] 121,34M  11,1MB/s    eta 14s                       p57jwn  44%[==============>                    ] 123,26M  11,0MB/s    eta 14s                      p57jwnt  45%[==============>                    ] 125,76M  11,2MB/s    eta 14s                     p57jwntv  46%[===============>                   ] 128,06M  11,1MB/s    eta 14s                    p57jwntv4  47%[===============>                   ] 130,29M  11,2MB/s    eta 14s                   p57jwntv43  47%[===============>                   ] 132,49M  11,1MB/s    eta 13s                  p57jwntv436  48%[================>                  ] 134,78M  11,1MB/s    eta 13s                 p57jwntv436l  49%[================>                  ] 137,59M  11,2MB/s    eta 13s                p57jwntv436lf  50%[================>                  ] 140,38M  11,4MB/s    eta 13s               p57jwntv436lfr  51%[=================>                 ] 142,69M  11,4MB/s    eta 13s              p57jwntv436lfrd  52%[=================>                 ] 144,88M  11,4MB/s    eta 12s             p57jwntv436lfrd7  53%[=================>                 ] 147,08M  11,4MB/s    eta 12s            p57jwntv436lfrd78  54%[=================>                 ] 149,71M  11,9MB/s    eta 12s           p57jwntv436lfrd78i  54%[==================>                ] 151,98M  11,6MB/s    eta 12s          p57jwntv436lfrd78in  55%[==================>                ] 154,28M  11,6MB/s    eta 12s         p57jwntv436lfrd78inw  56%[==================>                ] 156,36M  11,6MB/s    eta 11s        p57jwntv436lfrd78inwl  57%[===================>               ] 158,94M  11,8MB/s    eta 11s       p57jwntv436lfrd78inwl7  58%[===================>               ] 161,28M  11,9MB/s    eta 11s      p57jwntv436lfrd78inwl7i  59%[===================>               ] 163,59M  11,8MB/s    eta 11s     p57jwntv436lfrd78inwl7im  59%[===================>               ] 165,76M  11,8MB/s    eta 11s    p57jwntv436lfrd78inwl7iml  60%[====================>              ] 168,06M  11,8MB/s    eta 10s    57jwntv436lfrd78inwl7iml6  61%[====================>              ] 170,23M  11,8MB/s    eta 10s    7jwntv436lfrd78inwl7iml6p  62%[====================>              ] 171,83M  11,3MB/s    eta 10s    jwntv436lfrd78inwl7iml6p1  63%[=====================>             ] 174,72M  11,4MB/s    eta 10s    wntv436lfrd78inwl7iml6p13  63%[=====================>             ] 177,02M  11,4MB/s    eta 10s    ntv436lfrd78inwl7iml6p13f  64%[=====================>             ] 179,11M  11,3MB/s    eta 9s     tv436lfrd78inwl7iml6p13fz  65%[=====================>             ] 181,02M  11,2MB/s    eta 9s     v436lfrd78inwl7iml6p13fzh  66%[======================>            ] 183,42M  11,1MB/s    eta 9s     436lfrd78inwl7iml6p13fzh.  67%[======================>            ] 185,46M  11,1MB/s    eta 9s     36lfrd78inwl7iml6p13fzh.w  67%[======================>            ] 187,60M  11,1MB/s    eta 9s     6lfrd78inwl7iml6p13fzh.wh  68%[=======================>           ] 190,30M  11,2MB/s    eta 8s     lfrd78inwl7iml6p13fzh.whl  69%[=======================>           ] 192,50M  11,2MB/s    eta 8s     frd78inwl7iml6p13fzh.whl   70%[=======================>           ] 194,36M  11,0MB/s    eta 8s     rd78inwl7iml6p13fzh.whl    70%[=======================>           ] 196,25M  10,8MB/s    eta 8s     d78inwl7iml6p13fzh.whl     71%[========================>          ] 198,41M  10,7MB/s    eta 8s     78inwl7iml6p13fzh.whl      72%[========================>          ] 201,06M  10,9MB/s    eta 7s     8inwl7iml6p13fzh.whl       73%[========================>          ] 203,18M  10,8MB/s    eta 7s     inwl7iml6p13fzh.whl        74%[========================>          ] 205,29M  10,8MB/s    eta 7s     nwl7iml6p13fzh.whl         75%[=========================>         ] 207,79M  11,0MB/s    eta 7s     wl7iml6p13fzh.whl          76%[=========================>         ] 210,50M  11,0MB/s    eta 7s     l7iml6p13fzh.whl           76%[=========================>         ] 212,45M  10,9MB/s    eta 6s     7iml6p13fzh.whl            78%[==========================>        ] 216,09M  11,4MB/s    eta 6s     iml6p13fzh.whl             78%[==========================>        ] 218,26M  11,4MB/s    eta 6s     ml6p13fzh.whl              79%[==========================>        ] 220,26M  11,3MB/s    eta 6s     l6p13fzh.whl               80%[===========================>       ] 222,32M  11,3MB/s    eta 6s     6p13fzh.whl                81%[===========================>       ] 225,30M  11,5MB/s    eta 5s     p13fzh.whl                 82%[===========================>       ] 228,27M  11,7MB/s    eta 5s     13fzh.whl                  83%[============================>      ] 231,24M  12,1MB/s    eta 5s     3fzh.whl                   84%[============================>      ] 233,58M  12,2MB/s    eta 5s     fzh.whl                    85%[============================>      ] 236,08M  12,2MB/s    eta 5s     zh.whl                     86%[=============================>     ] 238,15M  12,2MB/s    eta 3s     h.whl                      86%[=============================>     ] 240,65M  12,3MB/s    eta 3s     .whl                       87%[=============================>     ] 243,17M  12,4MB/s    eta 3s     whl                        88%[=============================>     ] 245,12M  12,3MB/s    eta 3s     hl                         89%[==============================>    ] 247,83M  12,3MB/s    eta 3s     l                          90%[==============================>    ] 250,17M  12,3MB/s    eta 2s                                91%[==============================>    ] 252,17M  12,0MB/s    eta 2s                             p  92%[===============================>   ] 254,65M  12,1MB/s    eta 2s                            p5  92%[===============================>   ] 257,14M  12,2MB/s    eta 2s                           p57  93%[===============================>   ] 259,11M  12,3MB/s    eta 2s                          p57j  94%[================================>  ] 261,86M  12,2MB/s    eta 1s                         p57jw  95%[================================>  ] 264,19M  11,9MB/s    eta 1s                        p57jwn  96%[================================>  ] 266,71M  11,7MB/s    eta 1s                       p57jwnt  97%[=================================> ] 269,07M  11,7MB/s    eta 1s                      p57jwntv  98%[=================================> ] 271,24M  11,6MB/s    eta 1s                     p57jwntv4  98%[=================================> ] 273,69M  11,7MB/s    eta 0s                    p57jwntv43  99%[=================================> ] 276,24M  11,8MB/s    eta 0s     p57jwntv436lfrd78inwl7iml 100%[==================================>] 276,75M  11,7MB/s    in 25s     
-
-2021-08-28 14:35:54 (11,3 MB/s) - ‘p57jwntv436lfrd78inwl7iml6p13fzh.whl’ saved [290193522/290193522]
-
-Processing ./torch-1.8.0-cp36-cp36m-linux_aarch64.whl
-Requirement already satisfied: typing-extensions in /usr/local/lib/python3.6/dist-packages (from torch==1.8.0) (3.7.4.3)
-Requirement already satisfied: dataclasses in /usr/local/lib/python3.6/dist-packages (from torch==1.8.0) (0.8)
-Requirement already satisfied: numpy in /usr/local/lib/python3.6/dist-packages (from torch==1.8.0) (1.19.4)
-Installing collected packages: torch
-Successfully installed torch-1.8.0
-[sudo] password for rainer: 
-Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-Reading state information... 0%Reading state information... 0%Reading state information... Done
-libjpeg-dev is already the newest version (8c-2ubuntu8).
-zlib1g-dev is already the newest version (1:1.2.11.dfsg-0ubuntu2).
-libpython3-dev is already the newest version (3.6.7-1~18.04).
-libavcodec-dev is already the newest version (7:3.4.8-0ubuntu0.2).
-libavformat-dev is already the newest version (7:3.4.8-0ubuntu0.2).
-libswscale-dev is already the newest version (7:3.4.8-0ubuntu0.2).
-0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
-fatal: destination path 'torchvision' already exists and is not an empty directory.
-./install_part2.sh: line 20: cd: /home/rainer/project/torchvision: No such file or directory
-python: can't open file 'setup.py': [Errno 2] No such file or directory
-Collecting pyfiglet
-  Using cached pyfiglet-0.8.post1-py2.py3-none-any.whl (865 kB)
-Collecting prettytable
-  Using cached prettytable-2.2.0-py3-none-any.whl (23 kB)
-Collecting kivy
-  Using cached Kivy-2.0.0.tar.gz (23.7 MB)
-  Installing build dependencies ... [?25l- \ | / - \ done
-[?25h  Getting requirements to build wheel ... [?25l- \ | / - done
-[?25h    Preparing wheel metadata ... [?25l- \ | / - \ done
-[?25hCollecting plotly
-  Using cached plotly-5.2.2-py2.py3-none-any.whl (21.8 MB)
-Collecting imgaug
-  Using cached imgaug-0.4.0-py2.py3-none-any.whl (948 kB)
-Collecting packaging
-  Using cached packaging-21.0-py3-none-any.whl (40 kB)
-Collecting docopt
-  Using cached docopt-0.6.2-py2.py3-none-any.whl
-Collecting wcwidth
-  Using cached wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
-Requirement already satisfied: importlib-metadata in /usr/local/lib/python3.6/dist-packages (from prettytable) (4.7.1)
-Collecting pygments
-  Using cached Pygments-2.10.0-py3-none-any.whl (1.0 MB)
-Collecting docutils
-  Using cached docutils-0.17.1-py2.py3-none-any.whl (575 kB)
-Collecting Kivy-Garden>=0.1.4
-  Using cached Kivy_Garden-0.1.4-py3-none-any.whl
-Collecting tenacity>=6.2.0
-  Using cached tenacity-8.0.1-py3-none-any.whl (24 kB)
-Requirement already satisfied: six in ./env/lib/python3.6/site-packages (from plotly) (1.15.0)
-Requirement already satisfied: scipy in /usr/lib/python3/dist-packages (from imgaug) (0.19.1)
-Requirement already satisfied: numpy>=1.15 in /usr/local/lib/python3.6/dist-packages (from imgaug) (1.19.4)
-Collecting Shapely
-  Using cached Shapely-1.7.1.tar.gz (383 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_851177819b8a4da39153b463e69b3a97/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_851177819b8a4da39153b463e69b3a97/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-syrleo9h
-         cwd: /tmp/pip-install-7wgru4nj/shapely_851177819b8a4da39153b463e69b3a97/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_851177819b8a4da39153b463e69b3a97/setup.py", line 85, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_851177819b8a4da39153b463e69b3a97/shapely/_buildcfg.py", line 170, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_851177819b8a4da39153b463e69b3a97/shapely/_buildcfg.py", line 164, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/42/f3/0e1bc2c4f15e05e30c6b99322b9ddaa2babb3f43bc7df2698efdc1553439/Shapely-1.7.1.tar.gz#sha256=1641724c1055459a7e2b8bbe47ba25bdc89554582e62aec23cb3f3ca25f9b129 (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.7.0.tar.gz (349 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_5a4472174e75441e8ad85217d56b1550/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_5a4472174e75441e8ad85217d56b1550/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-kayc112u
-         cwd: /tmp/pip-install-7wgru4nj/shapely_5a4472174e75441e8ad85217d56b1550/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_5a4472174e75441e8ad85217d56b1550/setup.py", line 85, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_5a4472174e75441e8ad85217d56b1550/shapely/_buildcfg.py", line 170, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_5a4472174e75441e8ad85217d56b1550/shapely/_buildcfg.py", line 164, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/44/ec/4eddbf9d17a917c51fb4ad159aa7137f506681e91ab559cf87d120e1d78d/Shapely-1.7.0.tar.gz#sha256=e21a9fe1a416463ff11ae037766fe410526c95700b9e545372475d2361cc951e (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.6.4.post2.tar.gz (225 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_2137ec131cbe44a6820c8a8d459e7614/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_2137ec131cbe44a6820c8a8d459e7614/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-b2_mg5ub
-         cwd: /tmp/pip-install-7wgru4nj/shapely_2137ec131cbe44a6820c8a8d459e7614/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_2137ec131cbe44a6820c8a8d459e7614/setup.py", line 80, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_2137ec131cbe44a6820c8a8d459e7614/shapely/_buildcfg.py", line 167, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_2137ec131cbe44a6820c8a8d459e7614/shapely/_buildcfg.py", line 161, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/a2/fb/7a7af9ef7a35d16fa23b127abee272cfc483ca89029b73e92e93cdf36e6b/Shapely-1.6.4.post2.tar.gz#sha256=c4b87bb61fc3de59fc1f85e71a79b0c709dc68364d9584473697aad4aa13240f (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.6.4.post1.tar.gz (224 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_79da8cc6987447b0bee9a5e626365e32/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_79da8cc6987447b0bee9a5e626365e32/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-095c13_t
-         cwd: /tmp/pip-install-7wgru4nj/shapely_79da8cc6987447b0bee9a5e626365e32/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_79da8cc6987447b0bee9a5e626365e32/setup.py", line 80, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_79da8cc6987447b0bee9a5e626365e32/shapely/_buildcfg.py", line 167, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_79da8cc6987447b0bee9a5e626365e32/shapely/_buildcfg.py", line 161, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/7d/3c/0f09841db07aabf9cc387662be646f181d07ed196e6f60ce8be5f4a8f0bd/Shapely-1.6.4.post1.tar.gz#sha256=30df7572d311514802df8dc0e229d1660bc4cbdcf027a8281e79c5fc2fcf02f2 (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.6.4.tar.gz (224 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_a1a9312ea5c1401eaecfae5c66a6649b/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_a1a9312ea5c1401eaecfae5c66a6649b/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-u_jcknkz
-         cwd: /tmp/pip-install-7wgru4nj/shapely_a1a9312ea5c1401eaecfae5c66a6649b/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_a1a9312ea5c1401eaecfae5c66a6649b/setup.py", line 80, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_a1a9312ea5c1401eaecfae5c66a6649b/shapely/_buildcfg.py", line 167, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_a1a9312ea5c1401eaecfae5c66a6649b/shapely/_buildcfg.py", line 161, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/55/60/d04f6cf9834125f1d205cd43d14ebcf58d2cbc74d6e702d1ea59b0bbe2dd/Shapely-1.6.4.tar.gz#sha256=b10bc4199cfefcf1c0e5d932eac89369550320ca4bdf40559328d85f1ca4f655 (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.6.3.tar.gz (223 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_3f1d765d88da4e22aa165a9d9dec90f4/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_3f1d765d88da4e22aa165a9d9dec90f4/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-a48y8idr
-         cwd: /tmp/pip-install-7wgru4nj/shapely_3f1d765d88da4e22aa165a9d9dec90f4/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_3f1d765d88da4e22aa165a9d9dec90f4/setup.py", line 80, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_3f1d765d88da4e22aa165a9d9dec90f4/shapely/_buildcfg.py", line 167, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_3f1d765d88da4e22aa165a9d9dec90f4/shapely/_buildcfg.py", line 161, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/c0/10/1457c46e20b509108a32a5776141d78d410161dae8ab8da74efe67c530eb/Shapely-1.6.3.tar.gz#sha256=14152f111c7711fc6756fd538ec12fc8cdde7419f869b244922f71f61b2a6c6b (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.6.2.post1.tar.gz (221 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_3db52796c357418299280f79f59a600b/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_3db52796c357418299280f79f59a600b/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-n9_3yi2s
-         cwd: /tmp/pip-install-7wgru4nj/shapely_3db52796c357418299280f79f59a600b/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_3db52796c357418299280f79f59a600b/setup.py", line 80, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_3db52796c357418299280f79f59a600b/shapely/_buildcfg.py", line 167, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_3db52796c357418299280f79f59a600b/shapely/_buildcfg.py", line 161, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/60/c4/392aff1cb73f20d3cf4bb01a9eeb3eb5db7a167c094d69beca402b9a5846/Shapely-1.6.2.post1.tar.gz#sha256=07fba518e76b3276558f62a5829bdfa476f790cdef752383ccdc8c66b04b0899 (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.6.2.tar.gz (220 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_ad844853a58c40bebac32c8e38686748/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_ad844853a58c40bebac32c8e38686748/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-jnuktbc8
-         cwd: /tmp/pip-install-7wgru4nj/shapely_ad844853a58c40bebac32c8e38686748/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_ad844853a58c40bebac32c8e38686748/setup.py", line 80, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_ad844853a58c40bebac32c8e38686748/shapely/_buildcfg.py", line 167, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_ad844853a58c40bebac32c8e38686748/shapely/_buildcfg.py", line 161, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/bf/66/302e857b29457ab683ba8f476a385dca1212b6958ed105c2b195d3f87fdb/Shapely-1.6.2.tar.gz#sha256=0ed0db2ddc10e092de30c2ddae28cc8bd2543601b6af83877b76c3280f2537c6 (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.6.1.tar.gz (216 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_922172b9f71f473892d44945ecbb4202/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_922172b9f71f473892d44945ecbb4202/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-h2e19nu9
-         cwd: /tmp/pip-install-7wgru4nj/shapely_922172b9f71f473892d44945ecbb4202/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_922172b9f71f473892d44945ecbb4202/setup.py", line 80, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_922172b9f71f473892d44945ecbb4202/shapely/_buildcfg.py", line 167, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_922172b9f71f473892d44945ecbb4202/shapely/_buildcfg.py", line 161, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/97/33/d299b42241bf80fce900c6da3a8f4e40f909e2c936e690f749c2ac2fb05d/Shapely-1.6.1.tar.gz#sha256=5ae137eb95ff615be399a285cf447913f845b0224e03d1167f638867eaccd0c7 (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.6.0.tar.gz (214 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_296a9b7889a146b3b778431092b491e5/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_296a9b7889a146b3b778431092b491e5/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-kl_8zbro
-         cwd: /tmp/pip-install-7wgru4nj/shapely_296a9b7889a146b3b778431092b491e5/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_296a9b7889a146b3b778431092b491e5/setup.py", line 80, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_296a9b7889a146b3b778431092b491e5/shapely/_buildcfg.py", line 167, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_296a9b7889a146b3b778431092b491e5/shapely/_buildcfg.py", line 161, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/8b/18/d01334652244d5b9e3964b305ae9ce3e6d747345ec0767c4e0ea482d077a/Shapely-1.6.0.tar.gz#sha256=34d07cb277a5acf9ca5583a5b926678c58fb512d4fb4fcccbf3992e995b7ef60 (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.5.17.tar.gz (180 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_827ce559c8c14340b3f0386aef07fc4e/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_827ce559c8c14340b3f0386aef07fc4e/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-qtv6_i2x
-         cwd: /tmp/pip-install-7wgru4nj/shapely_827ce559c8c14340b3f0386aef07fc4e/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_827ce559c8c14340b3f0386aef07fc4e/setup.py", line 38, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_827ce559c8c14340b3f0386aef07fc4e/shapely/_buildcfg.py", line 167, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_827ce559c8c14340b3f0386aef07fc4e/shapely/_buildcfg.py", line 161, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/e6/23/03ea2c965fe5ded97c0dd97c2cd659f1afb5c21f388ec68012d6d981cb7c/Shapely-1.5.17.tar.gz#sha256=31fee47d9208078a19f40a451c0c99c085d16343e66cbd0dd5af0af6f48cfc3a (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.5.16.tar.gz (180 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_352eeccf35cb41c0968a0137b8824eea/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_352eeccf35cb41c0968a0137b8824eea/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-97m9l4nj
-         cwd: /tmp/pip-install-7wgru4nj/shapely_352eeccf35cb41c0968a0137b8824eea/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_352eeccf35cb41c0968a0137b8824eea/setup.py", line 38, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_352eeccf35cb41c0968a0137b8824eea/shapely/_buildcfg.py", line 167, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_352eeccf35cb41c0968a0137b8824eea/shapely/_buildcfg.py", line 161, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/f2/0d/80b8cded75b1ba22ef8f3ef5e156e014f6fd3025f74314e1a22bc3687741/Shapely-1.5.16.tar.gz#sha256=29ad6593909e04a337a4c57d1a7fa234e4e02d53e549e3019a2d0789e6c930fd (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.5.15.tar.gz (179 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_20af447b1b6c4fc6bdb7984ddc0e9070/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_20af447b1b6c4fc6bdb7984ddc0e9070/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-l47m24kp
-         cwd: /tmp/pip-install-7wgru4nj/shapely_20af447b1b6c4fc6bdb7984ddc0e9070/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_20af447b1b6c4fc6bdb7984ddc0e9070/setup.py", line 38, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_20af447b1b6c4fc6bdb7984ddc0e9070/shapely/_buildcfg.py", line 167, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_20af447b1b6c4fc6bdb7984ddc0e9070/shapely/_buildcfg.py", line 161, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/dc/44/84893410afc713e44a82a8f900de3ea63a80fa460beb3f9a9fed2ded0140/Shapely-1.5.15.tar.gz#sha256=e75d9461ad21ab0750b3e582a9af23de47c47c3aef43fa7f7ac0b63bc7ead851 (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.5.14.tar.gz (179 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_1e774f171bac4954b8c46cc72ecf6223/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_1e774f171bac4954b8c46cc72ecf6223/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-0vc32o5o
-         cwd: /tmp/pip-install-7wgru4nj/shapely_1e774f171bac4954b8c46cc72ecf6223/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_1e774f171bac4954b8c46cc72ecf6223/setup.py", line 38, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_1e774f171bac4954b8c46cc72ecf6223/shapely/_buildcfg.py", line 167, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_1e774f171bac4954b8c46cc72ecf6223/shapely/_buildcfg.py", line 161, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/b5/27/bd2d8e73067fb949b02982a93b9edee295b0f4f6bd3c17693fbac8dc21a4/Shapely-1.5.14.tar.gz#sha256=0e2f49f09abc66575c9bfb7908b7a21f402efc581d212416936476b5818f7f56 (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.5.13.tar.gz (176 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_52c07719468b432a97c82beb2aecebb6/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_52c07719468b432a97c82beb2aecebb6/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-irnpj6zr
-         cwd: /tmp/pip-install-7wgru4nj/shapely_52c07719468b432a97c82beb2aecebb6/
-    Complete output (11 lines):
-    Failed `CDLL(libgeos_c.so.1)`
-    Failed `CDLL(libgeos_c.so)`
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_52c07719468b432a97c82beb2aecebb6/setup.py", line 38, in <module>
-        from shapely._buildcfg import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_52c07719468b432a97c82beb2aecebb6/shapely/_buildcfg.py", line 167, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_52c07719468b432a97c82beb2aecebb6/shapely/_buildcfg.py", line 161, in load_dll
-        libname, fallbacks or []))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/ad/f9/4640d50324635fbdc7b109f8ef37de5f04456b89ed175cf2f71ae05efd8f/Shapely-1.5.13.tar.gz#sha256=68f8efb43112e8ef1f7e56e2c9eef64e0cbc1c19528c627696fb07345075a348 (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.5.12.tar.gz (174 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_455f5abaadf14ca6914d3f1b7194b818/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_455f5abaadf14ca6914d3f1b7194b818/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-ktbm48aw
-         cwd: /tmp/pip-install-7wgru4nj/shapely_455f5abaadf14ca6914d3f1b7194b818/
-    Complete output (9 lines):
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_455f5abaadf14ca6914d3f1b7194b818/setup.py", line 38, in <module>
-        from shapely.libgeos import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_455f5abaadf14ca6914d3f1b7194b818/shapely/libgeos.py", line 148, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_455f5abaadf14ca6914d3f1b7194b818/shapely/libgeos.py", line 143, in load_dll
-        libname, fallbacks))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/62/06/ac45106f509001b880dc1e2ade29edbac21078dc36c4f3ceb924bbea79d7/Shapely-1.5.12.tar.gz#sha256=dcb88e52146f29344fe7d05cbc1a50a20ce7d65659ea610b99c944ec622971b7 (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.5.11.tar.gz (174 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_e77ec198c4874ec5a62103f0db42ddca/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_e77ec198c4874ec5a62103f0db42ddca/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-1v2i41lr
-         cwd: /tmp/pip-install-7wgru4nj/shapely_e77ec198c4874ec5a62103f0db42ddca/
-    Complete output (9 lines):
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_e77ec198c4874ec5a62103f0db42ddca/setup.py", line 38, in <module>
-        from shapely.libgeos import geos_version_string, geos_version, \
-      File "/tmp/pip-install-7wgru4nj/shapely_e77ec198c4874ec5a62103f0db42ddca/shapely/libgeos.py", line 149, in <module>
-        fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
-      File "/tmp/pip-install-7wgru4nj/shapely_e77ec198c4874ec5a62103f0db42ddca/shapely/libgeos.py", line 144, in load_dll
-        libname, fallbacks))
-    OSError: Could not find library geos_c or load any of its variants ['libgeos_c.so.1', 'libgeos_c.so']
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/50/00/c2b76fe79a975408b66e6563f7bfda9079ebd63f501fda0cc7af713cdbb1/Shapely-1.5.11.tar.gz#sha256=500d56e4a93fd7024dd75718f48c8a06ff6d121193f5f92f7ee54a9771ae6851 (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.5.10.tar.gz (173 kB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-7wgru4nj/shapely_6650e33b8b564db98b8e11b275ea003d/setup.py'"'"'; __file__='"'"'/tmp/pip-install-7wgru4nj/shapely_6650e33b8b564db98b8e11b275ea003d/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-x6c2t4bq
-         cwd: /tmp/pip-install-7wgru4nj/shapely_6650e33b8b564db98b8e11b275ea003d/
-    Complete output (5 lines):
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-7wgru4nj/shapely_6650e33b8b564db98b8e11b275ea003d/setup.py", line 34, in <module>
-        from packaging.version import Version
-    ModuleNotFoundError: No module named 'packaging'
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/a5/43/161b5040e745b396918c6465daaf22aaf5820dee802e685c69cd152470f8/Shapely-1.5.10.tar.gz#sha256=878da9a4f9220d7f0394a4d3f5a12defbd9d541f9f1f3e5eb74878edbee42a66 (from https://pypi.org/simple/shapely/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached Shapely-1.5.9-py3-none-any.whl
-Collecting scikit-image>=0.14.2
-  Using cached scikit_image-0.17.2-cp36-cp36m-linux_aarch64.whl
-Requirement already satisfied: matplotlib in /usr/lib/python3/dist-packages (from imgaug) (2.1.1)
-Collecting opencv-python
-  Using cached opencv_python-4.5.3.56-cp36-cp36m-manylinux2014_aarch64.whl (34.2 MB)
-Collecting imageio
-  Using cached imageio-2.9.0-py3-none-any.whl (3.3 MB)
-Collecting Pillow
-  Downloading Pillow-8.3.1-cp36-cp36m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.9 MB)
-[?25l[K     |▏                               | 10 kB 8.2 MB/s eta 0:00:01[K     |▎                               | 20 kB 9.9 MB/s eta 0:00:01[K     |▍                               | 30 kB 8.1 MB/s eta 0:00:01[K     |▌                               | 40 kB 5.4 MB/s eta 0:00:01[K     |▋                               | 51 kB 4.2 MB/s eta 0:00:01[K     |▊                               | 61 kB 4.4 MB/s eta 0:00:01[K     |▉                               | 71 kB 4.3 MB/s eta 0:00:01[K     |█                               | 81 kB 4.7 MB/s eta 0:00:01[K     |█                               | 92 kB 4.6 MB/s eta 0:00:01[K     |█▏                              | 102 kB 4.6 MB/s eta 0:00:01[K     |█▎                              | 112 kB 4.6 MB/s eta 0:00:01[K     |█▍                              | 122 kB 4.6 MB/s eta 0:00:01[K     |█▌                              | 133 kB 4.6 MB/s eta 0:00:01[K     |█▋                              | 143 kB 4.6 MB/s eta 0:00:01[K     |█▊                              | 153 kB 4.6 MB/s eta 0:00:01[K     |█▉                              | 163 kB 4.6 MB/s eta 0:00:01[K     |██                              | 174 kB 4.6 MB/s eta 0:00:01[K     |██                              | 184 kB 4.6 MB/s eta 0:00:01[K     |██▏                             | 194 kB 4.6 MB/s eta 0:00:01[K     |██▎                             | 204 kB 4.6 MB/s eta 0:00:01[K     |██▍                             | 215 kB 4.6 MB/s eta 0:00:01[K     |██▌                             | 225 kB 4.6 MB/s eta 0:00:01[K     |██▋                             | 235 kB 4.6 MB/s eta 0:00:01[K     |██▊                             | 245 kB 4.6 MB/s eta 0:00:01[K     |██▉                             | 256 kB 4.6 MB/s eta 0:00:01[K     |███                             | 266 kB 4.6 MB/s eta 0:00:01[K     |███                             | 276 kB 4.6 MB/s eta 0:00:01[K     |███▏                            | 286 kB 4.6 MB/s eta 0:00:01[K     |███▎                            | 296 kB 4.6 MB/s eta 0:00:01[K     |███▍                            | 307 kB 4.6 MB/s eta 0:00:01[K     |███▌                            | 317 kB 4.6 MB/s eta 0:00:01[K     |███▋                            | 327 kB 4.6 MB/s eta 0:00:01[K     |███▊                            | 337 kB 4.6 MB/s eta 0:00:01[K     |███▉                            | 348 kB 4.6 MB/s eta 0:00:01[K     |████                            | 358 kB 4.6 MB/s eta 0:00:01[K     |████                            | 368 kB 4.6 MB/s eta 0:00:01[K     |████▎                           | 378 kB 4.6 MB/s eta 0:00:01[K     |████▍                           | 389 kB 4.6 MB/s eta 0:00:01[K     |████▌                           | 399 kB 4.6 MB/s eta 0:00:01[K     |████▋                           | 409 kB 4.6 MB/s eta 0:00:01[K     |████▊                           | 419 kB 4.6 MB/s eta 0:00:01[K     |████▉                           | 430 kB 4.6 MB/s eta 0:00:01[K     |█████                           | 440 kB 4.6 MB/s eta 0:00:01[K     |█████                           | 450 kB 4.6 MB/s eta 0:00:01[K     |█████▏                          | 460 kB 4.6 MB/s eta 0:00:01[K     |█████▎                          | 471 kB 4.6 MB/s eta 0:00:01[K     |█████▍                          | 481 kB 4.6 MB/s eta 0:00:01[K     |█████▌                          | 491 kB 4.6 MB/s eta 0:00:01[K     |█████▋                          | 501 kB 4.6 MB/s eta 0:00:01[K     |█████▊                          | 512 kB 4.6 MB/s eta 0:00:01[K     |█████▉                          | 522 kB 4.6 MB/s eta 0:00:01[K     |██████                          | 532 kB 4.6 MB/s eta 0:00:01[K     |██████                          | 542 kB 4.6 MB/s eta 0:00:01[K     |██████▏                         | 552 kB 4.6 MB/s eta 0:00:01[K     |██████▎                         | 563 kB 4.6 MB/s eta 0:00:01[K     |██████▍                         | 573 kB 4.6 MB/s eta 0:00:01[K     |██████▌                         | 583 kB 4.6 MB/s eta 0:00:01[K     |██████▋                         | 593 kB 4.6 MB/s eta 0:00:01[K     |██████▊                         | 604 kB 4.6 MB/s eta 0:00:01[K     |██████▉                         | 614 kB 4.6 MB/s eta 0:00:01[K     |███████                         | 624 kB 4.6 MB/s eta 0:00:01[K     |███████                         | 634 kB 4.6 MB/s eta 0:00:01[K     |███████▏                        | 645 kB 4.6 MB/s eta 0:00:01[K     |███████▎                        | 655 kB 4.6 MB/s eta 0:00:01[K     |███████▍                        | 665 kB 4.6 MB/s eta 0:00:01[K     |███████▌                        | 675 kB 4.6 MB/s eta 0:00:01[K     |███████▋                        | 686 kB 4.6 MB/s eta 0:00:01[K     |███████▊                        | 696 kB 4.6 MB/s eta 0:00:01[K     |███████▉                        | 706 kB 4.6 MB/s eta 0:00:01[K     |████████                        | 716 kB 4.6 MB/s eta 0:00:01[K     |████████                        | 727 kB 4.6 MB/s eta 0:00:01[K     |████████▏                       | 737 kB 4.6 MB/s eta 0:00:01[K     |████████▍                       | 747 kB 4.6 MB/s eta 0:00:01[K     |████████▌                       | 757 kB 4.6 MB/s eta 0:00:01[K     |████████▋                       | 768 kB 4.6 MB/s eta 0:00:01[K     |████████▊                       | 778 kB 4.6 MB/s eta 0:00:01[K     |████████▉                       | 788 kB 4.6 MB/s eta 0:00:01[K     |█████████                       | 798 kB 4.6 MB/s eta 0:00:01[K     |█████████                       | 808 kB 4.6 MB/s eta 0:00:01[K     |█████████▏                      | 819 kB 4.6 MB/s eta 0:00:01[K     |█████████▎                      | 829 kB 4.6 MB/s eta 0:00:01[K     |█████████▍                      | 839 kB 4.6 MB/s eta 0:00:01[K     |█████████▌                      | 849 kB 4.6 MB/s eta 0:00:01[K     |█████████▋                      | 860 kB 4.6 MB/s eta 0:00:01[K     |█████████▊                      | 870 kB 4.6 MB/s eta 0:00:01[K     |█████████▉                      | 880 kB 4.6 MB/s eta 0:00:01[K     |██████████                      | 890 kB 4.6 MB/s eta 0:00:01[K     |██████████                      | 901 kB 4.6 MB/s eta 0:00:01[K     |██████████▏                     | 911 kB 4.6 MB/s eta 0:00:01[K     |██████████▎                     | 921 kB 4.6 MB/s eta 0:00:01[K     |██████████▍                     | 931 kB 4.6 MB/s eta 0:00:01[K     |██████████▌                     | 942 kB 4.6 MB/s eta 0:00:01[K     |██████████▋                     | 952 kB 4.6 MB/s eta 0:00:01[K     |██████████▊                     | 962 kB 4.6 MB/s eta 0:00:01[K     |██████████▉                     | 972 kB 4.6 MB/s eta 0:00:01[K     |███████████                     | 983 kB 4.6 MB/s eta 0:00:01[K     |███████████                     | 993 kB 4.6 MB/s eta 0:00:01[K     |███████████▏                    | 1.0 MB 4.6 MB/s eta 0:00:01[K     |███████████▎                    | 1.0 MB 4.6 MB/s eta 0:00:01[K     |███████████▍                    | 1.0 MB 4.6 MB/s eta 0:00:01[K     |███████████▌                    | 1.0 MB 4.6 MB/s eta 0:00:01[K     |███████████▋                    | 1.0 MB 4.6 MB/s eta 0:00:01[K     |███████████▊                    | 1.1 MB 4.6 MB/s eta 0:00:01[K     |███████████▉                    | 1.1 MB 4.6 MB/s eta 0:00:01[K     |████████████                    | 1.1 MB 4.6 MB/s eta 0:00:01[K     |████████████                    | 1.1 MB 4.6 MB/s eta 0:00:01[K     |████████████▏                   | 1.1 MB 4.6 MB/s eta 0:00:01[K     |████████████▎                   | 1.1 MB 4.6 MB/s eta 0:00:01[K     |████████████▌                   | 1.1 MB 4.6 MB/s eta 0:00:01[K     |████████████▋                   | 1.1 MB 4.6 MB/s eta 0:00:01[K     |████████████▊                   | 1.1 MB 4.6 MB/s eta 0:00:01[K     |████████████▉                   | 1.1 MB 4.6 MB/s eta 0:00:01[K     |█████████████                   | 1.2 MB 4.6 MB/s eta 0:00:01[K     |█████████████                   | 1.2 MB 4.6 MB/s eta 0:00:01[K     |█████████████▏                  | 1.2 MB 4.6 MB/s eta 0:00:01[K     |█████████████▎                  | 1.2 MB 4.6 MB/s eta 0:00:01[K     |█████████████▍                  | 1.2 MB 4.6 MB/s eta 0:00:01[K     |█████████████▌                  | 1.2 MB 4.6 MB/s eta 0:00:01[K     |█████████████▋                  | 1.2 MB 4.6 MB/s eta 0:00:01[K     |█████████████▊                  | 1.2 MB 4.6 MB/s eta 0:00:01[K     |█████████████▉                  | 1.2 MB 4.6 MB/s eta 0:00:01[K     |██████████████                  | 1.2 MB 4.6 MB/s eta 0:00:01[K     |██████████████                  | 1.3 MB 4.6 MB/s eta 0:00:01[K     |██████████████▏                 | 1.3 MB 4.6 MB/s eta 0:00:01[K     |██████████████▎                 | 1.3 MB 4.6 MB/s eta 0:00:01[K     |██████████████▍                 | 1.3 MB 4.6 MB/s eta 0:00:01[K     |██████████████▌                 | 1.3 MB 4.6 MB/s eta 0:00:01[K     |██████████████▋                 | 1.3 MB 4.6 MB/s eta 0:00:01[K     |██████████████▊                 | 1.3 MB 4.6 MB/s eta 0:00:01[K     |██████████████▉                 | 1.3 MB 4.6 MB/s eta 0:00:01[K     |███████████████                 | 1.3 MB 4.6 MB/s eta 0:00:01[K     |███████████████                 | 1.4 MB 4.6 MB/s eta 0:00:01[K     |███████████████▏                | 1.4 MB 4.6 MB/s eta 0:00:01[K     |███████████████▎                | 1.4 MB 4.6 MB/s eta 0:00:01[K     |███████████████▍                | 1.4 MB 4.6 MB/s eta 0:00:01[K     |███████████████▌                | 1.4 MB 4.6 MB/s eta 0:00:01[K     |███████████████▋                | 1.4 MB 4.6 MB/s eta 0:00:01[K     |███████████████▊                | 1.4 MB 4.6 MB/s eta 0:00:01[K     |███████████████▉                | 1.4 MB 4.6 MB/s eta 0:00:01[K     |████████████████                | 1.4 MB 4.6 MB/s eta 0:00:01[K     |████████████████                | 1.4 MB 4.6 MB/s eta 0:00:01[K     |████████████████▏               | 1.5 MB 4.6 MB/s eta 0:00:01[K     |████████████████▎               | 1.5 MB 4.6 MB/s eta 0:00:01[K     |████████████████▍               | 1.5 MB 4.6 MB/s eta 0:00:01[K     |████████████████▋               | 1.5 MB 4.6 MB/s eta 0:00:01[K     |████████████████▊               | 1.5 MB 4.6 MB/s eta 0:00:01[K     |████████████████▉               | 1.5 MB 4.6 MB/s eta 0:00:01[K     |█████████████████               | 1.5 MB 4.6 MB/s eta 0:00:01[K     |█████████████████               | 1.5 MB 4.6 MB/s eta 0:00:01[K     |█████████████████▏              | 1.5 MB 4.6 MB/s eta 0:00:01[K     |█████████████████▎              | 1.5 MB 4.6 MB/s eta 0:00:01[K     |█████████████████▍              | 1.6 MB 4.6 MB/s eta 0:00:01[K     |█████████████████▌              | 1.6 MB 4.6 MB/s eta 0:00:01[K     |█████████████████▋              | 1.6 MB 4.6 MB/s eta 0:00:01[K     |█████████████████▊              | 1.6 MB 4.6 MB/s eta 0:00:01[K     |█████████████████▉              | 1.6 MB 4.6 MB/s eta 0:00:01[K     |██████████████████              | 1.6 MB 4.6 MB/s eta 0:00:01[K     |██████████████████              | 1.6 MB 4.6 MB/s eta 0:00:01[K     |██████████████████▏             | 1.6 MB 4.6 MB/s eta 0:00:01[K     |██████████████████▎             | 1.6 MB 4.6 MB/s eta 0:00:01[K     |██████████████████▍             | 1.6 MB 4.6 MB/s eta 0:00:01[K     |██████████████████▌             | 1.7 MB 4.6 MB/s eta 0:00:01[K     |██████████████████▋             | 1.7 MB 4.6 MB/s eta 0:00:01[K     |██████████████████▊             | 1.7 MB 4.6 MB/s eta 0:00:01[K     |██████████████████▉             | 1.7 MB 4.6 MB/s eta 0:00:01[K     |███████████████████             | 1.7 MB 4.6 MB/s eta 0:00:01[K     |███████████████████             | 1.7 MB 4.6 MB/s eta 0:00:01[K     |███████████████████▏            | 1.7 MB 4.6 MB/s eta 0:00:01[K     |███████████████████▎            | 1.7 MB 4.6 MB/s eta 0:00:01[K     |███████████████████▍            | 1.7 MB 4.6 MB/s eta 0:00:01[K     |███████████████████▌            | 1.8 MB 4.6 MB/s eta 0:00:01[K     |███████████████████▋            | 1.8 MB 4.6 MB/s eta 0:00:01[K     |███████████████████▊            | 1.8 MB 4.6 MB/s eta 0:00:01[K     |███████████████████▉            | 1.8 MB 4.6 MB/s eta 0:00:01[K     |████████████████████            | 1.8 MB 4.6 MB/s eta 0:00:01[K     |████████████████████            | 1.8 MB 4.6 MB/s eta 0:00:01[K     |████████████████████▏           | 1.8 MB 4.6 MB/s eta 0:00:01[K     |████████████████████▎           | 1.8 MB 4.6 MB/s eta 0:00:01[K     |████████████████████▍           | 1.8 MB 4.6 MB/s eta 0:00:01[K     |████████████████████▌           | 1.8 MB 4.6 MB/s eta 0:00:01[K     |████████████████████▊           | 1.9 MB 4.6 MB/s eta 0:00:01[K     |████████████████████▉           | 1.9 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████           | 1.9 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████           | 1.9 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████▏          | 1.9 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████▎          | 1.9 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████▍          | 1.9 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████▌          | 1.9 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████▋          | 1.9 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████▊          | 1.9 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████▉          | 2.0 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████          | 2.0 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████          | 2.0 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████▏         | 2.0 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████▎         | 2.0 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████▍         | 2.0 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████▌         | 2.0 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████▋         | 2.0 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████▊         | 2.0 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████▉         | 2.0 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████         | 2.1 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████         | 2.1 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████▏        | 2.1 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████▎        | 2.1 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████▍        | 2.1 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████▌        | 2.1 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████▋        | 2.1 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████▊        | 2.1 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████▉        | 2.1 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████        | 2.2 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████        | 2.2 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████▏       | 2.2 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████▎       | 2.2 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████▍       | 2.2 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████▌       | 2.2 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████▋       | 2.2 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████▉       | 2.2 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████       | 2.2 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████       | 2.2 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████▏      | 2.3 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████▎      | 2.3 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████▍      | 2.3 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████▌      | 2.3 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████▋      | 2.3 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████▊      | 2.3 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████▉      | 2.3 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████      | 2.3 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████      | 2.3 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████▏     | 2.3 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████▎     | 2.4 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████▍     | 2.4 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████▌     | 2.4 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████▋     | 2.4 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████▊     | 2.4 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████▉     | 2.4 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████     | 2.4 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████     | 2.4 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████▏    | 2.4 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████▎    | 2.4 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████▍    | 2.5 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████▌    | 2.5 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████▋    | 2.5 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████▊    | 2.5 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████▉    | 2.5 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████████    | 2.5 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████████    | 2.5 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████████▏   | 2.5 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████████▎   | 2.5 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████████▍   | 2.5 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████████▌   | 2.6 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████████▋   | 2.6 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████████▊   | 2.6 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████████   | 2.6 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████████   | 2.6 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████████▏  | 2.6 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████████▎  | 2.6 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████████▍  | 2.6 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████████▌  | 2.6 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████████▋  | 2.7 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████████▊  | 2.7 MB 4.6 MB/s eta 0:00:01[K     |█████████████████████████████▉  | 2.7 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████████  | 2.7 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████████  | 2.7 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████████▏ | 2.7 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████████▎ | 2.7 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████████▍ | 2.7 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████████▌ | 2.7 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████████▋ | 2.7 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████████▊ | 2.8 MB 4.6 MB/s eta 0:00:01[K     |██████████████████████████████▉ | 2.8 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████████ | 2.8 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████████ | 2.8 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████████▏| 2.8 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████████▎| 2.8 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████████▍| 2.8 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████████▌| 2.8 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████████▋| 2.8 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████████▊| 2.8 MB 4.6 MB/s eta 0:00:01[K     |███████████████████████████████▉| 2.9 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████████████| 2.9 MB 4.6 MB/s eta 0:00:01[K     |████████████████████████████████| 2.9 MB 4.6 MB/s 
-[?25hRequirement already satisfied: pyparsing>=2.0.2 in /usr/lib/python3/dist-packages (from packaging) (2.2.0)
-Requirement already satisfied: requests in ./env/lib/python3.6/site-packages (from Kivy-Garden>=0.1.4->kivy) (2.24.0)
-Collecting scipy
-  Using cached scipy-1.5.4-cp36-cp36m-manylinux2014_aarch64.whl (24.5 MB)
-Collecting networkx>=2.0
-  Using cached networkx-2.5.1-py3-none-any.whl (1.6 MB)
-Collecting tifffile>=2019.7.26
-  Using cached tifffile-2020.9.3-py3-none-any.whl (148 kB)
-Collecting PyWavelets>=1.1.1
-  Using cached PyWavelets-1.1.1-cp36-cp36m-manylinux2014_aarch64.whl (4.3 MB)
-Collecting decorator<5,>=4.3
-  Using cached decorator-4.4.2-py2.py3-none-any.whl (9.2 kB)
-Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.6/dist-packages (from importlib-metadata->prettytable) (3.5.0)
-Requirement already satisfied: typing-extensions>=3.6.4 in /usr/local/lib/python3.6/dist-packages (from importlib-metadata->prettytable) (3.7.4.3)
-Requirement already satisfied: chardet<4,>=3.0.2 in /usr/lib/python3/dist-packages (from requests->Kivy-Garden>=0.1.4->kivy) (3.0.4)
-Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/lib/python3/dist-packages (from requests->Kivy-Garden>=0.1.4->kivy) (1.22)
-Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from requests->Kivy-Garden>=0.1.4->kivy) (2018.1.18)
-Requirement already satisfied: idna<3,>=2.5 in /usr/lib/python3/dist-packages (from requests->Kivy-Garden>=0.1.4->kivy) (2.6)
-Building wheels for collected packages: kivy
-  Building wheel for kivy (PEP 517) ... [?25l- \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - done
-[?25h  Created wheel for kivy: filename=Kivy-2.0.0-cp36-cp36m-linux_aarch64.whl size=19436604 sha256=db9faa2efa8faaa1dfdd799b15952dbc6bba7e2b3992d22395d00ff1ec056623
-  Stored in directory: /home/rainer/.cache/pip/wheels/7f/b2/21/89ee08e852b0bb63a824104d16cb8d12bcc4c73d26eb9677b4
-Successfully built kivy
-Installing collected packages: Pillow, decorator, tifffile, scipy, PyWavelets, networkx, imageio, wcwidth, tenacity, Shapely, scikit-image, pygments, opencv-python, Kivy-Garden, docutils, pyfiglet, prettytable, plotly, packaging, kivy, imgaug, docopt
-  Attempting uninstall: decorator
-    Found existing installation: decorator 4.1.2
-    Not uninstalling decorator at /usr/lib/python3/dist-packages, outside environment /home/rainer/env
-    Can't uninstall 'decorator'. No files were found to uninstall.
-  Attempting uninstall: scipy
-    Found existing installation: scipy 0.19.1
-    Not uninstalling scipy at /usr/lib/python3/dist-packages, outside environment /home/rainer/env
-    Can't uninstall 'scipy'. No files were found to uninstall.
-Successfully installed Kivy-Garden-0.1.4 Pillow-8.3.1 PyWavelets-1.1.1 Shapely-1.5.9 decorator-4.4.2 docopt-0.6.2 docutils-0.17.1 imageio-2.9.0 imgaug-0.4.0 kivy-2.0.0 networkx-2.5.1 opencv-python-4.5.3.56 packaging-21.0 plotly-5.2.2 prettytable-2.2.0 pyfiglet-0.8.post1 pygments-2.10.0 scikit-image-0.17.2 scipy-1.5.4 tenacity-8.0.1 tifffile-2020.9.3 wcwidth-0.2.5
-fatal: destination path 'donkeycar' already exists and is not an empty directory.
-Already on 'dev'
-Your branch is up to date with 'origin/dev'.
-Obtaining file:///home/rainer/projects/donkeycar
-Requirement already satisfied: numpy in /usr/local/lib/python3.6/dist-packages (from donkeycar==4.3.0) (1.19.4)
-Requirement already satisfied: pillow in /home/rainer/env/lib/python3.6/site-packages (from donkeycar==4.3.0) (8.3.1)
-Requirement already satisfied: docopt in /home/rainer/env/lib/python3.6/site-packages (from donkeycar==4.3.0) (0.6.2)
-Collecting tornado
-  Using cached tornado-6.1-cp36-cp36m-manylinux2014_aarch64.whl (428 kB)
-Requirement already satisfied: requests in /home/rainer/env/lib/python3.6/site-packages (from donkeycar==4.3.0) (2.24.0)
-Requirement already satisfied: h5py in /usr/local/lib/python3.6/dist-packages (from donkeycar==4.3.0) (2.10.0)
-Requirement already satisfied: PrettyTable in /home/rainer/env/lib/python3.6/site-packages (from donkeycar==4.3.0) (2.2.0)
-Collecting paho-mqtt
-  Using cached paho_mqtt-1.5.1-py3-none-any.whl
-Collecting simple_pid
-  Using cached simple_pid-1.0.1-py2.py3-none-any.whl (8.1 kB)
-Collecting progress
-  Using cached progress-1.6-py3-none-any.whl
-Requirement already satisfied: typing_extensions in /usr/local/lib/python3.6/dist-packages (from donkeycar==4.3.0) (3.7.4.3)
-Requirement already satisfied: pyfiglet in /home/rainer/env/lib/python3.6/site-packages (from donkeycar==4.3.0) (0.8.post1)
-Requirement already satisfied: psutil in /home/rainer/env/lib/python3.6/site-packages (from donkeycar==4.3.0) (5.7.2)
-Collecting Adafruit_PCA9685
-  Using cached Adafruit_PCA9685-1.0.1-py3-none-any.whl
-Collecting adafruit-circuitpython-lis3dh
-  Downloading adafruit-circuitpython-lis3dh-5.1.10.tar.gz (34 kB)
-Collecting adafruit-circuitpython-ssd1306
-  Downloading adafruit-circuitpython-ssd1306-2.12.0.tar.gz (41 kB)
-[?25l[K     |███████▉                        | 10 kB 9.2 MB/s eta 0:00:01[K     |███████████████▊                | 20 kB 9.9 MB/s eta 0:00:01[K     |███████████████████████▋        | 30 kB 10.8 MB/s eta 0:00:01[K     |███████████████████████████████▌| 40 kB 12.6 MB/s eta 0:00:01[K     |████████████████████████████████| 41 kB 304 kB/s 
-[?25hCollecting RPi.GPIO
-  Using cached RPi.GPIO-0.7.0-cp36-cp36m-linux_aarch64.whl
-Collecting Adafruit-Blinka
-  Downloading Adafruit-Blinka-6.13.0.tar.gz (142 kB)
-[?25l[K     |██▎                             | 10 kB 13.8 MB/s eta 0:00:01[K     |████▋                           | 20 kB 15.5 MB/s eta 0:00:01[K     |███████                         | 30 kB 18.1 MB/s eta 0:00:01[K     |█████████▏                      | 40 kB 18.8 MB/s eta 0:00:01[K     |███████████▌                    | 51 kB 17.2 MB/s eta 0:00:01[K     |█████████████▉                  | 61 kB 17.9 MB/s eta 0:00:01[K     |████████████████▏               | 71 kB 15.0 MB/s eta 0:00:01[K     |██████████████████▍             | 81 kB 15.6 MB/s eta 0:00:01[K     |████████████████████▊           | 92 kB 6.6 MB/s eta 0:00:01[K     |███████████████████████         | 102 kB 5.5 MB/s eta 0:00:01[K     |█████████████████████████▍      | 112 kB 5.5 MB/s eta 0:00:01[K     |███████████████████████████▋    | 122 kB 5.5 MB/s eta 0:00:01[K     |██████████████████████████████  | 133 kB 5.5 MB/s eta 0:00:01[K     |████████████████████████████████| 142 kB 5.5 MB/s 
-[?25hCollecting Adafruit-PlatformDetect>=3.13.0
-  Downloading Adafruit-PlatformDetect-3.15.3.tar.gz (31 kB)
-Collecting Adafruit-PureIO>=1.1.7
-  Using cached Adafruit_PureIO-1.1.9-py3-none-any.whl
-Collecting pyftdi>=0.40.0
-  Downloading pyftdi-0.53.3-py3-none-any.whl (141 kB)
-[?25l[K     |██▎                             | 10 kB 753 kB/s eta 0:00:01[K     |████▋                           | 20 kB 1.4 MB/s eta 0:00:01[K     |███████                         | 30 kB 2.1 MB/s eta 0:00:01[K     |█████████▎                      | 40 kB 2.7 MB/s eta 0:00:01[K     |███████████▋                    | 51 kB 3.3 MB/s eta 0:00:01[K     |██████████████                  | 61 kB 3.9 MB/s eta 0:00:01[K     |████████████████▏               | 71 kB 4.4 MB/s eta 0:00:01[K     |██████████████████▌             | 81 kB 4.8 MB/s eta 0:00:01[K     |████████████████████▉           | 92 kB 5.3 MB/s eta 0:00:01[K     |███████████████████████▏        | 102 kB 5.7 MB/s eta 0:00:01[K     |█████████████████████████▌      | 112 kB 5.7 MB/s eta 0:00:01[K     |███████████████████████████▉    | 122 kB 5.7 MB/s eta 0:00:01[K     |██████████████████████████████  | 133 kB 5.7 MB/s eta 0:00:01[K     |████████████████████████████████| 141 kB 5.7 MB/s 
-[?25hRequirement already satisfied: Jetson.GPIO in /usr/lib/python3/dist-packages (from Adafruit-Blinka->adafruit-circuitpython-lis3dh->donkeycar==4.3.0) (2.0.17)
-Requirement already satisfied: pyserial>=3.0 in /home/rainer/env/lib/python3.6/site-packages (from pyftdi>=0.40.0->Adafruit-Blinka->adafruit-circuitpython-lis3dh->donkeycar==4.3.0) (3.5)
-Collecting pyusb!=1.2.0,>=1.0.0
-  Downloading pyusb-1.2.1-py3-none-any.whl (58 kB)
-[?25l[K     |█████▋                          | 10 kB 11.3 MB/s eta 0:00:01[K     |███████████▏                    | 20 kB 12.0 MB/s eta 0:00:01[K     |████████████████▉               | 30 kB 13.9 MB/s eta 0:00:01[K     |██████████████████████▍         | 40 kB 13.5 MB/s eta 0:00:01[K     |████████████████████████████    | 51 kB 14.6 MB/s eta 0:00:01[K     |████████████████████████████████| 58 kB 2.1 MB/s 
-[?25hCollecting adafruit-circuitpython-busdevice
-  Downloading adafruit-circuitpython-busdevice-5.0.6.tar.gz (27 kB)
-Collecting adafruit-circuitpython-framebuf
-  Downloading adafruit-circuitpython-framebuf-1.4.7.tar.gz (33 kB)
-Collecting Adafruit-GPIO>=0.6.5
-  Using cached Adafruit_GPIO-1.0.3-py3-none-any.whl
-Collecting spidev
-  Using cached spidev-3.5-cp36-cp36m-linux_aarch64.whl
-Requirement already satisfied: six in /home/rainer/env/lib/python3.6/site-packages (from h5py->donkeycar==4.3.0) (1.15.0)
-Requirement already satisfied: wcwidth in /home/rainer/env/lib/python3.6/site-packages (from PrettyTable->donkeycar==4.3.0) (0.2.5)
-Requirement already satisfied: importlib-metadata in /usr/local/lib/python3.6/dist-packages (from PrettyTable->donkeycar==4.3.0) (4.7.1)
-Requirement already satisfied: zipp>=0.5 in /usr/local/lib/python3.6/dist-packages (from importlib-metadata->PrettyTable->donkeycar==4.3.0) (3.5.0)
-Requirement already satisfied: chardet<4,>=3.0.2 in /usr/lib/python3/dist-packages (from requests->donkeycar==4.3.0) (3.0.4)
-Requirement already satisfied: idna<3,>=2.5 in /usr/lib/python3/dist-packages (from requests->donkeycar==4.3.0) (2.6)
-Requirement already satisfied: urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 in /usr/lib/python3/dist-packages (from requests->donkeycar==4.3.0) (1.22)
-Requirement already satisfied: certifi>=2017.4.17 in /usr/lib/python3/dist-packages (from requests->donkeycar==4.3.0) (2018.1.18)
-Building wheels for collected packages: adafruit-circuitpython-lis3dh, Adafruit-Blinka, Adafruit-PlatformDetect, adafruit-circuitpython-ssd1306, adafruit-circuitpython-busdevice, adafruit-circuitpython-framebuf
-  Building wheel for adafruit-circuitpython-lis3dh (setup.py) ... [?25l- \ | / done
-[?25h  Created wheel for adafruit-circuitpython-lis3dh: filename=adafruit_circuitpython_lis3dh-5.1.10-py3-none-any.whl size=8083 sha256=f56ecae9c3ffc4ed876b42246cadaa790dd04579552910cc2ccc6485d31c1216
-  Stored in directory: /home/rainer/.cache/pip/wheels/1a/d3/d7/084791d8281e4fdfff581d0404bc0b628af11ab2688be1bc39
-  Building wheel for Adafruit-Blinka (setup.py) ... [?25l- \ | / - \ | / done
-[?25h  Created wheel for Adafruit-Blinka: filename=Adafruit_Blinka-6.13.0-py3-none-any.whl size=179642 sha256=537207d995af5d8d146d83e2b0afed813d8989e1e1bd4cf2c9208b2cefc5cc40
-  Stored in directory: /home/rainer/.cache/pip/wheels/96/2a/78/adfce2fde014026c5a9b079504f571eb14df37029930717d7b
-  Building wheel for Adafruit-PlatformDetect (setup.py) ... [?25l- \ | / done
-[?25h  Created wheel for Adafruit-PlatformDetect: filename=Adafruit_PlatformDetect-3.15.3-py3-none-any.whl size=18964 sha256=250f3850564caeb64fcfa80b98e4d5fc2bed722f57e469693a770cc7af22ec88
-  Stored in directory: /home/rainer/.cache/pip/wheels/57/f9/95/025bc25d1f70c053b552455cab4e3dfad372d2efb0b58d0935
-  Building wheel for adafruit-circuitpython-ssd1306 (setup.py) ... [?25l- \ | / done
-[?25h  Created wheel for adafruit-circuitpython-ssd1306: filename=adafruit_circuitpython_ssd1306-2.12.0-py3-none-any.whl size=7365 sha256=d7f4aaaf4f1fc69a10e2ea85d6b039e4babcc90c1ecdcaf244b41bb6206c34f9
-  Stored in directory: /home/rainer/.cache/pip/wheels/00/39/9f/fb481d56fcd0ad09506d0edaf0b90fd0265267ce6763b14054
-  Building wheel for adafruit-circuitpython-busdevice (setup.py) ... [?25l- \ | / done
-[?25h  Created wheel for adafruit-circuitpython-busdevice: filename=adafruit_circuitpython_busdevice-5.0.6-py3-none-any.whl size=6567 sha256=74936d82837ceb68c6f0166c645fe5863aba48c3a3e92b93930a917b3dbf72bc
-  Stored in directory: /home/rainer/.cache/pip/wheels/2b/26/56/b6832aace8bc8fa4c2c9257cdbc16eab544ba78d1aa968e68f
-  Building wheel for adafruit-circuitpython-framebuf (setup.py) ... [?25l- \ | / done
-[?25h  Created wheel for adafruit-circuitpython-framebuf: filename=adafruit_circuitpython_framebuf-1.4.7-py3-none-any.whl size=8452 sha256=d9fa9010e1a73c1b78ab074966f64b74df04fa074272eb9b875bb1b3e497590d
-  Stored in directory: /home/rainer/.cache/pip/wheels/03/c1/c8/1427e273b18a70fbbe914b0fb8ca744ec1ac3e0a6d69b12d29
-Successfully built adafruit-circuitpython-lis3dh Adafruit-Blinka Adafruit-PlatformDetect adafruit-circuitpython-ssd1306 adafruit-circuitpython-busdevice adafruit-circuitpython-framebuf
-Installing collected packages: pyusb, pyftdi, Adafruit-PureIO, Adafruit-PlatformDetect, spidev, Adafruit-Blinka, tornado, simple-pid, progress, paho-mqtt, Adafruit-GPIO, adafruit-circuitpython-framebuf, adafruit-circuitpython-busdevice, RPi.GPIO, donkeycar, Adafruit-PCA9685, adafruit-circuitpython-ssd1306, adafruit-circuitpython-lis3dh
-  Running setup.py develop for donkeycar
-Successfully installed Adafruit-Blinka-6.13.0 Adafruit-GPIO-1.0.3 Adafruit-PCA9685-1.0.1 Adafruit-PlatformDetect-3.15.3 Adafruit-PureIO-1.1.9 RPi.GPIO-0.7.0 adafruit-circuitpython-busdevice-5.0.6 adafruit-circuitpython-framebuf-1.4.7 adafruit-circuitpython-lis3dh-5.1.10 adafruit-circuitpython-ssd1306-2.12.0 donkeycar paho-mqtt-1.5.1 progress-1.6 pyftdi-0.53.3 pyusb-1.2.1 simple-pid-1.0.1 spidev-3.5 tornado-6.1
-Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-Reading state information... 0%Reading state information... 0%Reading state information... Done
-python-dev is already the newest version (2.7.15~rc1-1).
-python-numpy is already the newest version (1:1.13.3-2ubuntu1).
-libportmidi-dev is already the newest version (1:217-6).
-libsdl-mixer1.2-dev is already the newest version (1.2.12-14).
-libsdl-ttf2.0-dev is already the newest version (2.0.11-4).
-libsmpeg-dev is already the newest version (0.4.5+cvs20030824-7.2).
-subversion is already the newest version (1.9.7-4ubuntu1).
-libfreetype6-dev is already the newest version (2.8.1-2ubuntu2.1).
-libsdl1.2-dev is already the newest version (1.2.15+dfsg2-0.1ubuntu0.1).
-ffmpeg is already the newest version (7:3.4.8-0ubuntu0.2).
-libavcodec-dev is already the newest version (7:3.4.8-0ubuntu0.2).
-libavformat-dev is already the newest version (7:3.4.8-0ubuntu0.2).
-libsdl-image1.2-dev is already the newest version (1.2.12-8ubuntu0.1).
-libswscale-dev is already the newest version (7:3.4.8-0ubuntu0.2).
-0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
-Collecting pygame
-  Using cached pygame-2.0.1.tar.gz (5.5 MB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-sssw0l9l/pygame_a46083f752384e528292f2fec8c9f552/setup.py'"'"'; __file__='"'"'/tmp/pip-install-sssw0l9l/pygame_a46083f752384e528292f2fec8c9f552/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-aa0kihvh
-         cwd: /tmp/pip-install-sssw0l9l/pygame_a46083f752384e528292f2fec8c9f552/
-    Complete output (29 lines):
-    
-    
-    WARNING, No "Setup" File Exists, Running "buildconfig/config.py"
-    Using UNIX configuration...
-    
-    /bin/sh: 1: sdl2-config: not found
-    /bin/sh: 1: sdl2-config: not found
-    /bin/sh: 1: sdl2-config: not found
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-sssw0l9l/pygame_a46083f752384e528292f2fec8c9f552/setup.py", line 318, in <module>
-        buildconfig.config.main(AUTO_CONFIG)
-      File "/tmp/pip-install-sssw0l9l/pygame_a46083f752384e528292f2fec8c9f552/buildconfig/config.py", line 221, in main
-        deps = CFG.main(**kwds)
-      File "/tmp/pip-install-sssw0l9l/pygame_a46083f752384e528292f2fec8c9f552/buildconfig/config_unix.py", line 194, in main
-        DependencyProg('SDL', 'SDL_CONFIG', 'sdl2-config', '2.0', ['sdl']),
-      File "/tmp/pip-install-sssw0l9l/pygame_a46083f752384e528292f2fec8c9f552/buildconfig/config_unix.py", line 39, in __init__
-        self.ver = config[0].strip()
-    IndexError: list index out of range
-    
-    Hunting dependencies...
-    
-    ---
-    For help with compilation see:
-        https://www.pygame.org/wiki/CompileUbuntu
-    To contribute to pygame development see:
-        https://www.pygame.org/contribute.html
-    ---
-    
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/c7/b8/06e02c7cca7aec915839927a9aa19f749ac17a3d2bb2610b945d2de0aa96/pygame-2.0.1.tar.gz#sha256=8b1e7b63f47aafcdd8849933b206778747ef1802bd3d526aca45ed77141e4001 (from https://pypi.org/simple/pygame/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached pygame-2.0.0.tar.gz (5.5 MB)
-[31m    ERROR: Command errored out with exit status 1:
-     command: /home/rainer/env/bin/python -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-sssw0l9l/pygame_ac7c52761f014255804a7cf5e71bae44/setup.py'"'"'; __file__='"'"'/tmp/pip-install-sssw0l9l/pygame_ac7c52761f014255804a7cf5e71bae44/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' egg_info --egg-base /tmp/pip-pip-egg-info-uxoetrbd
-         cwd: /tmp/pip-install-sssw0l9l/pygame_ac7c52761f014255804a7cf5e71bae44/
-    Complete output (29 lines):
-    
-    
-    WARNING, No "Setup" File Exists, Running "buildconfig/config.py"
-    Using UNIX configuration...
-    
-    /bin/sh: 1: sdl2-config: not found
-    /bin/sh: 1: sdl2-config: not found
-    /bin/sh: 1: sdl2-config: not found
-    Traceback (most recent call last):
-      File "<string>", line 1, in <module>
-      File "/tmp/pip-install-sssw0l9l/pygame_ac7c52761f014255804a7cf5e71bae44/setup.py", line 318, in <module>
-        buildconfig.config.main(AUTO_CONFIG)
-      File "/tmp/pip-install-sssw0l9l/pygame_ac7c52761f014255804a7cf5e71bae44/buildconfig/config.py", line 221, in main
-        deps = CFG.main(**kwds)
-      File "/tmp/pip-install-sssw0l9l/pygame_ac7c52761f014255804a7cf5e71bae44/buildconfig/config_unix.py", line 194, in main
-        DependencyProg('SDL', 'SDL_CONFIG', 'sdl2-config', '2.0', ['sdl']),
-      File "/tmp/pip-install-sssw0l9l/pygame_ac7c52761f014255804a7cf5e71bae44/buildconfig/config_unix.py", line 39, in __init__
-        self.ver = config[0].strip()
-    IndexError: list index out of range
-    
-    Hunting dependencies...
-    
-    ---
-    For help with compilation see:
-        https://www.pygame.org/wiki/CompileUbuntu
-    To contribute to pygame development see:
-        https://www.pygame.org/contribute.html
-    ---
-    
-    ----------------------------------------[0m
-[33mWARNING: Discarding https://files.pythonhosted.org/packages/bc/0c/d164411381bada8feae57359aa9296defbed3035f4b55bef6a271cb0573c/pygame-2.0.0.tar.gz#sha256=63b038da116a643046181b02173fd894d87d2f85ecfd6aa7d5ece73c6ef501e9 (from https://pypi.org/simple/pygame/). Command errored out with exit status 1: python setup.py egg_info Check the logs for full command output.[0m
-  Using cached pygame-1.9.6-cp36-cp36m-linux_aarch64.whl
-Installing collected packages: pygame
-Successfully installed pygame-1.9.6
-Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-Reading state information... 0%Reading state information... 0%Reading state information... Done
-0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
-]0;rainer@jetsonautoware46n5: ~/dev/diyrobocars_install_jp46[01;32mrainer@jetsonautoware46n5[00m:[01;34m~/dev/diyrobocars_install_jp46[00m$ donkeyu[K
-________             ______                   _________              
-___  __ \_______________  /___________  __    __  ____/_____ ________
-__  / / /  __ \_  __ \_  //_/  _ \_  / / /    _  /    _  __ `/_  ___/
-_  /_/ // /_/ /  / / /  ,<  /  __/  /_/ /     / /___  / /_/ /_  /    
-/_____/ \____//_/ /_//_/|_| \___/_\__, /      \____/  \__,_/ /_/     
-                                 /____/                              
-
-using donkey v4.3.0 ...
-Usage: The available commands are:
-['createcar', 'findcar', 'calibrate', 'tubclean', 'tubplot', 'makemovie', 'createjs', 'cnnactivations', 'update', 'train', 'ui']
-]0;rainer@jetsonautoware46n5: ~/dev/diyrobocars_install_jp46[01;32mrainer@jetsonautoware46n5[00m:[01;34m~/dev/diyrobocars_install_jp46[00m$ cd
-]0;rainer@jetsonautoware46n5: ~[01;32mrainer@jetsonautoware46n5[00m:[01;34m~[00m$ donkey createcar --path mycar
-________             ______                   _________              
-___  __ \_______________  /___________  __    __  ____/_____ ________
-__  / / /  __ \_  __ \_  //_/  _ \_  / / /    _  /    _  __ `/_  ___/
-_  /_/ // /_/ /  / / /  ,<  /  __/  /_/ /     / /___  / /_/ /_  /    
-/_____/ \____//_/ /_//_/|_| \___/_\__, /      \____/  \__,_/ /_/     
-                                 /____/                              
-
-using donkey v4.3.0 ...
-Creating car folder: mycar
-making dir  mycar
-Creating data & model folders.
-making dir  mycar/models
-making dir  mycar/data
-making dir  mycar/logs
-Copying car application template: complete
-Copying car config defaults. Adjust these before starting your car.
-Copying train script. Adjust these before starting your car.
-Copying calibrate script. Adjust these before starting your car.
-Copying my car config overrides
-Donkey setup complete.
-]0;rainer@jetsonautoware46n5: ~[01;32mrainer@jetsonautoware46n5[00m:[01;34m~[00m$ cd mm[Kycar/
-]0;rainer@jetsonautoware46n5: ~/mycar[01;32mrainer@jetsonautoware46n5[00m:[01;34m~/mycar[00m$ vi myconfig.py 
-[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;31r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[31;1H"myconfig.py" 370L, 20476C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m# """ 
-# My CAR CONFIG 
-
-# This file is read by your car application's manage.py script to change the car
-# performance
-
-# If desired, all config overrides can be specified here. 
-# The update operation will not touch this file.
-# """
-
-# import os
-# 
-# #PATHS
-# CAR_PATH = PACKAGE_PATH = os.path.dirname(os.path.realpath(__file__))
-# DATA_PATH = os.path.join(CAR_PATH, 'data')
-# MODELS_PATH = os.path.join(CAR_PATH, 'models')
-# 
-# #VEHICLE
-# DRIVE_LOOP_HZ = 20      # the vehicle loop will pause if faster than this speed.
-# MAX_LOOPS = None        # the vehicle loop can abort after this many iterations, when given a positt[21;1Hive integer.
-# 
-# #CAMERA
-# CAMERA_TYPE = "PICAM"   # (PICAM|WEBCAM|CVCAM|CSIC|V4L|D435|MOCK|IMAGE_LIST)
-# IMAGE_W = 160  # for a CSIC camera this must be 224
-# IMAGE_H = 120  # for a CSIC camera this must be 224
-# IMAGE_DEPTH = 3         # default RGB=3, make 1 for mono
-# CAMERA_FRAMERATE = DRIVE_LOOP_HZ
-# CAMERA_VFLIP = False
-# CAMERA_HFLIP = False[m[31;84H1,1[11CTop[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[27m[23m[29m[m[H[2J[?25l[1;1H[96m# """ 
-# My CAR CONFIG 
-
-# This file is read by your car application's manage.py script to change the car
-# performance
-
-# If desired, all config overrides can be specified here. 
-# The update operation will not touch this file.
-# """
-
-# import os
-# 
-# #PATHS
-# CAR_PATH = PACKAGE_PATH = os.path.dirname(os.path.realpath(__file__))
-# DATA_PATH = os.path.join(CAR_PATH, 'data')
-# MODELS_PATH = os.path.join(CAR_PATH, 'models')
-# 
-# #VEHICLE
-# DRIVE_LOOP_HZ = 20      # the vehicle loop will pause if faster than this speed.
-# MAX_LOOPS = None        # the vehicle loop can abort after this many iterations, when given a positt[21;1Hive integer.
-# 
-# #CAMERA
-# CAMERA_TYPE = "PICAM"   # (PICAM|WEBCAM|CVCAM|CSIC|V4L|D435|MOCK|IMAGE_LIST)
-# IMAGE_W = 160  # for a CSIC camera this must be 224
-# IMAGE_H = 120  # for a CSIC camera this must be 224
-# IMAGE_DEPTH = 3         # default RGB=3, make 1 for mono
-# CAMERA_FRAMERATE = DRIVE_LOOP_HZ
-# CAMERA_VFLIP = False
-# CAMERA_HFLIP = False[m[31;84H1,1[11CTop"myconfig.py" 370L, 20476C[1;1H[?25h[?25l[31;74H~@k[1;1H[31;74H   [2;1H[31;84H2[2;1H[?25h[?25l[31;74H~@k[2;1H[31;74H   [3;1H[31;84H3,0-1[3;1H[?25h[?25l[31;74H~@k[3;1H[31;74H   [4;1H[31;84H4,1  [4;1H[?25h[?25l[31;74H~@k[4;1H[31;74H   [5;1H[31;84H5[5;1H[?25h[?25l[31;74H~@k[5;1H[31;74H   [6;1H[31;84H6,0-1[6;1H[?25h[?25l[31;74H~@k[6;1H[31;74H   [7;1H[31;84H7,1  [7;1H[?25h[?25l[31;74H~@k[7;1H[31;74H   [8;1H[31;84H8[8;1H[?25h[?25l[31;74H~@k[8;1H[31;74H   [9;1H[31;84H9[9;1H[?25h[?25l[31;74H~@k[9;1H[31;74H   [10;1H[31;84H10,0-1[10;1H[?25h[?25l[31;74H~@k[10;1H[31;74H   [11;1H[31;85H1,1  [11;1H[?25h[?25l[31;74H~@k[11;1H[31;74H   [12;1H[31;85H2[12;1H[?25h[?25l[31;74H~@k[12;1H[31;74H   [13;1H[31;85H3[13;1H[?25h[?25l[31;74H~@k[13;1H[31;74H   [14;1H[31;85H4[14;1H[?25h[?25l[31;74H~@k[14;1H[31;74H   [15;1H[31;85H5[15;1H[?25h[?25l[31;74H~@k[15;1H[31;74H   [16;1H[31;85H6[16;1H[?25h[?25l[31;74H~@k[16;1H[31;74H   [17;1H[31;85H7[17;1H[?25h[?25l[31;74H~@k[17;1H[31;74H   [18;1H[31;85H8[18;1H[?25h[?25l[31;74H~@k[18;1H[31;74H   [19;1H[31;85H9[19;1H[?25h[?25l[31;74H~@k[19;1H[31;74H   [20;1H[31;84H20[20;1H[?25h[?25l[31;74H~@k[20;1H[31;74H   [22;1H[31;85H1[22;1H[?25h[?25l[31;74H~@k[22;1H[31;74H   [23;1H[31;85H2[23;1H[?25h[?25l[31;74H~@k[23;1H[31;74H   [24;1H[31;85H3[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [25;1H[31;85H4[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [24;1H[1;30r[1;1H[2M[1;31r[29;1H[96m# # For CSIC camera - If the camera is mounted in a rotated position, changing the below parameter wii[30;1Hll correct the output frame orientation[m[31;1H[K[31;84H25,1[11C0%[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [25;1H[31;85H6[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# CSIC_CAM_GSTREAMER_FLIP_PARM = 0 # (0 => none , 4 => Flip horizontally, 6 => Flip vertically)[m[31;84H[K[31;84H27,1[11C0%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [24;1H[31;85H6[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [23;1H[31;85H5[23;1H[?25h[?25l[31;74H~@k[23;1H[31;74H   [22;1H[31;85H4[22;1H[?25h[?25l[31;74H~@k[22;1H[31;74H   [21;1H[31;85H3[21;1H[?25h[?25l[31;74Hx[21;1H[31;74H [21;1H[31;74Hdl[21;1H[31;74H  [21;1H CAMERA_TYPE = [95m"PICAM"[m   [96m# (PICAM|WEBCAM|CVCAM|CSIC|V4L|D435|MOCK|IMAGE_LIST)[m[21;78H[K[21;1H[?25h[?25l[31;74Hx[21;1H[31;74H [21;1H[31;74Hdl[21;1H[31;74H  [21;1HCAMERA_TYPE = [95m"PICAM"[m   [96m# (PICAM|WEBCAM|CVCAM|CSIC|V4L|D435|MOCK|IMAGE_LIST)[m[21;77H[K[21;1H[?25h[?25l[31;74H~@k[21;1H[31;74H   [21;2H[31;87H2[21;2H[?25h[?25l[31;74H~@k[21;2H[31;74H   [21;3H[31;87H3[21;3H[?25h[?25l[31;74H~@k[21;3H[31;74H   [21;4H[31;87H4[21;4H[?25h[?25l[31;74H~@k[21;4H[31;74H   [21;5H[31;87H5[21;5H[?25h[?25l[31;74H~@k[21;5H[31;74H   [21;6H[31;87H6[21;6H[?25h[?25l[31;74H~@k[21;6H[31;74H   [21;7H[31;87H7[21;7H[?25h[?25l[31;74H~@k[21;7H[31;74H   [21;8H[31;87H8[21;8H[?25h[?25l[31;74H~@k[21;8H[31;74H   [21;9H[31;87H9[21;9H[?25h[?25l[31;74H~@k[21;9H[31;74H   [21;10H[31;87H10[21;10H[?25h[?25l[31;74H~@k[21;10H[31;74H   [21;11H[31;88H1[21;11H[?25h[?25l[31;74H~@k[21;11H[31;74H   [21;12H[31;88H2[21;12H[?25h[?25l[31;74H~@k[21;12H[31;74H   [21;13H[31;88H3[21;13H[?25h[?25l[31;74H~@k[21;13H[31;74H   [21;14H[31;88H4[21;14H[?25h[?25l[31;74H~@k[21;14H[31;74H   [21;15H[31;88H5[21;15H[?25h[?25l[31;74H~@k[21;15H[31;74H   [21;16H[31;88H6[21;16H[?25h[?25l[31;74H~@k[21;16H[31;74H   [21;17H[31;88H7[21;17H[?25h[?25l[31;74H~@k[21;17H[31;74H   [21;18H[31;88H8[21;18H[?25h[?25l[31;74H~@k[21;18H[31;74H   [21;17H[31;88H7[21;17H[?25h[?25l[31;74H~@k[21;17H[31;74H   [21;16H[31;88H6[21;16H[?25h[?25l[31;74Hx[21;16H[31;74H [21;16H[31;74Hdl[21;16H[31;74H  [21;16H[95mICAM"[m   [96m# (PICAM|WEBCAM|CVCAM|CSIC|V4L|D435|MOCK|IMAGE_LIST)[m[21;76H[K[21;16H[?25h[?25l[31;74Hx[21;16H[31;74H [21;16H[31;74Hdl[21;16H[31;74H  [21;16H[95mCAM"[m   [96m# (PICAM|WEBCAM|CVCAM|CSIC|V4L|D435|MOCK|IMAGE_LIST)[m[21;75H[K[21;16H[?25h[?25l[31;74Hx[21;16H[31;74H [21;16H[31;74Hdl[21;16H[31;74H  [21;16H[95mAM"[m   [96m# (PICAM|WEBCAM|CVCAM|CSIC|V4L|D435|MOCK|IMAGE_LIST)[m[21;74H[K[21;16H[?25h[?25l[31;74Hx[21;16H[31;74H [21;16H[31;74Hdl[21;16H[31;74H  [21;16H[95mM"[m   [96m# (PICAM|WEBCAM|CVCAM|CSIC|V4L|D435|MOCK|IMAGE_LIST)[m[21;73H[K[21;16H[?25h[?25l[31;74Hs[21;16H[31;74H [21;16H[31;74Hcl[21;16H[31;74H  [21;16H[31;1H[1m-- INSERT --[m[31;84H[K[31;84H23,16[10C0%[21;16H[95m"[m   [96m# (PICAM|WEBCAM|CVCAM|CSIC|V4L|D435|MOCK|IMAGE_LIST)[m[21;72H[K[21;16H[?25h[?25l[95mC"[m   [96m# (PICAM|WEBCAM|CVCAM|CSIC|V4L|D435|MOCK|IMAGE_LIST)[m[31;88H7[21;17H[?25h[?25l[95mS"[m   [96m# (PICAM|WEBCAM|CVCAM|CSIC|V4L|D435|MOCK|IMAGE_LIST)[m[31;88H8[21;18H[?25h[?25l[95mI"[m   [96m# (PICAM|WEBCAM|CVCAM|CSIC|V4L|D435|MOCK|IMAGE_LIST)[m[31;88H9[21;19H[?25h[?25l[95mC"[m   [96m# (PICAM|WEBCAM|CVCAM|CSIC|V4L|D435|MOCK|IMAGE_LIST)[m[31;87H20[21;20H[?25h[31;1H[K[21;19H[?25l[31;74H^[[21;19H[31;74H  [21;20H[31;84H23,19[10C0%[21;19H[?25h[?25l[31;74H~@k[21;19H[31;74H   [22;19H[31;85H4[22;19H[?25h[?25l[31;74H~@k[22;19H[31;74H   [22;1H[31;88H [22;1H[?25h[?25l[31;74Hx[22;1H[31;74H [22;1H[31;74Hdl[22;1H[31;74H  [22;1H IMAGE_W = [95m160[m  [96m# for a CSIC camera this must be 224[m[22;53H[K[22;1H[?25h[?25l[31;74Hx[22;1H[31;74H [22;1H[31;74Hdl[22;1H[31;74H  [22;1HIMAGE_W = [95m160[m  [96m# for a CSIC camera this must be 224[m[22;52H[K[22;1H[?25h[?25l[31;74H~@k[22;1H[31;74H   [23;1H[31;85H5[23;1H[?25h[?25l[31;74Hx[23;1H[31;74H [23;1H[31;74Hdl[23;1H[31;74H  [23;1H IMAGE_H = [95m120[m  [96m# for a CSIC camera this must be 224[m[23;53H[K[23;1H[?25h[?25l[31;74Hx[23;1H[31;74H [23;1H[31;74Hdl[23;1H[31;74H  [23;1HIMAGE_H = [95m120[m  [96m# for a CSIC camera this must be 224[m[23;52H[K[23;1H[?25h[?25l[31;74H~@k[23;1H[31;74H   [23;2H[31;87H2[23;2H[?25h[?25l[31;74H^[[23;2H[31;74H  [23;2H[31;74H^[[23;2H[31;74H  [23;2H[?25h[?25l[31;74H~@k[23;2H[31;74H   [22;2H[31;85H4[22;2H[?25h[?25l[31;74H~@k[22;2H[31;74H   [22;3H[31;87H3[22;3H[?25h[?25l[31;74H~@k[22;3H[31;74H   [22;4H[31;87H4[22;4H[?25h[?25l[31;74H~@k[22;4H[31;74H   [22;5H[31;87H5[22;5H[?25h[?25l[31;74H~@k[22;5H[31;74H   [22;6H[31;87H6[22;6H[?25h[?25l[31;74H~@k[22;6H[31;74H   [22;7H[31;87H7[22;7H[?25h[?25l[31;74H~@k[22;7H[31;74H   [22;8H[31;87H8[22;8H[?25h[?25l[31;74H~@k[22;8H[31;74H   [22;9H[31;87H9[22;9H[?25h[?25l[31;74H~@k[22;9H[31;74H   [22;10H[31;87H10[22;10H[?25h[?25l[31;74H~@k[22;10H[31;74H   [22;11H[31;88H1[22;11H[?25h[?25l[31;74Hi[22;11H[31;74H [22;11H[31;1H[1m-- INSERT --[m[31;84H[K[31;84H24,11[10C0%[22;11H[?25h[?25l[95m2160[m  [96m# for a CSIC camera this must be 224[m[31;88H2[22;12H[?25h[?25l[95m2160[m  [96m# for a CSIC camera this must be 224[m[31;88H3[22;13H[?25h[?25l[95m4160[m  [96m# for a CSIC camera this must be 224[m[31;88H4[22;14H[?25h[?25l [95m160[m  [96m# for a CSIC camera this must be 224[m[31;88H5[22;15H[?25h[?25l[96m#160  # for a CSIC camera this must be 224[m[31;88H6[22;16H[?25h[31;1H[K[22;15H[?25l[31;74H^[[22;15H[31;74H  [22;16H[31;84H24,15[10C0%[22;15H[?25h[?25l[31;74H~@k[22;15H[31;74H   [23;15H[31;85H5[23;15H[?25h[?25l[31;74H~@k[23;15H[31;74H   [23;14H[31;88H4[23;14H[?25h[?25l[31;74H~@k[23;14H[31;74H   [23;13H[31;88H3[23;13H[?25h[?25l[31;74H~@k[23;13H[31;74H   [23;12H[31;88H2[23;12H[?25h[?25l[31;74H~@k[23;12H[31;74H   [23;11H[31;88H1[23;11H[?25h[?25l[31;74Hi[23;11H[31;74H [23;11H[31;1H[1m-- INSERT --[m[31;84H[K[31;84H25,11[10C0%[23;11H[?25h[?25l[95m2120[m  [96m# for a CSIC camera this must be 224[m[31;88H2[23;12H[?25h[?25l[95m2120[m  [96m# for a CSIC camera this must be 224[m[31;88H3[23;13H[?25h[?25l[95m4120[m  [96m# for a CSIC camera this must be 224[m[31;88H4[23;14H[?25h[?25l[96m#120  # for a CSIC camera this must be 224[m[31;88H5[23;15H[?25h[?25l[96m 120  # for a CSIC camera this must be 224[m[31;88H6[23;16H[?25h[?25l[96m120  # for a CSIC camera this must be 224[m[23;56H[K[31;88H5[23;15H[?25h[31;1H[K[23;14H[?25l[31;74H^[[23;14H[31;74H  [23;15H[31;84H25,14[10C0%[23;14H[?25h[?25l[31;74H~@k[23;14H[31;74H   [23;13H[31;88H3[23;13H[?25h[?25l[31;74H~@k[23;13H[31;74H   [23;14H[31;88H4[23;14H[?25h[?25l[31;74Hi[23;14H[31;74H [23;14H[31;1H[1m-- INSERT --[m[31;84H[K[31;84H25,14[10C0%[23;14H[?25h[?25l [96m#120  # for a CSIC camera this must be 224[m[31;88H5[23;15H[?25h[31;1H[K[23;14H[?25l[31;74H^[[23;14H[31;74H  [23;15H[31;84H25,14[10C0%[23;14H[?25h[?25l[31;74H~@k[23;14H[31;74H   [24;14H[31;85H6[24;14H[?25h[?25l[31;74H~@k[24;14H[31;74H   [25;14H[31;85H7[25;14H[?25h[?25l[31;74H~@k[25;14H[31;74H   [25;14H[1;30r[30;1H
-[1;31r[30;1H[96m# [m[31;84H[K[31;84H28,14[10C1%[25;14H[?25h[?25l[31;74H~@k[25;14H[31;74H   [25;14H[1;30r[30;1H
-[1;31r[30;1H[96m# # For IMAGE_LIST camera[m[31;84H[K[31;84H29,14[10C1%[25;14H[?25h[?25l[31;74H~@k[25;14H[31;74H   [24;14H[1;30r[1;1H[2M[1;31r[29;1H[96m# # PATH_MASK = "~/mycar/data/tub_1_20-03-12/*.jpg"
-# [m[31;84H[K[31;84H30,14[10C2%[24;14H[?25h[?25l[31;74H~@k[24;14H[31;74H   [25;14H[1;30r[30;1H
-[1;31r[30;1H[96m# #9865, over rides only if needed, ie. TX2..[m[31;84H[K[31;84H31,14[10C2%[25;14H[?25h[?25l[31;74H~@k[25;14H[31;74H   [25;2H[1;30r[30;1H
-[1;31r[30;1H[96m# PCA9685_I2C_ADDR = 0x40     #I2C address, use i2cdetect to validate this number[m[31;84H[K[31;84H32,2[11C2%[25;2H[?25h[?25l[31;74H~@k[25;2H[31;74H   [24;14H[1;30r[1;1H[2M[1;31r[29;1H[96m# PCA9685_I2C_BUSNUM = None   #None will auto detect, which is fine on the pi. But other platforms shh[30;1Hould specify the bus num.[m[31;84H[K[31;84H33,14[10C3%[24;14H[?25h[?25l[31;74H~@k[24;14H[31;74H   [25;14H[31;85H4[25;14H[?25h[?25l[31;74H~@k[25;14H[31;74H   [25;2H[1;30r[30;1H
-[1;31r[30;1H[96m# [m[31;84H[K[31;84H35,2[11C3%[25;2H[?25h[?25l[31;74H~@k[25;2H[31;74H   [25;14H[1;30r[30;1H
-[1;31r[30;1H[96m# #SSD1306_128_32[m[31;84H[K[31;84H36,14[10C3%[25;14H[?25h[?25l[31;74H~@k[25;14H[31;74H   [25;14H[1;30r[30;1H
-[1;31r[30;1H[96m# USE_SSD1306_128_32 = False    # Enable the SSD_1306 OLED Display[m[31;84H[K[31;84H37,14[10C4%[25;14H[?25h[?25l[31;74H~@k[25;14H[31;74H   [24;14H[1;30r[1;1H[2M[1;31r[29;1H[96m# SSD1306_128_32_I2C_ROTATION = 0 # 0 = text is right-side up, 1 = rotated 90 degrees clockwise, 2 =  [30;1H180 degrees (flipped), 3 = 270 degrees[m[31;84H[K[31;84H38,14[10C4%[24;14H[?25h[?25l[31;74H~@k[24;14H[31;74H   [25;2H[1;30r[30;1H
-[1;31r[30;1H[96m# SSD1306_RESOLUTION = 1 # 1 = 128x32; 2 = 128x64[m[31;84H[K[31;84H39,2[11C4%[25;2H[?25h[?25l[31;74H~@k[25;2H[31;74H   [25;14H[1;30r[30;1H
-[1;31r[30;1H[96m# [m[31;84H[K[31;84H40,14[10C5%[25;14H[?25h[?25l[31;74H~@k[25;14H[31;74H   [25;14H[1;30r[30;1H
-[1;31r[30;1H[96m# #DRIVETRAIN[m[31;84H[K[31;84H41,14[10C5%[25;14H[?25h[?25l[31;74H~@k[25;14H[31;74H   [24;14H[1;30r[1;1H[2M[1;31r[29;1H[96m# #These options specify which chasis and motor setup you are using. Most are using I2C_SERVO.
-# #DC_STEER_THROTTLE uses HBridge pwm to control one steering dc motor, and one drive wheel motor[m[31;84H[K[31;84H42,14[10C5%[24;14H[?25h[?25l[31;74H~@k[24;14H[31;74H   [23;14H[31;85H1[23;14H[?25h[?25l[31;74H~@k[23;14H[31;74H   [22;14H[31;85H0[22;14H[?25h[?25l[31;74H~@k[22;14H[31;74H   [21;2H[31;84H39,2 [21;2H[?25h[?25l[31;74H~@k[21;2H[31;74H   [19;14H[31;85H8,14[19;14H[?25h[?25l[31;74H~@k[19;14H[31;74H   [18;14H[31;85H7[18;14H[?25h[?25l[31;74H~@k[18;14H[31;74H   [18;1H[31;88H [18;1H[?25h[?25l[31;74H~@k[18;1H[31;74H   [23;1H[1;30r[1;1H[21L[1;31r[1;1H[96m# """ 
-# My CAR CONFIG 
-
-# This file is read by your car application's manage.py script to change the car
-# performance
-
-# If desired, all config overrides can be specified here. 
-# The update operation will not touch this file.
-# """
-
-# import os
-# 
-# #PATHS
-# CAR_PATH = PACKAGE_PATH = os.path.dirname(os.path.realpath(__file__))
-# DATA_PATH = os.path.join(CAR_PATH, 'data')
-# MODELS_PATH = os.path.join(CAR_PATH, 'models')
-# 
-# #VEHICLE
-# DRIVE_LOOP_HZ = 20      # the vehicle loop will pause if faster than this speed.
-# MAX_LOOPS = None        # the vehicle loop can abort after this many iterations, when given a positt[21;1Hive integer.[m[31;84H[K[31;84H22,1[10CTop[23;1H[?25h[?25l[31;74H~@k[23;1H[31;74H   [24;1H[31;85H3[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [25;1H[31;85H4[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [24;1H[1;30r[1;1H[2M[1;31r[29;1H[96m# # For CSIC camera - If the camera is mounted in a rotated position, changing the below parameter wii[30;1Hll correct the output frame orientation[m[31;84H[K[31;84H25,1[11C0%[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [25;1H[31;85H6[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# CSIC_CAM_GSTREAMER_FLIP_PARM = 0 # (0 => none , 4 => Flip horizontally, 6 => Flip vertically)[m[31;84H[K[31;84H27,1[11C0%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# [m[31;84H[K[31;84H28,1[11C1%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# # For IMAGE_LIST camera[m[31;84H[K[31;84H29,1[11C1%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [24;1H[1;30r[1;1H[2M[1;31r[29;1H[96m# # PATH_MASK = "~/mycar/data/tub_1_20-03-12/*.jpg"
-# [m[31;84H[K[31;84H30,1[11C2%[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# #9865, over rides only if needed, ie. TX2..[m[31;84H[K[31;84H31,1[11C2%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# PCA9685_I2C_ADDR = 0x40     #I2C address, use i2cdetect to validate this number[m[31;84H[K[31;84H32,1[11C2%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [24;1H[1;30r[1;1H[2M[1;31r[29;1H[96m# PCA9685_I2C_BUSNUM = None   #None will auto detect, which is fine on the pi. But other platforms shh[30;1Hould specify the bus num.[m[31;84H[K[31;84H33,1[11C3%[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [25;1H[31;85H4[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# [m[31;84H[K[31;84H35,1[11C3%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# #SSD1306_128_32[m[31;84H[K[31;84H36,1[11C3%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# USE_SSD1306_128_32 = False    # Enable the SSD_1306 OLED Display[m[31;84H[K[31;84H37,1[11C4%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [24;1H[1;30r[1;1H[2M[1;31r[29;1H[96m# SSD1306_128_32_I2C_ROTATION = 0 # 0 = text is right-side up, 1 = rotated 90 degrees clockwise, 2 =  [30;1H180 degrees (flipped), 3 = 270 degrees[m[31;84H[K[31;84H38,1[11C4%[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# SSD1306_RESOLUTION = 1 # 1 = 128x32; 2 = 128x64[m[31;84H[K[31;84H39,1[11C4%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# [m[31;84H[K[31;84H40,1[11C5%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# #DRIVETRAIN[m[31;84H[K[31;84H41,1[11C5%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [24;1H[1;30r[1;1H[2M[1;31r[29;1H[96m# #These options specify which chasis and motor setup you are using. Most are using I2C_SERVO.
-# #DC_STEER_THROTTLE uses HBridge pwm to control one steering dc motor, and one drive wheel motor[m[31;84H[K[31;84H42,1[11C5%[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# #DC_TWO_WHEEL uses HBridge pwm to control two drive motors, one on the left, and one on the right.[m[31;84H[K[31;84H43,1[11C6%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [24;1H[1;30r[1;1H[2M[1;31r[29;1H[96m# #SERVO_HBRIDGE_PWM use ServoBlaster to output pwm control from the PiZero directly to control steerr[30;1Hing, and HBridge for a drive motor.[m[31;84H[K[31;84H44,1[11C6%[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [25;1H[31;85H5[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# #PIGPIO_PWM uses Raspberrys internal PWM[m[31;84H[K[31;84H46,1[11C6%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [24;1H[1;30r[1;1H[2M[1;31r[29;1H[96m# DRIVE_TRAIN_TYPE = "I2C_SERVO" # I2C_SERVO|DC_STEER_THROTTLE|DC_TWO_WHEEL|DC_TWO_WHEEL_L298N|SERVO__[30;1HHBRIDGE_PWM|PIGPIO_PWM|MM1|MOCK[m[31;84H[K[31;84H47,1[11C7%[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [25;1H[31;85H8[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [24;1H[1;30r[1;1H[2M[1;31r[29;1H[96m# 
-# #STEERING[m[31;84H[K[31;84H49,1[11C8%[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# STEERING_CHANNEL = 1            #channel on the 9685 pwm board 0-15[m[31;84H[K[31;84H50,1[11C8%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [24;1H[1;30r[1;1H[2M[1;31r[29;1H[96m# STEERING_LEFT_PWM = 460         #pwm value for full left steering
-# STEERING_RIGHT_PWM = 290        #pwm value for full right steering[m[31;84H[K[31;84H51,1[11C8%[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# [m[31;84H[K[31;84H52,1[11C9%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# #STEERING FOR PIGPIO_PWM OUTPUT[m[31;84H[K[31;84H53,1[11C9%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# STEERING_PWM_PIN = 13           #Pin numbering according to Broadcom numbers[m[31;84H[K[31;84H54,1[11C9%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# STEERING_PWM_FREQ = 50          #Frequency for PWM[m[31;84H[K[31;84H55,1[11C9%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [25;1H[1;30r[30;1H
-[1;31r[30;1H[96m# STEERING_PWM_INVERTED = False   #If PWM needs to be inverted[m[31;84H[K[31;84H56,1[10C10%[25;1H[?25h[?25l[31;74H~@k[25;1H[31;74H   [24;1H[31;85H5[24;1H[?25h[?25l[31;74H~@k[24;1H[31;74H   [23;1H[31;85H4[23;1H[?25h[?25l[31;74H~@k[23;1H[31;74H   [22;1H[31;85H3[22;1H[?25h[?25l[31;74H~@k[22;1H[31;74H   [21;1H[31;85H2[21;1H[?25h[?25l[31;74H~@k[21;1H[31;74H   [19;1H[31;85H1[19;1H[?25h[?25l[31;74H~@k[19;1H[31;74H   [18;1H[31;85H0[18;1H[?25h[?25l[31;74H~@k[18;1H[31;74H   [16;1H[31;84H49[16;1H[?25h[?25l[31;74H~@k[16;1H[31;74H   [15;1H[31;85H8[15;1H[?25h[?25l[31;74H~@k[15;1H[31;74H   [14;1H[31;85H7[14;1H[?25h[?25l[31;74H~@k[14;1H[31;74H   [13;1H[31;85H6[13;1H[?25h[?25l[31;74H~@k[13;1H[31;74H   [12;1H[31;85H5[12;1H[?25h[?25l[31;74H~@k[12;1H[31;74H   [11;1H[31;85H4[11;1H[?25h[?25l[31;74H~@k[11;1H[31;74H   [10;1H[31;85H3[10;1H[?25h[?25l[31;74H~@k[10;1H[31;74H   [8;1H[31;85H2[8;1H[?25h[?25l[31;74H~@k[8;1H[31;74H   [7;1H[31;85H1[7;1H[?25h[?25l[31;74H~@k[7;1H[31;74H   [6;1H[31;85H0[6;1H[?25h[?25l[31;74H~@k[6;1H[31;74H   [6;1H[1;30r[1;1H[L[1;31r[1;1H[96m# [m[31;84H[K[31;84H39,1[11C9%[6;1H[?25h[?25l[31;74H~@k[6;1H[31;74H   [6;1H[1;30r[1;1H[2L[1;31r[1;1H[96m# # For IMAGE_LIST camera
-# # PATH_MASK = "~/mycar/data/tub_1_20-03-12/*.jpg"[m[31;84H[K[31;84H38,1[11C9%[6;1H[?25h[?25l[31;74H~@k[6;1H[31;74H   [6;1H[1;30r[1;1H[L[1;31r[1;1H[96m# [m[31;84H[K[31;84H37,1[11C9%[6;1H[?25h[?25l[31;74H~@k[6;1H[31;74H   [6;1H[1;30r[1;1H[L[1;31r[1;1H[96m# CSIC_CAM_GSTREAMER_FLIP_PARM = 0 # (0 => none , 4 => Flip horizontally, 6 => Flip vertically)[m[31;84H[K[31;84H36,1[11C8%[6;1H[?25h[?25l[31;74H~@k[6;1H[31;74H   [7;1H[1;30r[1;1H[2L[1;31r[1;1H[96m# # For CSIC camera - If the camera is mounted in a rotated position, changing the below parameter wii[2;1Hll correct the output frame orientation[m[31;84H[K[31;84H35,1[11C8%[7;1H[?25h[?25l[31;74H~@k[7;1H[31;74H   [6;1H[31;85H4[6;1H[?25h[?25l[31;74H~@k[6;1H[31;74H   [6;1H[1;30r[1;1H[L[1;31r[1;1H[96m# CAMERA_HFLIP = False[m[31;84H[K[31;84H33,1[11C8%[6;1H[?25h[?25l[31;74H~@k[6;1H[31;74H   [6;1H[1;30r[1;1H[L[1;31r[1;1H[96m# CAMERA_VFLIP = False[m[31;84H[K[31;84H32,1[11C7%[6;1H[?25h[?25l[31;74H~@k[6;1H[31;74H   [6;1H[1;30r[1;1H[L[1;31r[1;1H[96m# CAMERA_FRAMERATE = DRIVE_LOOP_HZ[m[31;84H[K[31;84H31,1[11C7%[6;1H[?25h[?25l[31;74H~@k[6;1H[31;74H   [6;1H[1;30r[1;1H[2L[1;31r[1;1HIMAGE_H = [95m224[m [96m#120  # for a CSIC camera this must be 224
-# IMAGE_DEPTH = 3         # default RGB=3, make 1 for mono[m[31;84H[K[31;84H30,1[11C6%[6;1H[?25h[?25l[31;74H~@k[6;1H[31;74H   [6;1H[1;30r[1;1H[L[1;31r[1;1HIMAGE_W = [95m224[m [96m#160  # for a CSIC camera this must be 224[m[31;84H[K[31;84H29,1[11C6%[6;1H[?25h[?25l[31;74H~@k[6;1H[31;74H   [7;1H[31;84H30[7;1H[?25h[?25l[31;74H~@k[7;1H[31;74H   [9;1H[31;85H1[9;1H[?25h[?25l[31;74H~@k[9;1H[31;74H   [10;1H[31;85H2[10;1H[?25h[?25l[31;74H~@k[10;1H[31;74H   [11;1H[31;85H3[11;1H[?25h[?25l[31;74H~@k[11;1H[31;74H   [12;1H[31;85H4[12;1H[?25h[?25l[31;74H~@k[12;1H[31;74H   [13;1H[31;85H5[13;1H[?25h[?25l[31;74H~@k[13;1H[31;74H   [14;1H[31;85H6[14;1H[?25h[?25l[31;74H~@k[14;1H[31;74H   [15;1H[31;85H7[15;1H[?25h[?25l[31;74Hx[15;1H[31;74H [15;1H[31;74Hdl[15;1H[31;74H  [15;1H PCA9685_I2C_ADDR = [95m0x40[m     [96m#I2C address, use i2cdetect to validate this number[m[15;81H[K[15;1H[?25h[?25l[31;74Hx[15;1H[31;74H [15;1H[31;74Hdl[15;1H[31;74H  [15;1HPCA9685_I2C_ADDR = [95m0x40[m     [96m#I2C address, use i2cdetect to validate this number[m[15;80H[K[15;1H[?25h[?25l[31;74H^[[15;1H[31;74H  [15;1H[31;74H^[[15;1H[31;74H  [15;1H[?25h[?25l[31;74H~@k[15;1H[31;74H   [16;1H[31;85H8[16;1H[?25h[?25l[31;74Hx[16;1H[31;74H [16;1H[31;74Hdl[16;1H[31;74H  [16;1H PCA9685_I2C_BUSNUM = [1m[96mNone[m   [96m#None will auto detect, which is fine on the pi. But other platforms shoo[17;1Huld specify the bus num.[m[17;25H[K[16;1H[?25h[?25l[31;74Hx[16;1H[31;74H [16;1H[31;74Hdl[16;1H[31;74H  [16;1HPCA9685_I2C_BUSNUM = [1m[96mNone[m   [96m#None will auto detect, which is fine on the pi. But other platforms shouu[17;1Hld specify the bus num.[m[17;24H[K[16;1H[?25h[?25l[31;74H^[[16;1H[31;74H  [16;1H[31;74H^[[16;1H[31;74H  [16;1H[?25h[?25l[31;74H~@k[16;1H[31;74H   [16;2H[31;87H2[16;2H[?25h[?25l[31;74H~@k[16;2H[31;74H   [16;3H[31;87H3[16;3H[?25h[?25l[31;74H~@k[16;3H[31;74H   [16;4H[31;87H4[16;4H[?25h[?25l[31;74H~@k[16;4H[31;74H   [16;5H[31;87H5[16;5H[?25h[?25l[31;74H~@k[16;5H[31;74H   [16;6H[31;87H6[16;6H[?25h[?25l[31;74H~@k[16;6H[31;74H   [16;7H[31;87H7[16;7H[?25h[?25l[31;74H~@k[16;7H[31;74H   [16;8H[31;87H8[16;8H[?25h[?25l[31;74H~@k[16;8H[31;74H   [16;9H[31;87H9[16;9H[?25h[?25l[31;74H~@k[16;9H[31;74H   [16;10H[31;87H10[16;10H[?25h[?25l[31;74H~@k[16;10H[31;74H   [16;11H[31;88H1[16;11H[?25h[?25l[31;74H~@k[16;11H[31;74H   [16;12H[31;88H2[16;12H[?25h[?25l[31;74H~@k[16;12H[31;74H   [16;13H[31;88H3[16;13H[?25h[?25l[31;74H~@k[16;13H[31;74H   [16;14H[31;88H4[16;14H[?25h[?25l[31;74H~@k[16;14H[31;74H   [16;15H[31;88H5[16;15H[?25h[?25l[31;74H~@k[16;15H[31;74H   [16;16H[31;88H6[16;16H[?25h[?25l[31;74H~@k[16;16H[31;74H   [16;17H[31;88H7[16;17H[?25h[?25l[31;74H~@k[16;17H[31;74H   [16;18H[31;88H8[16;18H[?25h[?25l[31;74H~@k[16;18H[31;74H   [16;19H[31;88H9[16;19H[?25h[?25l[31;74H~@k[16;19H[31;74H   [16;20H[31;87H20[16;20H[?25h[?25l[31;74H~@k[16;20H[31;74H   [16;21H[31;88H1[16;21H[?25h[?25l[31;74H~@k[16;21H[31;74H   [16;22H[31;88H2[16;22H[?25h[?25l[31;74Hi[16;22H[31;74H [16;22H[31;1H[1m-- INSERT --[m[31;84H[K[31;84H38,22[10C6%[16;22H[?25h[?25l1None   [96m#None will auto detect, which is fine on the pi. But other platforms shoo[17;1Huld specify the bus num.[m[31;88H3[16;23H[?25h[?25l[95m1[m [1m[96mNone[m   [96m#None will auto detect, which is fine on the pi. But other platforms shh[17;1Hould specify the bus num.[m[31;88H4[16;24H[?25h[?25l[96m#None   #None will auto detect, which is fine on the pi. But other platforms ss[17;1Hhould specify the bus num.[m[31;88H5[16;25H[?25h[31;1H[K[16;24H[?25l[31;74H^[[16;24H[31;74H  [16;25H[31;84H38,24[10C6%[16;24H[?25h[?25l[31;74H:[16;24H[31;74H[K[31;1H:[?2004h[?25hx[?25l[?25h[?25l[?2004l"myconfig.py" 370L, 20478C written
-[?2004l[?1l>[?25h[?1049l[23;0;0t]0;rainer@jetsonautoware46n5: ~/mycar[01;32mrainer@jetsonautoware46n5[00m:[01;34m~/mycar[00m$ python manage.py drive
-________             ______                   _________              
-___  __ \_______________  /___________  __    __  ____/_____ ________
-__  / / /  __ \_  __ \_  //_/  _ \_  / / /    _  /    _  __ `/_  ___/
-_  /_/ // /_/ /  / / /  ,<  /  __/  /_/ /     / /___  / /_/ /_  /    
-/_____/ \____//_/ /_//_/|_| \___/_\__, /      \____/  \__,_/ /_/     
-                                 /____/                              
-
-using donkey v4.3.0 ...
-loading config file: /home/rainer/mycar/config.py
-loading personal config over-rides from myconfig.py
-INFO:__main__:PID: 8089
-cfg.CAMERA_TYPE CSIC
-INFO:__main__:cfg.CAMERA_TYPE CSIC
-INFO:donkeycar.vehicle:Adding part CSICamera.
-Starting Donkey Server...... you can now go to jetsonautoware46n5.local:8887 to drive your car.
-INFO:donkeycar.vehicle:Adding part LocalWebController.
-INFO:donkeycar.vehicle:Adding part ThrottleFilter.
-INFO:donkeycar.vehicle:Adding part PilotCondition.
-INFO:donkeycar.vehicle:Adding part RecordTracker.
-INFO:donkeycar.vehicle:Adding part DriveMode.
-INFO:donkeycar.vehicle:Adding part AiLaunch.
-INFO:donkeycar.vehicle:Adding part AiRunCondition.
-PWM Steering created
-Init ESC
-PWM Throttle created
-INFO:donkeycar.vehicle:Adding part PWMSteering.
-INFO:donkeycar.vehicle:Adding part PWMThrottle.
-INFO:donkeycar.vehicle:Adding part TubWriter.
-You can now go to <your hostname.local>:8887 to drive your car.
-INFO:donkeycar.vehicle:Starting vehicle at 20 Hz
-Exception in thread Thread-1:
-Traceback (most recent call last):
-  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
-    self.run()
-  File "/usr/lib/python3.6/threading.py", line 864, in run
-    self._target(*self._args, **self._kwargs)
-  File "/home/rainer/projects/donkeycar/donkeycar/parts/camera.py", line 174, in update
-    self.init_camera()
-  File "/home/rainer/projects/donkeycar/donkeycar/parts/camera.py", line 169, in init_camera
-    self.poll_camera()
-  File "/home/rainer/projects/donkeycar/donkeycar/parts/camera.py", line 181, in poll_camera
-    self.frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-cv2.error: OpenCV(4.5.3) /tmp/pip-req-build-rd4x2fty/opencv/modules/imgproc/src/color.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'
-
-
-INFO:tornado.access:301 GET / (::1) 2.59ms
-INFO:tornado.access:200 GET /drive (::1) 25.48ms
-INFO:tornado.access:200 GET /static/jquery-3.1.1.min.js (::1) 40.27ms
-INFO:tornado.access:200 GET /static/style.css (::1) 13.97ms
-INFO:tornado.access:200 GET /static/nipple.js (::1) 18.82ms
-INFO:tornado.access:200 GET /static/bootstrap/3.3.7/css/bootstrap.min.css (::1) 22.05ms
-INFO:tornado.access:200 GET /static/bootstrap/3.3.7/js/bootstrap.min.js (::1) 24.76ms
-INFO:tornado.access:200 GET /static/main.js (::1) 27.11ms
-INFO:tornado.access:200 GET /static/ui/1.12.1/jquery-ui.min.js (::1) 39.79ms
-ERROR:tornado.application:Uncaught exception GET /video (::1)
-HTTPServerRequest(protocol='http', host='localhost:8887', method='GET', uri='/video', version='HTTP/1.1', remote_ip='::1')
-Traceback (most recent call last):
-  File "/home/rainer/env/lib/python3.6/site-packages/tornado/web.py", line 1704, in _execute
-    result = await result
-  File "/home/rainer/projects/donkeycar/donkeycar/parts/web_controller/web.py", line 295, in get
-    img = utils.arr_to_binary(self.application.img_arr)
-  File "/home/rainer/projects/donkeycar/donkeycar/utils.py", line 78, in arr_to_binary
-    img = arr_to_img(arr)
-  File "/home/rainer/projects/donkeycar/donkeycar/utils.py", line 87, in arr_to_img
-    arr = np.uint8(arr)
-TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
-ERROR:tornado.access:500 GET /video (::1) 17.20ms
-INFO:tornado.access:200 GET /static/bootstrap/3.3.7/fonts/glyphicons-halflings-regular.woff2 (::1) 4.36ms
-INFO:tornado.access:101 GET /wsDrive (::1) 2.47ms
-New client connected
-WARNING:tornado.access:404 GET /favicon.ico (::1) 2.02ms
-recorded 10 records
-recorded 20 records
-^CINFO:donkeycar.vehicle:Shutting down vehicle and its parts...
-stopping CSICamera
-INFO:donkeycar.vehicle:Part Profile Summary: (times in ms)
-INFO:donkeycar.vehicle:
-+--------------------+------+------+------+------+------+------+-------+
-|        part        | max  | min  | avg  | 50%  | 90%  | 99%  | 99.9% |
-+--------------------+------+------+------+------+------+------+-------+
-|     CSICamera      | 0.10 | 0.01 | 0.02 | 0.02 | 0.03 | 0.05 |  0.09 |
-| LocalWebController | 0.27 | 0.02 | 0.04 | 0.03 | 0.05 | 0.11 |  0.21 |
-|   ThrottleFilter   | 0.10 | 0.01 | 0.02 | 0.02 | 0.02 | 0.03 |  0.09 |
-|   PilotCondition   | 0.03 | 0.01 | 0.01 | 0.01 | 0.02 | 0.02 |  0.03 |
-|   RecordTracker    | 0.57 | 0.01 | 0.01 | 0.01 | 0.02 | 0.03 |  0.56 |
-|     DriveMode      | 0.22 | 0.01 | 0.02 | 0.02 | 0.02 | 0.04 |  0.14 |
-|      AiLaunch      | 0.09 | 0.01 | 0.01 | 0.01 | 0.02 | 0.02 |  0.08 |
-|   AiRunCondition   | 0.07 | 0.01 | 0.01 | 0.01 | 0.01 | 0.02 |  0.06 |
-|    PWMSteering     | 0.09 | 0.01 | 0.02 | 0.02 | 0.03 | 0.04 |  0.09 |
-|    PWMThrottle     | 0.08 | 0.01 | 0.02 | 0.02 | 0.02 | 0.06 |  0.08 |
-|     TubWriter      | 2.52 | 0.74 | 1.18 | 1.01 | 1.75 | 2.46 |  2.51 |
-+--------------------+------+------+------+------+------+------+-------+
-]0;rainer@jetsonautoware46n5: ~/mycar[01;32mrainer@jetsonautoware46n5[00m:[01;34m~/mycar[00m$ 
-]0;rainer@jetsonautoware46n5: ~/mycar[01;32mrainer@jetsonautoware46n5[00m:[01;34m~/mycar[00m$ exit
-exit
-
-Script done on 2021-08-28 14:50:04+0200
