@@ -52,6 +52,9 @@ pip3 install pygame
 pip3 install glob2
 pip3 install Adafruit_CircuitPython_RPLIDAR
 
+# dependencies for docker ui
+pip3 install -y kivy
+
 # cleaning up
 sudo apt autoremove -y
 
