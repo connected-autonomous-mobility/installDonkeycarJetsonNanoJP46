@@ -53,7 +53,8 @@ pip3 install glob2
 pip3 install Adafruit_CircuitPython_RPLIDAR
 
 # dependencies for docker ui
-pip3 install -y kivy
+pip3 install kivy
+pip3 install plotly
 
 # cleaning up
 sudo apt autoremove -y
