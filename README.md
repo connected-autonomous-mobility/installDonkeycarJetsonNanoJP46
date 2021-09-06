@@ -11,6 +11,7 @@ Prepare SD-card with the latest Nvidia JetPack version (JP 4.6) for Jetson Nano 
 git clone https://github.com/connected-autonomous-mobility/installDonkeycarJetsonNanoJP46.git
 cd installDonkeycarJetsonNanoJP46
 ```
+Update software indicated on Ubuntu Software Center & reboot.
 
 ## 1 Preparation
 
