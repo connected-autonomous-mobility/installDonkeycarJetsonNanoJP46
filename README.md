@@ -1,8 +1,9 @@
 # installDonkeycarJetsonNanoJP46
 Automates (partly) the installation described at [donkeycar.com](https://docs.donkeycar.com/guide/robot_sbc/setup_jetson_nano/) for a Jetson Nano JP 4.6.
 
-- branch: master (JP4.6) is broken
-- branch jp451 (JP4.5.1) use this one
+branches: 
+- master (JP4.6) is broken
+- jp451 (JP4.5.1) use this one
 
 *128GB, jetsonautoware46n5*
 ![](media/JetsonNanoJP46_infos.png)
