@@ -37,10 +37,10 @@ git checkout master
 pip3 install -e .[nano]
 
 # Step 7 
-#wget https://www.dropbox.com/s/u80hr1o8n9hqeaj/camera_overrides.isp
-#sudo cp camera_overrides.isp /var/nvidia/nvcam/settings/
-#sudo chmod 664 /var/nvidia/nvcam/settings/camera_overrides.isp
-#sudo chown root:root /var/nvidia/nvcam/settings/camera_overrides.isp
+wget https://www.dropbox.com/s/u80hr1o8n9hqeaj/camera_overrides.isp
+sudo cp camera_overrides.isp /var/nvidia/nvcam/settings/
+sudo chmod 664 /var/nvidia/nvcam/settings/camera_overrides.isp
+sudo chown root:root /var/nvidia/nvcam/settings/camera_overrides.isp
 
 # Step 8 
 sudo apt-get install -y python-dev libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev libsdl1.2-dev libsmpeg-dev python-numpy subversion libportmidi-dev ffmpeg libswscale-dev libavformat-dev libavcodec-dev libfreetype6-dev
