@@ -30,8 +30,6 @@ cd ~/dev; git clone https://github.com/JetsonHacksNano/CSI-Camera.git
 
 # lidar stuff
 sudo usermod -aG dialout $USER
-pip3 install glob2
-pip3 install Adafruit_CircuitPython_RPLIDAR
 
 # VScode
 mkdir -p ~/dev;cd dev
