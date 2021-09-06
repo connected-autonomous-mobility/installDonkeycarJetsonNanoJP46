@@ -47,10 +47,10 @@ cd ~/dev; git clone https://github.com/jetsonhacks/installROS2.git
 sudo -H pip3 install -U jetson-stats
 sudo systemctl restart jetson_stats.service
 
-# increase swap space to 4GB
+# increase swap space to 6GB
 cd ~/dev; git clone https://github.com/JetsonHacksNano/resizeSwapMemory.git
 cd resizeSwapMemory
-./setSwapMemorySize.sh -g 4
+./setSwapMemorySize.sh -g 6
 
 # bluetooth & ps3 controller stuff
 ## libs
