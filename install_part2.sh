@@ -21,14 +21,15 @@ cd ~/project/torchvision
 python setup.py install
 cd ../
 
-pip3 install pyfiglet prettytable kivy plotly imgaug packaging docopt
-pip3 uninstall -y opencv-python #  fix thx to @naisy, Jetson has already installed OpenCV and generic does not work on Jetson
+#pip3 install pyfiglet prettytable kivy plotly imgaug packaging docopt
+#pip3 uninstall -y opencv-python #  fix thx to @naisy, Jetson has already installed OpenCV and generic does not work on Jetson
 
 # Step 6
 cd ~/projects
 git clone https://github.com/autorope/donkeycar
 cd donkeycar
-git checkout dev
+#git checkout dev
+git checkout master
 pip3 install -e .[nano]
 
 # Step 7 
