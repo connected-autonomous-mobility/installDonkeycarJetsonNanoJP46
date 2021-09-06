@@ -34,6 +34,9 @@ cd donkeycar
 #git checkout dev
 git checkout master
 pip3 install -e .[nano]
+git checkout dev
+pip3 install -e .[nano]
+
 
 # Step 7 
 wget https://www.dropbox.com/s/u80hr1o8n9hqeaj/camera_overrides.isp
