@@ -1,6 +1,9 @@
 # PART 2
 # # script --timing install_dc_jp46_p2.log 
 
+sudo usermod -aG dialout $USER
+sudo systemctl disable nvgetty
+
 # Step 5
 pip3 install -U pip testresources setuptools
 pip3 install -U futures==3.1.1 protobuf==3.12.2 pybind11==2.5.0
