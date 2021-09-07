@@ -32,8 +32,8 @@ cd ../
 cd ~/projects
 git clone https://github.com/autorope/donkeycar
 cd donkeycar
-#git checkout dev
-git checkout master
+git checkout dev
+#git checkout master
 pip3 install -e .[nano]
 
 # Step 7 
