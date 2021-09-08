@@ -53,6 +53,9 @@ pip3 install Adafruit_CircuitPython_RPLIDAR
 # cleaning up
 sudo apt autoremove -y
 
+# install openCV
+https://qengineering.eu/install-opencv-4.5-on-jetson-nano.html
+
 # end logging
 #exit
 
