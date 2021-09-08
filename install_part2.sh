@@ -54,7 +54,10 @@ pip3 install Adafruit_CircuitPython_RPLIDAR
 sudo apt autoremove -y
 
 # install openCV
-https://qengineering.eu/install-opencv-4.5-on-jetson-nano.html
+# https://qengineering.eu/install-opencv-4.5-on-jetson-nano.html
+
+# install tensorflow
+# https://qengineering.eu/install-tensorflow-2.4.0-on-jetson-nano.html
 
 # end logging
 #exit
