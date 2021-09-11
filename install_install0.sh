@@ -9,7 +9,7 @@ sudo apt update
 sudo apt install python3.9 python3.9-venv python3.9-dev
 python3.9 -V
 ```
-## make python3.9 the defaul
+## make python3.9 the default
 
 ```
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
