@@ -1,5 +1,5 @@
-# installDonkeycarJetsonNanoJP461
-Automates (partly) the installation described at [donkeycar.com](https://docs.donkeycar.com/guide/robot_sbc/setup_jetson_nano/) for a Jetson Nano JP 4.6.
+# installDonkeycarJetsonNanoJP46
+Automates (partly) the installation described at [donkeycar.com](https://docs.donkeycar.com/guide/robot_sbc/setup_jetson_nano/) for a Jetson Nano JP 4.6.1
 
 *128GB, jetsonautoware46n6
 ![](media/jetsonautoware461_jtop.png)
