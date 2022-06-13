@@ -13,12 +13,13 @@
 - [x] pip install opencv-python
 
 ## 4. test lidar
+[x] testing lidar.py
 ```
-[x] sudo adduser $USER dialout
-[x] sudo chown :rainer /dev/ttyUSB0
-[x] sudo ls -l /dev/tty*
-[x] cd projects/donkeycar/donkeycar/parts/
-[x] python lidar.py 
+sudo adduser $USER dialout
+sudo chown :rainer /dev/ttyUSB0
+sudo ls -l /dev/tty*
+cd projects/donkeycar/donkeycar/parts/
+python lidar.py 
 ```
 ## 5. fix CSI camera
 ```
