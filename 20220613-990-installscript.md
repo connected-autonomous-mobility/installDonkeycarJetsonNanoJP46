@@ -1,7 +1,7 @@
 # Installation using Ed Murphy's script
 
 ## 1. get install script 
-- [x] 
+- [x] prepare script
 ```
 git clone https://github.com/autorope/donkeycar.git
 checkout 990-jetson-nano-install-script
