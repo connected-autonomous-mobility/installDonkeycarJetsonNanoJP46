@@ -1,8 +1,11 @@
 # Installation using Ed Murphy's script
 
 ## 1. get install script 
-- [x] get autorope/donkeycar, branch 990-jetson-nano-install-script
-
+- [x] 
+```
+git clone https://github.com/autorope/donkeycar.git
+checkout 990-jetson-nano-install-script
+```
 ## 2. get python 3.7.13
 - [x] install pyenv
 - [x] pyenv install 3.7.13
