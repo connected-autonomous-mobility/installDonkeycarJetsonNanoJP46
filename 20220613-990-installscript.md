@@ -21,8 +21,9 @@
 [x] python lidar.py 
 ```
 ## 5. fix CSI camera
+```
 [ ] not solved yet
-
+```
 error
 ```
 python manage.py drive
