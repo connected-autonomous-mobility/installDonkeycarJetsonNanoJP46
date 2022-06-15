@@ -27,7 +27,8 @@ python lidar.py
 ## 5. fix CSI camera
 - [ ] not solved yet
 - [x] sudo usermod -a -G video $LOGNAME
-- [x] instal https://lifestyletransfer.com/how-to-launch-gstreamer-pipeline-in-python/
+- [x] install: https://lifestyletransfer.com/how-to-launch-gstreamer-pipeline-in-python/
+- [x] works: ~/projects/gst-python-tutorials$ python launch_pipeline/pipeline_with_parse_launch.py -p "nvarguscamerasrc sensor_id=0 ! nvoverlaysink"
 
 error
 ```
