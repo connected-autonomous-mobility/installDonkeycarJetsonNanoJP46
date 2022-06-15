@@ -26,6 +26,8 @@ python lidar.py
 ```
 ## 5. fix CSI camera
 - [ ] not solved yet
+- [x] sudo usermod -a -G video $LOGNAME
+- [x] instal https://lifestyletransfer.com/how-to-launch-gstreamer-pipeline-in-python/
 
 error
 ```
