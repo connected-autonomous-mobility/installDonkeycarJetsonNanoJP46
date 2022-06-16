@@ -23,6 +23,10 @@ sudo chown :rainer /dev/ttyUSB0
 sudo ls -l /dev/tty*
 cd projects/donkeycar/donkeycar/parts/
 python lidar.py 
+
+Bus 001 Device 010: ID 10c4:ea60 Cygnal Integrated Products, Inc. CP210x UART Bridge / myAVR mySmartUSB light
+
+
 ```
 ## 5. fix CSI camera
 - [ ] not solved yet
