@@ -173,3 +173,148 @@ P:  Vendor=0bda ProdID=0411 Rev= 1.20
 S:  Manufacturer=Generic
 S:  Product=4-Port USB 3.1 Hub
 ```
+
+### udev
+```
+rainer@jetsonautoware46:/etc/udev/rules.d$ sudo udevadm info --name=/dev/ttyUSB0 --attribute-walk
+
+Udevadm info starts with the device specified by the devpath and then
+walks up the chain of parent devices. It prints for every device
+found, all possible attributes in the udev rules key format.
+A rule to match, can be composed by the attributes of the device
+and the attributes from one single parent device.
+
+  looking at device '/devices/70090000.xusb/usb1/1-2/1-2.3/1-2.3:1.0/ttyUSB0/tty/ttyUSB0':
+    KERNEL=="ttyUSB0"
+    SUBSYSTEM=="tty"
+    DRIVER==""
+
+  looking at parent device '/devices/70090000.xusb/usb1/1-2/1-2.3/1-2.3:1.0/ttyUSB0':
+    KERNELS=="ttyUSB0"
+    SUBSYSTEMS=="usb-serial"
+    DRIVERS=="cp210x"
+    ATTRS{port_number}=="0"
+
+  looking at parent device '/devices/70090000.xusb/usb1/1-2/1-2.3/1-2.3:1.0':
+    KERNELS=="1-2.3:1.0"
+    SUBSYSTEMS=="usb"
+    DRIVERS=="cp210x"
+    ATTRS{authorized}=="1"
+    ATTRS{bAlternateSetting}==" 0"
+    ATTRS{bInterfaceClass}=="ff"
+    ATTRS{bInterfaceNumber}=="00"
+    ATTRS{bInterfaceProtocol}=="00"
+    ATTRS{bInterfaceSubClass}=="00"
+    ATTRS{bNumEndpoints}=="02"
+    ATTRS{interface}=="CP2102 USB to UART Bridge Controller"
+    ATTRS{supports_autosuspend}=="1"
+
+  looking at parent device '/devices/70090000.xusb/usb1/1-2/1-2.3':
+    KERNELS=="1-2.3"
+    SUBSYSTEMS=="usb"
+    DRIVERS=="usb"
+    ATTRS{authorized}=="1"
+    ATTRS{avoid_reset_quirk}=="0"
+    ATTRS{bConfigurationValue}=="1"
+    ATTRS{bDeviceClass}=="00"
+    ATTRS{bDeviceProtocol}=="00"
+    ATTRS{bDeviceSubClass}=="00"
+    ATTRS{bMaxPacketSize0}=="64"
+    ATTRS{bMaxPower}=="100mA"
+    ATTRS{bNumConfigurations}=="1"
+    ATTRS{bNumInterfaces}==" 1"
+    ATTRS{bcdDevice}=="0100"
+    ATTRS{bmAttributes}=="80"
+    ATTRS{busnum}=="1"
+    ATTRS{configuration}==""
+    ATTRS{devnum}=="6"
+    ATTRS{devpath}=="2.3"
+    ATTRS{idProduct}=="ea60"
+    ATTRS{idVendor}=="10c4"
+    ATTRS{ltm_capable}=="no"
+    ATTRS{manufacturer}=="Silicon Labs"
+    ATTRS{maxchild}=="0"
+    ATTRS{product}=="CP2102 USB to UART Bridge Controller"
+    ATTRS{quirks}=="0x0"
+    ATTRS{removable}=="unknown"
+    ATTRS{serial}=="0001"
+    ATTRS{speed}=="12"
+    ATTRS{urbnum}=="14"
+    ATTRS{version}==" 1.10"
+
+  looking at parent device '/devices/70090000.xusb/usb1/1-2':
+    KERNELS=="1-2"
+    SUBSYSTEMS=="usb"
+    DRIVERS=="usb"
+    ATTRS{authorized}=="1"
+    ATTRS{avoid_reset_quirk}=="0"
+    ATTRS{bConfigurationValue}=="1"
+    ATTRS{bDeviceClass}=="09"
+    ATTRS{bDeviceProtocol}=="02"
+    ATTRS{bDeviceSubClass}=="00"
+    ATTRS{bMaxPacketSize0}=="64"
+    ATTRS{bMaxPower}=="0mA"
+    ATTRS{bNumConfigurations}=="1"
+    ATTRS{bNumInterfaces}==" 1"
+    ATTRS{bcdDevice}=="0120"
+    ATTRS{bmAttributes}=="e0"
+    ATTRS{busnum}=="1"
+    ATTRS{configuration}==""
+    ATTRS{devnum}=="2"
+    ATTRS{devpath}=="2"
+    ATTRS{idProduct}=="5411"
+    ATTRS{idVendor}=="0bda"
+    ATTRS{ltm_capable}=="no"
+    ATTRS{manufacturer}=="Generic"
+    ATTRS{maxchild}=="4"
+    ATTRS{product}=="4-Port USB 2.1 Hub"
+    ATTRS{quirks}=="0x0"
+    ATTRS{removable}=="unknown"
+    ATTRS{speed}=="480"
+    ATTRS{urbnum}=="61"
+    ATTRS{version}==" 2.10"
+
+  looking at parent device '/devices/70090000.xusb/usb1':
+    KERNELS=="usb1"
+    SUBSYSTEMS=="usb"
+    DRIVERS=="usb"
+    ATTRS{authorized}=="1"
+    ATTRS{authorized_default}=="1"
+    ATTRS{avoid_reset_quirk}=="0"
+    ATTRS{bConfigurationValue}=="1"
+    ATTRS{bDeviceClass}=="09"
+    ATTRS{bDeviceProtocol}=="01"
+    ATTRS{bDeviceSubClass}=="00"
+    ATTRS{bMaxPacketSize0}=="64"
+    ATTRS{bMaxPower}=="0mA"
+    ATTRS{bNumConfigurations}=="1"
+    ATTRS{bNumInterfaces}==" 1"
+    ATTRS{bcdDevice}=="0409"
+    ATTRS{bmAttributes}=="e0"
+    ATTRS{busnum}=="1"
+    ATTRS{configuration}==""
+    ATTRS{devnum}=="1"
+    ATTRS{devpath}=="0"
+    ATTRS{idProduct}=="0002"
+    ATTRS{idVendor}=="1d6b"
+    ATTRS{interface_authorized_default}=="1"
+    ATTRS{ltm_capable}=="no"
+    ATTRS{manufacturer}=="Linux 4.9.253-tegra xhci-hcd"
+    ATTRS{maxchild}=="5"
+    ATTRS{product}=="xHCI Host Controller"
+    ATTRS{quirks}=="0x0"
+    ATTRS{removable}=="unknown"
+    ATTRS{serial}=="70090000.xusb"
+    ATTRS{speed}=="480"
+    ATTRS{urbnum}=="32"
+    ATTRS{version}==" 2.00"
+
+  looking at parent device '/devices/70090000.xusb':
+    KERNELS=="70090000.xusb"
+    SUBSYSTEMS=="platform"
+    DRIVERS=="tegra-xusb"
+    ATTRS{downgrade_usb3}=="0"
+    ATTRS{driver_override}=="(null)"
+    ATTRS{hsic_power}=="0"
+```
+
