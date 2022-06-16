@@ -102,3 +102,9 @@ line 135@/opt/nvidia/jetson-io/Jetson/board.py.
     #dtbdir = os.path.join(self.bootdir, 'dtb')
     dtbdir = os.path.join(self.bootdir, '')
 ```
+```
+Configuration saved to file                     |
+ |     /boot/tegra210-p3448-0000-p3449-0000-a02-user-custom.dtb.      |
+ |                                                                    |
+ |     Press any key to reboot the system now or Ctrl-C to abort 
+```
