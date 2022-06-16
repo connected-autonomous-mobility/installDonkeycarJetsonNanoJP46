@@ -89,3 +89,16 @@ RuntimeError: Unable to open CSICamera.
 # m h  dom mon dow   command
 * * * * * sudo /usr/local/bin/bluetooth-autoconnect
 ```
+
+## 7 fix servo
+https://forums.developer.nvidia.com/t/jetpack-4-3-l4t-r32-3-1-released/109271/12
+```
+In my case, dtb files are under /boot/ , while script expects /boot/dtb/
+
+the following change works for me.
+
+line 135@/opt/nvidia/jetson-io/Jetson/board.py.
+
+    #dtbdir = os.path.join(self.bootdir, 'dtb')
+    dtbdir = os.path.join(self.bootdir, '')
+```
