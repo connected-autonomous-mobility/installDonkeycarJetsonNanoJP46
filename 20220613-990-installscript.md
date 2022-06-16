@@ -26,6 +26,7 @@ python lidar.py
 ```
 ## 5. fix CSI camera
 - [ ] not solved yet
+- [ ] https://github.com/mad4ms/python-opencv-gstreamer-examples/blob/master/gst_intel_device_to_app_to_file.py
 - [x] sudo usermod -a -G video $LOGNAME
 - [x] install: https://lifestyletransfer.com/how-to-launch-gstreamer-pipeline-in-python/
 - [x] works: ~/projects/gst-python-tutorials$ python launch_pipeline/pipeline_with_parse_launch.py -p "nvarguscamerasrc sensor_id=0 ! nvoverlaysink"
