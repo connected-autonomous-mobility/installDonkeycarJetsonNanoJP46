@@ -1,11 +1,12 @@
 # Following Ed' installation script on a donkeycar
 
-
-mysterious bug:
+base configuration
 1. running on donkeycar with jetson nano, jp46
 2. software version 1: classical donkey with Ed's script
 3. software version 2: docker with naisy/donkeycar-jetson:overdrive4
-4. doing ```donkey calibrate --channel 1/0 --bus 1``` works perfectly in both settings for both steering & throttle
+
+bug description
+doing ```donkey calibrate --channel 1/0 --bus 1``` works perfectly in both settings for both steering & throttle
 But as soon as I start ```python manage.py drive``` the steering goes maximum right.
 
 Already checked
