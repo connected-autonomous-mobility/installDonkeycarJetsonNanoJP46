@@ -1,9 +1,10 @@
 # Installation using Ed Murphy's script
-## 0. check hardware
+## 0. check hardware, preparations
 - [ ] jetson nano 5W
 - [ ] battery loaded, loading equipement
 - [ ] wiring, cable connections, gnd. identify loose cables
 - [ ] remove, clean from debris
+- [ ] wifi network keys, mobile hotspot
 
 ## 1. get install script 
 - [x] prepare script
