@@ -1,4 +1,9 @@
 # Installation using Ed Murphy's script
+## 0. check hardware
+- [ ] jetson nano 5W
+- [ ] battery loaded, loading equipement
+- [ ] wiring, cable connections, gnd. identify loose cables
+- [ ] remove, clean from debris
 
 ## 1. get install script 
 - [x] prepare script
