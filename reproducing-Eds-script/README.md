@@ -1,4 +1,4 @@
-# Following Ed' installation script on a donkeycar
+# Following Ed's installation script on a donkeycar
 
 ## 1 setup
 1. hardware donkeycar: [Jetson Nano 4GB, CSI-camera, Adafruit PWM hat](https://github.com/connected-autonomous-mobility/50-hardware/blob/master/build_hardware_ValleyCrawler.md)
