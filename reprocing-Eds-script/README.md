@@ -2,7 +2,7 @@
 
 
 mysterious bug:
-1. running on donkeycar with jetson nano
+1. running on donkeycar with jetson nano, jp46
 2. software version 1: classical donkey with Ed's script
 3. software version 2: docker with naisy/donkeycar-jetson:overdrive4
 4. doing ```donkey calibrate --channel 1/0 --bus 1``` works perfectly in both settings for both steering & throttle
@@ -15,6 +15,7 @@ Already checked
 - [x] used the webcontroller
 
 To be checked
+- [ ] create own joystick to be sure angle & throttle are given correctly
 - [ ] check debug output
 - [ ] test driving with a plain pwm-joystick script that hardware is ok
 - [ ] test with jp461 inkl. naisy docker
