@@ -93,8 +93,44 @@ RuntimeError: Unable to open CSICamera.
 # m h  dom mon dow   command
 * * * * * sudo /usr/local/bin/bluetooth-autoconnect
 ```
+### 7 hotspot
+rbnano1-drivingnetwork:
+```
+[connection]
+id=rbnano1-drivingnetwork
+uuid=5fa5eb54-e02b-465c-b497-4bc717ae22f4
+type=wifi
+autoconnect=false
+permissions=
 
-## 7 fix servo
+[wifi]
+mac-address=<your-mac>
+mac-address-blacklist=
+mode=ap
+ssid=rbnano1-drivingnetwork
+
+[wifi-security]
+key-mgmt=wpa-psk
+psk=<wifi-password>
+
+[ipv4]
+dns-search=
+method=shared
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+ip6-privacy=0
+method=ignore
+~               
+```
+```
+cp rbnano1-drivingnetwork /etc/NetworkManager/system-connections/
+nmcli c up rbnano1-drivingnetwork
+nmcli c down rbnano1-drivingnetwork
+```
+
+## 8 fix servo (needed after finding hardware bug?)
 https://forums.developer.nvidia.com/t/jetpack-4-3-l4t-r32-3-1-released/109271/12
 ```
 sudo /opt/nvidia/jetson-io/jetson-io.py
