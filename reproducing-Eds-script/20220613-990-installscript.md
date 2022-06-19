@@ -97,6 +97,8 @@ RuntimeError: Unable to open CSICamera.
 ## 7 fix servo
 https://forums.developer.nvidia.com/t/jetpack-4-3-l4t-r32-3-1-released/109271/12
 ```
+sudo /opt/nvidia/jetson-io/jetson-io.py
+
 In my case, dtb files are under /boot/ , while script expects /boot/dtb/
 
 the following change works for me.
