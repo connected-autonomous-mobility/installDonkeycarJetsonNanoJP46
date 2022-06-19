@@ -23,6 +23,6 @@ But as soon as I start ```python manage.py drive``` the steering goes maximum ri
 - [ ] test with jp461 inkl. naisy docker
 
 ## 5 related bugs
-
+- https://github.com/autorope/donkeycar/issues/989
 
 *Any ideas what else to check? Could that be some kind of hardware failure or a specialty of Jetson Nano gpio?*
