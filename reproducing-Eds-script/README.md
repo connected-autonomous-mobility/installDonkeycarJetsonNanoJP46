@@ -7,8 +7,13 @@
 4. software version 2: docker with naisy/donkeycar-jetson:overdrive4, jp46
 
 ## 2 error
-doing ```donkey calibrate --channel 1/0 --bus 1``` works perfectly in both settings for both steering & throttle
-But as soon as I start ```python manage.py drive``` the steering goes maximum right.
+command 
+```donkey calibrate --channel 1/0 --bus 1``` 
+works perfectly in both settings for both steering & throttle
+
+command
+```python manage.py drive``` 
+the steering goes maximum right.
 
 ## 3 checked
 - [x] steering & throttle in manage.py and pwm pulses in actuator.py. They are correct in both software versions.
