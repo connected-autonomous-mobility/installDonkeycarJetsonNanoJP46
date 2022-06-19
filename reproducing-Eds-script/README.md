@@ -1,9 +1,10 @@
 # Following Ed' installation script on a donkeycar
 
 base configuration
-1. running on donkeycar with jetson nano, jp46
-2. software version 1: classical donkey with Ed's script
-3. software version 2: docker with naisy/donkeycar-jetson:overdrive4
+1. hardware donkeycar: [Jetson Nano 4GB, CSI-camera, Adafruit PWM hat](https://github.com/connected-autonomous-mobility/50-hardware/blob/master/build_hardware_ValleyCrawler.md)
+2. image: NVIDIA: jp46
+3. software version 1: classical donkey with Ed's script, donkeycar 4.3.17?
+4. software version 2: docker with naisy/donkeycar-jetson:overdrive4, jp46
 
 bug description
 doing ```donkey calibrate --channel 1/0 --bus 1``` works perfectly in both settings for both steering & throttle
