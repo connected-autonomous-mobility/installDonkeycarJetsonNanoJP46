@@ -1,25 +1,28 @@
 # Following Ed' installation script on a donkeycar
 
-base configuration
+## 1 base configuration
 1. hardware donkeycar: [Jetson Nano 4GB, CSI-camera, Adafruit PWM hat](https://github.com/connected-autonomous-mobility/50-hardware/blob/master/build_hardware_ValleyCrawler.md)
 2. image: NVIDIA: jp46
 3. software version 1: classical donkey with Ed's script, donkeycar 4.3.17?
 4. software version 2: docker with naisy/donkeycar-jetson:overdrive4, jp46
 
-bug description
+## 2 bug description
 doing ```donkey calibrate --channel 1/0 --bus 1``` works perfectly in both settings for both steering & throttle
 But as soon as I start ```python manage.py drive``` the steering goes maximum right.
 
-Already checked
+## 3 Already checked
 - [x] steering & throttle in manage.py and pwm pulses in actuator.py. They are correct in both software versions.
 - [x] with drivettrain setting *I2C* and the new *PWM_ ...*
 - [x] Jetson Expansion Header Tool shows pwm0(32) and pwm2(33) as it should be
 - [x] used the webcontroller
 
-To be checked
+## 4 To be checked
 - [ ] create own joystick to be sure angle & throttle are given correctly
 - [ ] check debug output
 - [ ] test driving with a plain pwm-joystick script that hardware is ok
 - [ ] test with jp461 inkl. naisy docker
+
+## 5 related bugs
+
 
 *Any ideas what else to check? Could that be some kind of hardware failure or a specialty of Jetson Nano gpio?*
