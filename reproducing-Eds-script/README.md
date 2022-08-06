@@ -31,3 +31,24 @@ the steering goes maximum right.
 - https://github.com/autorope/donkeycar/issues/989
 
 *Any ideas what else to check? Could that be some kind of hardware failure or a specialty of Jetson Nano gpio?*
+
+## 6 Info
+### https://github.com/JetsonHacksNano/CSI-Camera
+```
+(env) rainer@jetsonautoware46:~/projects/CSI-Camera$ v4l2-ctl --list-formats-ext
+ioctl: VIDIOC_ENUM_FMT
+	Index       : 0
+	Type        : Video Capture
+	Pixel Format: 'RG10'
+	Name        : 10-bit Bayer RGRG/GBGB
+		Size: Discrete 3264x2464
+			Interval: Discrete 0.048s (21.000 fps)
+		Size: Discrete 3264x1848
+			Interval: Discrete 0.036s (28.000 fps)
+		Size: Discrete 1920x1080
+			Interval: Discrete 0.033s (30.000 fps)
+		Size: Discrete 1640x1232
+			Interval: Discrete 0.033s (30.000 fps)
+		Size: Discrete 1280x720
+			Interval: Discrete 0.017s (60.000 fps)
+```
