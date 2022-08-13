@@ -31,3 +31,6 @@ the steering goes maximum right.
 - https://github.com/autorope/donkeycar/issues/989
 
 *Any ideas what else to check? Could that be some kind of hardware failure or a specialty of Jetson Nano gpio?*
+
+## Solved
+Hardware error!
