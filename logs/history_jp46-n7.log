@@ -1,0 +1,1000 @@
+ 1039  docker -v
+ 1040  sudo apt install containerd=1.5.2-0ubuntu1~18.04.3
+ 1041  sudo apt install ./docker.io_19.03.6-0ubuntu1_18.04.3_arm64.deb
+ 1042  distribution=$(. /etc/os-release;echo $ID$VERSION_ID)    && curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -    && curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+ 1043  sudo apt-get update
+ 1044  sudo apt-get install nvidia-docker2=2.8.0-1
+ 1045  docker -v
+ 1046  history 
+ 1047  docker run --runtime nvidia -it f1tenth/focal-l4t-foxy:f1tenth-stack bash
+ 1048  ./run-f1tenth-jetson.sh 
+ 1049  cd Downloads/
+ 1050  ll
+ 1051  sudo apt-get install ./discord-0.0.18.deb 
+ 1052  cd
+ 1053  cd projects/donkeycar/
+ 1054  git branch
+ 1055  cd
+ 1056  cd d2
+ 1057  ll
+ 1058  more my_joystick.py 
+ 1059  donkey creatjs
+ 1060  cd 
+ 1061  cd docker-files
+ 1062  ll
+ 1063  ./run-donkeycar-jetson2.sh 
+ 1064  source env/bin/activate
+ 1065  cd d2
+ 1066  donkey creatjs
+ 1067  donkey createjs
+ 1068  more my_joystick.py 
+ 1069  python manage.py drive
+ 1070  more my_joystick.py 
+ 1071  python manage.py drive
+ 1072  cd
+ 1073  cd projects/
+ 1074  cd do
+ 1075  cd donkeycar/
+ 1076  git checkout main
+ 1077  pip install -e .
+ 1078  donkey
+ 1079  cd
+ 1080  cd d2
+ 1081  python manage.py drive
+ 1082  history 
+ 1083  donkey calibrate --channel 1 --bus 1
+ 1084  python manage.py drive
+ 1085  donkey calibrate --channel 1 --bus 1
+ 1086  cd
+ 1087  cd projects/
+ 1088  cd myAutoware/
+ 1089  git status 
+ 1090  git add *
+ 1091  git commit -m"feat: f1tenth docker fixed"
+ 1092  git push
+ 1093  cd projects/
+ 1094  cde myAutoware/
+ 1095  cd myAutoware/
+ 1096  git pull
+ 1097  cd pwm-joystick/
+ 1098  ll
+ 1099  python joydrive-pwm.py 
+ 1100  source ~/env/bin/activate
+ 1101  python joydrive-pwm.py 
+ 1102  history 
+ 1103  donkey calibrate --channel 1 --bus 1
+ 1104  python joydrive-pwm.py 
+ 1105  donkey calibrate --channel 1 --bus 1
+ 1106  python joydrive-pwm.py 
+ 1107  370
+ 1108  python joydrive-pwm.py 
+ 1109  git status
+ 1110  cd ..
+ 1111  git status
+ 1112  git add pwm-joystick/
+ 1113  git commit -m"feat: jowdrive-pwm.py prtotype added"
+ 1114  git push
+ 1115  sudo usermod -aG i2c $USER
+ 1116  sudo i2cdetect -r -y 1
+ 1117  sudo /opt/nvidia/jetson-io/jetson-io.py
+ 1118  cd
+ 1119  cd docker-files
+ 1120  ll
+ 1121  ./run-donkeycar-jetson2.sh 
+ 1122  source env/bin/activate
+ 1123  cd d2
+ 1124  ll
+ 1125  history 
+ 1126  ~1086
+ 1127  donkey calibrate --channel 1 --bus 1
+ 1128  donkey calibrate --channel 0 --bus 1
+ 1129  pyhtnon manage.py drive
+ 1130  pyhton manage.py drive
+ 1131  python manage.py drive
+ 1132  cd
+ 1133  cd docker-files
+ 1134  ll
+ 1135  ./run-donkeycar-jetson2.sh 
+ 1136  jtop
+ 1137  cd
+ 1138  cd d2
+ 1139  python manage.py drive
+ 1140  sudo /opt/nvidia/jetson-io/jetson-io.py
+ 1141  cd /boot
+ 1142  ll
+ 1143  cd dtb
+ 1144  ll
+ 1145  sudo mkdir old
+ 1146  ll
+ 1147  sudo mv tegra210-p3448-0000-p3449-0000-a02-user-custom.dtb old
+ 1148  ll
+ 1149  cxd ..
+ 1150  cd ..
+ 1151  ll
+ 1152  sudo mv tegra210-p3448-0000-p3449-0000-a02-user-custom-user-custom.dtb dtb/old/
+ 1153  sudo /opt/nvidia/jetson-io/jetson-io.py
+ 1154  sudo reboot
+ 1155  cd 
+ 1156  cd docker-files
+ 1157  ll
+ 1158  ./run-donkeycar-jetson2.sh 
+ 1159  source env/bin/activate
+ 1160  cd d2
+ 1161  python manage.py driver
+ 1162  python manage.py drive
+ 1163  gst-launch-1.0 nvarguscamerasrc sensor_id=0 !    'video/x-raw(memory:NVMM),width=1920, height=1080, framerate=30/1' !    nvvidconv flip-method=0 ! 'video/x-raw,width=960, height=540' !    nvvidconv ! nvegltransform ! nveglglessink -e
+ 1164  ll
+ 1165  source env/bin/activate
+ 1166  cd d2
+ 1167  python manage.py drive
+ 1168  sudo reboot
+ 1169  cd 
+ 1170  cd projects/myAutoware/
+ 1171  git status
+ 1172  git add *
+ 1173  git commit -m "feat: aftyer fixing hardware PWN-issue"
+ 1174  git push
+ 1175  ifconfig
+ 1176  cd
+ 1177  cd
+ 1178  cd docker-files
+ 1179  ll
+ 1180  ./run-donkeycar-jetson2.sh 
+ 1181  sudo /opt/nvidia/jetson-io/jetson-io.py
+ 1182  source env/bin/activate
+ 1183  cd d2
+ 1184  python manage.py drive
+ 1185  cd
+ 1186  cd projects/
+ 1187  cd donkeycar/
+ 1188  cd donkeycar
+ 1189  cd parts/
+ 1190  python lidar.py 
+ 1191  sudo reboot
+ 1192  source env/bin/activate
+ 1193  cd projects/myAutoware/
+ 1194  git pull
+ 1195  cd ..
+ 1196  cd installDonkeycarJetsonNanoJP46/
+ 1197  git pull
+ 1198  git status
+ 1199  git add camera/
+ 1200  git commit -mcamera added"
+ 1201  git commit -m"feat: camera added"
+ 1202  git push
+ 1203  cd ..
+ 1204  cd /etc/NetworkManager/system-connections/
+ 1205  ll
+ 1206  more Hotspot 
+ 1207  sudo more Hotspot 
+ 1208  nmcli c down Hotspot
+ 1209  sudo mv Hotspot ~
+ 1210  sudo cp ~/rbnano1-drivingnetwork .
+ 1211  ll
+ 1212  nmcli c up rbnano1-drivingnetwork
+ 1213  sudo reboot
+ 1214  vi .bashrc
+ 1215  .. .bashrc
+ 1216  . .bashrc
+ 1217  cd d2
+ 1218  python manage.py drive
+ 1219  sudo halt
+ 1220  cd projects/
+ 1221  git clone https://github.com/lakinduakash/linux-wifi-hotspotgit clone https://github.com/lakinduakash/linux-wifi-hotspot
+ 1222  git clone https://github.com/lakinduakash/linux-wifi-hotspot
+ 1223  cd linux-wifi-hotspot
+ 1224  make
+ 1225  ll
+ 1226  make config
+ 1227  ./cofigure
+ 1228  ./configure
+ 1229  make
+ 1230  sudo add-apt-repository ppa:lakinduakash/lwh
+ 1231  sudo apt install linux-wifi-hotspot
+ 1232  sudo apt-get upgrade
+ 1233  sudo apt-get update
+ 1234  sudo apt install linux-wifi-hotspot
+ 1235  sudo apt install -y libgtk-3-dev build-essential gcc g++ pkg-config make hostapd libqrencode-dev libpng-dev
+ 1236  git pull
+ 1237  make
+ 1238  sudo make install
+ 1239  wihotspot
+ 1240  jtop
+ 1241  history 
+ 1242  source env/bin/activate
+ 1243  nmcli c up rbnano1-drivingnetwork
+ 1244  cd /etc/NetworkManager/system-connections/\
+ 1245  ll
+ 1246  nmcli c up rbnano1-drivingnetwork
+ 1247  sudo vi rbnano1-drivingnetwork 
+ 1248  sudo mv ~/Hotspot .
+ 1249  nmcli c up Hotspot
+ 1250  ll
+ 1251  nmcli dev show wlan0
+ 1252  nmcli dev show wlan1
+ 1253  more rbnano1-drivingnetwork 
+ 1254  nmcli radio wifi on
+ 1255  nmcli dev wifi list
+ 1256  nmcli con show
+ 1257  systemctl disable dnsmasq
+ 1258  systemctl stop dnsmasq
+ 1259  systemctl NetworkManager restart
+ 1260  mac-address-blacklist=
+ 1261  nmcli con show
+ 1262  systemctl -h
+ 1263  systemctl list-units
+ 1264  systemctl list-units|grep network
+ 1265  systemctl networking.service restart
+ 1266  cd
+ 1267  vci rbnano1-drivingnetwork 
+ 1268  vi rbnano1-drivingnetwork 
+ 1269  sudo create_ap wlan0 eth0 'rbnano1-drivingnetwork' 'rbnano1-drivingnetwork' --freq-band 2.4 --no-virt -w 2
+ 1270  sudo apt install -y libgtk-3-dev build-essential gcc g++ pkg-config make hostapd
+ 1271  more rbnano1-drivingnetwork 
+ 1272  systemctl enable create_ap
+ 1273  vi .bashrc
+ 1274  cd projects/
+ 1275  cd myAutoware/
+ 1276  git status
+ 1277  git pull
+ 1278  cd d2
+ 1279  cat myconfig.py | grep RP
+ 1280  vi myconfig.py 
+ 1281  pytho manage.py drive
+ 1282  python manage.py drive
+ 1283  pytho manage.py drive
+ 1284  vi myconfig.py 
+ 1285  python manage.py drive
+ 1286  cd
+ 1287  cd projects/
+ 1288  cd donkeycar/
+ 1289  cd donkeycar
+ 1290  cd parts/
+ 1291  vi lidar.py 
+ 1292  cd
+ 1293  cd d2
+ 1294  python manage.py drive
+ 1295  cd data/
+ 1296  ll
+ 1297  cd ..
+ 1298  python manage.py drive
+ 1299  vi manage.py .
+ 1300  vi manage.py 
+ 1301  cd 
+ 1302  cd projects/donkeycar/donkeycar/parts/
+ 1303  vi actuator.py 
+ 1304  cd
+ 1305  cd d2
+ 1306  history 
+ 1307  python manage.py drive
+ 1308  cd projects/donkeycar/donkeycar/parts/
+ 1309  cd
+ 1310  cd projects/donkeycar/donkeycar/parts/
+ 1311  vi actuator.py 
+ 1312  cd
+ 1313  cd d2
+ 1314  history 
+ 1315  python manage.py drive
+ 1316  cd
+ 1317  cd projects/donkeycar/donkeycar/parts/
+ 1318  vi actuator.py 
+ 1319  cd
+ 1320  cd d2
+ 1321  python manage.py drive
+ 1322  cd data
+ 1323  ll
+ 1324  time
+ 1325  date
+ 1326  cd tub_15_22-06-19/
+ 1327  ll
+ 1328  more catalog_0.catalog
+ 1329  ll
+ 1330  cd
+ 1331  cd projects/
+ 1332  ll
+ 1333  cd myAutoware/
+ 1334  ll
+ 1335  cd lidar/
+ 1336  ll
+ 1337  python display-lidar.py 
+ 1338  ll
+ 1339  python stream_scans.py 
+ 1340  ll
+ 1341  cd ..
+ 1342  cd donkeycar/donkeycar/parts/
+ 1343  python lidar.py 
+ 1344  sudo halt
+ 1345  cd
+ 1346  cd projects/donkeycar/donkeycar/parts/
+ 1347  python lidar.py 
+ 1348  cd
+ 1349  source env/bin/deactivate.nu 
+ 1350  source env/bin/deactivate
+ 1351  source env/bin/deactivate.nu 
+ 1352  cd docker-files
+ 1353  cd d2
+ 1354  ll
+ 1355  cd ..
+ 1356  ll
+ 1357  ./run-donkeycar-jetson2.sh 
+ 1358  ./run-donkeycar-jetson3.sh 
+ 1359  chmod +x run-*
+ 1360  ll
+ 1361  ./run-donkeycar-jetson3.sh 
+ 1362  more run-donkeycar-jetson3.sh 
+ 1363  more run-donkeycar-jetson2.sh 
+ 1364  run-donkeycar-jetson2.sh 
+ 1365  ./run-donkeycar-jetson2.sh 
+ 1366  ./run-donkeycar-jetson3.sh 
+ 1367  docker ps
+ 1368  cd d2
+ 1369  python manage.py drive
+ 1370  cd
+ 1371  cd d2
+ 1372  python manage.py drive
+ 1373  sudo halt
+ 1374  cd
+ 1375  cd d2
+ 1376  python manage.py drive
+ 1377  cd
+ 1378  cd projects/
+ 1379  cd CSI-Camera/
+ 1380  gst-launch-1.0 nvarguscamerasrc sensor_id=0 ! nvoverlaysink
+ 1381  gst-launch-1.0 nvarguscamerasrc sensor_id=0 ! nvoverlaysink
+ 1382  gst-launch-1.0 nvarguscamerasrc sensor_id=0 !    'video/x-raw(memory:NVMM),width=1920, height=1080, framerate=30/1' !    nvvidconv flip-method=0 ! 'video/x-raw,width=960, height=540' !    nvvidconv ! nvegltransform ! nveglglessink -e
+ 1383  sudo apt uninstall libopencv-dev=3.2.0+dfsg-4ubuntu0.1
+ 1384  sudo apt remove libopencv-dev=3.2.0+dfsg-4ubuntu0.1
+ 1385  gst-launch-1.0 nvarguscamerasrc sensor_id=0 !    'video/x-raw(memory:NVMM),width=1920, height=1080, framerate=30/1' !    nvvidconv flip-method=0 ! 'video/x-raw,width=960, height=540' !    nvvidconv ! nvegltransform ! nveglglessink -e
+ 1386  sudo apt-get install libopencv-dev
+ 1387  python
+ 1388  gst-launch-1.0 nvarguscamerasrc sensor_id=0 !    'video/x-raw(memory:NVMM),width=1920, height=1080, framerate=30/1' !    nvvidconv flip-method=0 ! 'video/x-raw,width=960, height=540' !    nvvidconv ! nvegltransform ! nveglglessink -e
+ 1389  gst-launch-1.0 nvarguscamerasrc sensor_id=0 ! nvoverlaysink
+ 1390  ./simple_camera.py 
+ 1391  ./simple_camera
+ 1392  ll
+ 1393  gst-launch-1.0 nvarguscamerasrc sensor_id=0 !    'video/x-raw(memory:NVMM),width=1920, height=1080, framerate=30/1' !    nvvidconv flip-method=0 ! 'video/x-raw,width=960, height=540' !    nvvidconv ! nvegltransform ! nveglglessink -e
+ 1394  cd d2
+ 1395  history 
+ 1396  python manage.py drive
+ 1397  cd
+ 1398  cd projects/
+ 1399  cd CSI-Camera/
+ 1400  ll
+ 1401  git pull
+ 1402  ./simple_camera.py 
+ 1403  gst-launch-1.0 nvarguscamerasrc sensor_id=0 !    'video/x-raw(memory:NVMM),width=1920, height=1080, framerate=30/1' !    nvvidconv flip-method=0 ! 'video/x-raw,width=960, height=540' !    nvvidconv ! nvegltransform ! nveglglessink -e
+ 1404  gst-launch-1.0 nvarguscamerasrc sensor_id=0 ! nvoverlaysink
+ 1405  python simple_camera.py 
+ 1406  $ v4l2-ctl --list-formats-ext
+ 1407  ioctl: VIDIOC_ENUM_FMT
+ 1408  Index       : 0
+ 1409  Type        : Video Capture
+ 1410  Pixel Format: 'RG10'
+ 1411  Name        : 10-bit Bayer RGRG/GBGB
+ 1412  Size: Discrete 3280x2464
+ 1413  Interval: Discrete 0.048s (21.000 fps)
+ 1414  Size: Discrete 3280x1848
+ 1415  Interval: Discrete 0.036s (28.000 fps)
+ 1416  Size: Discrete 1920x1080
+ 1417  Interval: Discrete 0.033s (30.000 fps)
+ 1418  Size: Discrete 1280x720
+ 1419  Interval: Discrete 0.017s (60.000 fps)
+ 1420  Size: Discrete 1280x720
+ 1421  Interval: Discrete 0.017s (60.000 fps)$ v4l2-ctl --list-formats-ext
+ 1422  ioctl: VIDIOC_ENUM_FMT
+ 1423  Index       : 0
+ 1424  Type        : Video Capture
+ 1425  Pixel Format: 'RG10'
+ 1426  Name        : 10-bit Bayer RGRG/GBGB
+ 1427  Size: Discrete 3280x2464
+ 1428  Interval: Discrete 0.048s (21.000 fps)
+ 1429  Size: Discrete 3280x1848
+ 1430  Interval: Discrete 0.036s (28.000 fps)
+ 1431  Size: Discrete 1920x1080
+ 1432  Interval: Discrete 0.033s (30.000 fps)
+ 1433  Size: Discrete 1280x720
+ 1434  Interval: Discrete 0.017s (60.000 fps)
+ 1435  Size: Discrete 1280x720
+ 1436  Interval: Discrete 0.017s (60.000 fps)
+ 1437  $ v4l2-ctl --list-formats-ext
+ 1438  v4l2-ctl --list-formats-ext
+ 1439  sudo apt-get install v4l-utils
+ 1440  v4l2-ctl --list-formats-ext
+ 1441  pythoncv2.__version__
+ 1442  cv2.__version__
+ 1443  python
+ 1444  g++ -std=c++11 -Wall -I/usr/lib/opencv -I/usr/include/opencv4 simple_camera.cpp -L/usr/lib -lopencv_core -lopencv_highgui -lopencv_videoio -o simple_camera
+ 1445  ll
+ 1446  ./simple_camera
+ 1447  cd
+ 1448  more .bashrc\
+ 1449  sudo rosdep init
+ 1450  rosdep update
+ 1451  ll
+ 1452  cd cat
+ 1453  cd sandbox/
+ 1454  ll
+ 1455  cd
+ 1456  mkdir -p ~/catkin_ws/src
+ 1457  cd ~/catkin_ws/src
+ 1458  git clone https://github.com/CopterExpress/clover
+ 1459  git clone https://github.com/CopterExpress/ros_led
+ 1460  git clone https://github.com/okalachev/vl53l1x_ros
+ 1461  ll
+ 1462  cd ..
+ 1463  rosdep install --from-paths src --ignore-src -y
+ 1464  curl https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh -o install_geographiclib_datasets.sh
+ 1465  ll
+ 1466  chmod a+x ./install_geographiclib_datasets.sh
+ 1467  ll
+ 1468  more install_geographiclib_datasets.sh 
+ 1469  sudo ./install_geographiclib_datasets.sh
+ 1470  catkin_make
+ 1471  python
+ 1472  sudo apt install libopencv-dev=3.2.0+dfsg-4ubuntu0.1
+ 1473  catkin__make
+ 1474  ll
+ 1475  catkin_maked
+ 1476  catkin_make
+ 1477  ll
+ 1478  ./install_geographiclib_datasets.sh 
+ 1479  sudo ./install_geographiclib_datasets.sh 
+ 1480  python
+ 1481  more install_geographiclib_datasets.sh 
+ 1482  curl https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh -o install_geographiclib_datasets.sh
+ 1483  ll
+ 1484  sudo ./install_geographiclib_datasets.sh
+ 1485  cd d2
+ 1486  ll
+ 1487  python manage.py drive
+ 1488  cd data
+ 1489  ll
+ 1490  cd tub_1_22-06-26/
+ 1491  more catalog_0.catalog
+ 1492  ll
+ 1493  cd ima
+ 1494  cd images/
+ 1495  ll
+ 1496  exit
+ 1497  python manage.py drive
+ 1498  cd d2
+ 1499  python manage.py drive
+ 1500  ll
+ 1501  more readme.md 
+ 1502  dmesg | grep tty
+ 1503  sudo chmod 666 /dev/ttyUSB0
+ 1504  ll /dev/ttyUSB0
+ 1505  more readme.md 
+ 1506  ll
+ 1507  chmod +x iViewer 
+ 1508  ll
+ 1509  ./iViewer 
+ 1510  ./iViewer
+ 1511  cd ..
+ 1512  cd src
+ 1513  git clone https://github.com/tu-darmstadt-ros-pkg/hector_slam.git
+ 1514  cd ~/catkin_ws/src/hector_slam/hector_mapping/launch/mapping_default.launch
+ 1515  cd ~/catkin_ws/src/hector_slam/hector_mapping/launch/
+ 1516  cd ~/catkin_ws2/src/hector_slam/hector_mapping/launch/
+ 1517  ll
+ 1518  vi mapping_default.launch 
+ 1519  cd ..
+ 1520  cd hector_slam_launch/
+ 1521  ll
+ 1522  cd launch/
+ 1523  ll
+ 1524  vi tutorial.launch 
+ 1525  cd ..
+ 1526  catkin_build
+ 1527  catkin build
+ 1528  source devel/setup.bash
+ 1529  catkin build
+ 1530  catkin_build
+ 1531  catkin_make
+ 1532  cd /usr/include
+ 1533  sudo ln -s opencv4/ opencv
+ 1534  roslaunch rplidar_ros rplidar.launch
+ 1535  catkin_make
+ 1536  cd
+ 1537  cd catkin_ws2
+ 1538  catkin_make
+ 1539  source devel/setup.bash 
+ 1540  roslaunch rplidar_ros rplidar.launch
+ 1541  source devel/setup.bash 
+ 1542  rostopic pub syscommand std_msgs/String "savegeotiff"
+ 1543  ll
+ 1544  cd src/
+ 1545  ll
+ 1546  cd hector_slam/
+ 1547  ll
+ 1548  cd hector_geotiff
+ 1549  ll
+ 1550  cd maps/
+ 1551  ll
+ 1552  more hector_slam_map_13\:45\:27.tfw 
+ 1553  rostopic pub syscommand std_msgs/String "savegeotiff"
+ 1554  ll
+ 1555  more hector_slam_map_13:53:44.tfw
+ 1556  rostopic echo /scan
+ 1557  rviz
+ 1558  source devel/setup.bash
+ 1559  rviz
+ 1560  rviz2
+ 1561  rviz
+ 1562  rqt
+ 1563  cd
+ 1564  vi .bashrc
+ 1565  cd catkin_ws2
+ 1566  source devel/setup.bash 
+ 1567  rviz
+ 1568  roscore
+ 1569  rviz
+ 1570  which rviz
+ 1571  source devel/setup.bash
+ 1572  roslaunch rplidar_ros rplidar.launch
+ 1573  roslaunch hector_slam_launch tutorial.launch
+ 1574  clear
+ 1575  source devel/setup.bash 
+ 1576  roslaunch hector_slam_launch tutorial.launch
+ 1577  ll
+ 1578  cd projects/
+ 1579  ll
+ 1580  cd myAutoware/
+ 1581  git pull
+ 1582  cd ..
+ 1583  git clone https://github.com/connected-autonomous-mobility/donkeycar-breezy-slam.git
+ 1584  ll
+ 1585  cd donkeycar-breezy-slam/
+ 1586  ll
+ 1587  gst-launch-1.0 nvarguscamerasrc sensor_id=0 !    'video/x-raw(memory:NVMM),width=1920, height=1080, framerate=30/1' !    nvvidconv flip-method=0 ! 'video/x-raw,width=960, height=540' !    nvvidconv ! nvegltransform ! nveglglessink -e
+ 1588  python
+ 1589  touch test_donkecar_lidar.sh
+ 1590  chmod +x test_donkecar_lidar.sh 
+ 1591  ~/projects/donkeycar/donkeycar/parts/lidar.py
+ 1592  .~/projects/donkeycar/donkeycar/parts/lidar.py
+ 1593  python ~/projects/donkeycar/donkeycar/parts/lidar.py
+ 1594  ll
+ 1595  ./test_donkecar_lidar.sh 
+ 1596  touch test_breezy1.py
+ 1597  ll
+ 1598  chmod +x test_breezy1.py 
+ 1599  ll
+ 1600  ./test_breezy1.py 
+ 1601  python test_breezy1.py 
+ 1602  mkdir mydata
+ 1603  python test_breezy1.py 
+ 1604  ll
+ 1605  python test_breezy1.py 
+ 1606  . ~/.bashrc
+ 1607  python test_breezy1.py 
+ 1608  pip install breezyslam
+ 1609  ll
+ 1610  chmod +x test_webcam1.py 
+ 1611  ll
+ 1612  python test_breezy1.py 
+ 1613  git status
+ 1614  vi .gitignore 
+ 1615  git status 
+ 1616  vi .gitignore 
+ 1617  git status 
+ 1618  git add *
+ 1619  git commit -m"test scripts added"
+ 1620  git push
+ 1621  ll
+ 1622  sudo reboot
+ 1623  cd /usr/local/lib/python3.6/dist-packages/
+ 1624  ll
+ 1625  cd breezyslam/
+ 1626  ll
+ 1627  cd ..
+ 1628  ll
+ 1629  cd
+ 1630  vi .bashrc
+ 1631  . .bashrc
+ 1632  cd catkin_ws/
+ 1633  ll
+ 1634  cd src/
+ 1635  ll
+ 1636  git clone  https://github.com/Slamtec/rplidar_ros.git
+ 1637  cd ..
+ 1638  catkin_make
+ 1639  cd ..
+ 1640  mkdir -p ~/catkin_ws2/src
+ 1641  cd catkin_ws2
+ 1642  cd src
+ 1643  git clone  https://github.com/Slamtec/rplidar_ros.git
+ 1644  cd ..
+ 1645  catkin_make
+ 1646  source devel/setup.bash
+ 1647  roslaunch rplidar_ros rplidar.launch
+ 1648  rviz
+ 1649  rviz2
+ 1650  ros2
+ 1651  cd ..
+ 1652  ll
+ 1653  cd projects/
+ 1654  ll
+ 1655  cd installROS/
+ 1656  ll
+ 1657  more installROS.sh 
+ 1658  more installROS.sh -h
+ 1659  ./installROS.sh -h
+ 1660  ./installROS.sh -p ros-melodic-desktop-full
+ 1661  rviz
+ 1662  clear
+ 1663  git clone https://github.com/simondlevy/BreezySLAM.git
+ 1664  cd BreezySLAM/
+ 1665  ll
+ 1666  sudo python3 setup.py install
+ 1667  lll
+ 1668  ll
+ 1669  cd python/
+ 1670  ll
+ 1671  sudo python3 setup.py install
+ 1672  make pytest
+ 1673  cd ..
+ 1674  cd examples/
+ 1675  make pytest
+ 1676  LL
+ 1677  ll
+ 1678  make
+ 1679  cd ..
+ 1680  cd python
+ 1681  ll
+ 1682  pip install -e .
+ 1683  sudo python3 setup.py install
+ 1684  cd ..
+ 1685  cd examples/
+ 1686  ll
+ 1687  make pytest
+ 1688  more log2pgm.py 
+ 1689  ll
+ 1690  make movie
+ 1691  . ~/.bashrc
+ 1692  make pytest
+ 1693  pydoc3 breezyslam
+ 1694  cd ..
+ 1695  pydoc3 breezyslam
+ 1696  ll
+ 1697  cd examples/
+ 1698  python log2png.py 
+ 1699  cd ..
+ 1700  cd python
+ 1701  more setup.py 
+ 1702  sudo python3 setup.py install
+ 1703  make
+ 1704  ll
+ 1705  cd build/
+ 1706  ll
+ 1707  cd ..
+ 1708  ll
+ 1709  cd ..
+ 1710  ll
+ 1711  cd examples/
+ 1712  ll
+ 1713  more Makefile 
+ 1714  vi Makefile 
+ 1715  make pytest
+ 1716  vi Makefile 
+ 1717  make all
+ 1718  make pytest
+ 1719  ln -s /usr/local/lib/python3.6/dist-packages/breezyslam/ .
+ 1720  ll
+ 1721  make pytest
+ 1722  ls -ls /dev/cu.*
+ 1723  rosversion -d
+ 1724  ls -l /dev | grep ttyUSB
+ 1725  sudo apt-get install cmake python-catkin-pkg python-empy python-nose python-setuptools libgtest-dev python-rosinstall python-rosinstall-generator python-wstool build-essential git
+ 1726  sudo apt autoremove
+ 1727  make pytest
+ 1728  ll
+ 1729  rm breezyslam
+ 1730  make pytest
+ 1731  printenv > /tmp/tmp-17912jbEhHiWgQsD8txt
+ 1732  rviz
+ 1733  ll /dev/ttyUSB*
+ 1734  chmod 777 /dev/USB0
+ 1735  chmod 777 /dev/ttyUSB0
+ 1736  sudo chmod 777 /dev/ttyUSB0
+ 1737  ll /dev/ttyUSB*
+ 1738  ros2
+ 1739  roscore
+ 1740  cd projects/
+ 1741  cd ldrobot-D300-lidar-test/
+ 1742  ll
+ 1743  git status
+ 1744  git add README.md 
+ 1745  git commit -m"simple test added"
+ 1746  git push
+ 1747  cd ..
+ 1748  git clone https://github.com/ldrobotSensorTeam/ldlidar_stl_ros.git
+ 1749  cd
+ 1750  ll
+ 1751  cd catkin_ws
+ 1752  ll
+ 1753  catkin_make
+ 1754  cd ..
+ 1755  cd projects/
+ 1756  cd ldlidar_stl_ros/
+ 1757  ll
+ 1758  cd
+ 1759  mkdir -p ldlidar_ros_ws/src
+ 1760  cd ldlidar_ros_ws/src
+ 1761  mv ~/projects/ldlidar_stl_ros/
+ 1762  mv ~/projects/ldlidar_stl_ros/ .
+ 1763  ll
+ 1764  cd ..
+ 1765  catkin_make
+ 1766  source devel/setup.bash 
+ 1767  $ roslaunch ldlidar_stl_ros ld06.launch
+ 1768  roslaunch ldlidar_stl_ros ld06.launch
+ 1769  lsusb
+ 1770  ll /dev/tty*
+ 1771  cd projects/
+ 1772  git clone https://github.com/henjin0/LIDAR_LD06_python_loder.git
+ 1773  ll
+ 1774  git clone https://github.com/connected-autonomous-mobility/ldrobot-D300-lidar-test.git
+ 1775  cd ldrobot-D300-lidar-test/
+ 1776  git status
+ 1777  git README.md
+ 1778  git added README.md
+ 1779  git add README.md
+ 1780  git commit -m"README added"
+ 1781  git push
+ 1782  cd ..
+ 1783  git clone https://github.com/ldrobotSensorTeam/ldlidar_stl_sdk.git
+ 1784  cd *stl*
+ 1785  ll
+ 1786  sh ./auto_build.sh 
+ 1787  ll
+ 1788  cd build/
+ 1789  ll
+ 1790  ./ldlidar_stl /dev/ttyUSB0
+ 1791  ll
+ 1792  cd ..
+ 1793  ll
+ 1794  cd LIDAR_LD06_python_loder/
+ 1795  ll
+ 1796  more requirements.txt 
+ 1797  pip install -r requirements.txt 
+ 1798  ll
+ 1799  more main.py 
+ 1800  python main.py 
+ 1801  pip instal lserial
+ 1802  pip install serial
+ 1803  more requirements.txt 
+ 1804  python main.py 
+ 1805  pip install matplotlib
+ 1806  python main.py 
+ 1807  python main.py /dev/ttyUSB0
+ 1808  python main.py
+ 1809  cd ..
+ 1810  cd ldrobot-D300-lidar-test/
+ 1811  git status
+ 1812  git add *
+ 1813  git commit -m"sdk & ros test added"
+ 1814  git push
+ 1815  cd ..
+ 1816  cd LIDAR_LD06_python_loder/
+ 1817  ll
+ 1818  more requirements.txt 
+ 1819  pip install pyserial
+ 1820  pip install six
+ 1821  python main.py 
+ 1822  cd ..
+ 1823  cd ldrobot-D300-lidar-test/
+ 1824  git status
+ 1825  giot add *
+ 1826  git add *
+ 1827  git commit -m"feat: python test added"
+ 1828  git push
+ 1829  cd
+ 1830  source env/bin/activate
+ 1831  cd projects/donkeycar
+ 1832  cd donkeycar
+ 1833  cd parts/
+ 1834  ll
+ 1835  python lidar.py 
+ 1836  pyenv shell 3.7.13
+ 1837  cd pro
+ 1838  cd ..
+ 1839  cd LIDAR_LD06_python_loder/
+ 1840  ll
+ 1841  mv CalcLidarData.py ../ldrobot-D300-lidar-test/
+ 1842  cd ..
+ 1843  cd ldrobot-D300-lidar-test/
+ 1844  ll
+ 1845  mkdir part
+ 1846  cd part/
+ 1847  ll
+ 1848  mv lidar.py lidar_d300.py
+ 1849  ll
+ 1850  cd ..
+ 1851  git pull
+ 1852  git status
+ 1853  git add *
+ 1854  git commit -m"feat: part template added"
+ 1855  git push
+ 1856  git status
+ 1857  cd part/
+ 1858  python lidar_d300.py 
+ 1859  source ~/env/bin/activate
+ 1860  python lidar_d300.py 
+ 1861  mv ../CalcLidarData.py .
+ 1862  python lidar_d300.py 
+ 1863  CLEAR
+ 1864  clear
+ 1865  python lidar_d300.py 
+ 1866  cd ..
+ 1867  git status
+ 1868  git add *
+ 1869  git commit -m"feat: frist version of part added NOT working"
+ 1870  git push
+ 1871  python lidar_d300.py 
+ 1872  cd part/
+ 1873  python lidar_d300.py 
+ 1874  ll
+ 1875  more CalcLidarData.py 
+ 1876  python lidar_d300.py 
+ 1877  cd ..
+ 1878  cd part/
+ 1879  python lidar_d300.py 
+ 1880  cd ..
+ 1881  git status
+ 1882  git add part/
+ 1883  git commit -m"feat: first raw version showing data"
+ 1884  git push
+ 1885  sudo shutdown
+ 1886  sudo halt
+ 1887  sudo apt-get upgrade
+ 1888  sudo apt-get update
+ 1889  sudo apt-get upgrade
+ 1890  ll
+ 1891  cd pr
+ 1892  cd projects/
+ 1893  ll
+ 1894  cd ldrobot-D300-lidar-test/
+ 1895  ll
+ 1896  git status
+ 1897  ll
+ 1898  cd ..
+ 1899  cd LIDAR_LD06_python_loder/
+ 1900  ll
+ 1901  more main.py 
+ 1902  python main.py 
+ 1903  cp main.py ../ldrobot-D300-lidar-test/
+ 1904  cd ..
+ 1905  cd ldrobot-D300-lidar-test/
+ 1906  ll
+ 1907  mv main.py ld06?main.py
+ 1908  ll
+ 1909  mvb ld06\?main.py ld06_main.py
+ 1910  ll
+ 1911  mv ld06\?main.py ld06_main.py
+ 1912  ll
+ 1913  python ld06_main.py 
+ 1914  cd ..
+ 1915  ll
+ 1916  cd hybo-ilidar-test/
+ 1917  ll
+ 1918  cd part/
+ 1919  ll
+ 1920  more hybo_ilidar.py 
+ 1921  cd ..
+ 1922  ll
+ 1923  cd ..
+ 1924  ll
+ 1925  cd donkeycark
+ 1926  cd donkeycar
+ 1927  ll
+ 1928  git status\
+ 1929  git show
+ 1930  cd ..
+ 1931  git status
+ 1932  cd donkeycar
+ 1933  cd parts/
+ 1934  ll
+ 1935  cp lidar.py ~/projects/ldrobot-D300-lidar-test/part/
+ 1936  source ~/env/bin/activate
+ 1937  ll
+ 1938  cd
+ 1939  cd projects/
+ 1940  cd ldrobot-D300-lidar-test/
+ 1941  ll
+ 1942  python ld06_main.py 
+ 1943  ln -s part/CalcLidarData.py .
+ 1944  ll
+ 1945  python ld06_main.py 
+ 1946  ll
+ 1947  python ld06_main.py 
+ 1948  cd
+ 1949  vi .bashrc
+ 1950  source ~/env/bin/activate
+ 1951  pyenv shell 3.7.13
+ 1952  cd ldrobot-D300-lidar-test/
+ 1953  ll
+ 1954  cd part/
+ 1955  ll
+ 1956  python lidar_d300.py 
+ 1957  source ~/env/bin/activate
+ 1958  python lidar_d300.py 
+ 1959  pyenv shell 3.7.13
+ 1960  /home/rainer/.pyenv/versions/3.7.13/bin/python /home/rainer/projects/ldrobot-D300-lidar-test/part/lidar_d300.py
+ 1961  source ~/env/bin/activate
+ 1962  /home/rainer/.pyenv/versions/3.7.13/bin/python /home/rainer/projects/ldrobot-D300-lidar-test/part/lidar_d300.py
+ 1963  source env/bin/activate
+ 1964  cd projects/
+ 1965  cd ldrobot-D300-lidar-test/
+ 1966  ll
+ 1967  python ld06_main.py 
+ 1968  git status
+ 1969  git add part/
+ 1970  git commit -m"feat: lidar part delivers measurements BUT distances seem way too small"
+ 1971  git push
+ 1972  sud reboot
+ 1973  sudo reboot
+ 1974  source env/bin/activate
+ 1975  cd projects/
+ 1976  cd donkeycar
+ 1977  cd parts/
+ 1978  python lidar.py 
+ 1979  source env/bin/activate
+ 1980  cd projects/
+ 1981  cd ldrobot-D300-lidar-test/
+ 1982  cd part/
+ 1983  ll
+ 1984  python lidar_d300.py 
+ 1985  python lidar_d300.py -n 400
+ 1986  python lidar_d300.py -n 40
+ 1987  python lidar_d300.py -n 40 -min_distance=0
+ 1988  python lidar_d300.py -n 40 -d 0=0
+ 1989  python lidar_d300.py -n 40 -d 0
+ 1990  python lidar_d300.py -n 40 -d 0 -D 12000
+ 1991  source env/bin/activate
+ 1992  cd projects/
+ 1993  cd ldrobot-D300-lidar-test/
+ 1994  ll
+ 1995  python ld06_main.py 
+ 1996  ll
+ 1997  cd projects/
+ 1998  ll
+ 1999  cd install
+ 2000  cd installDonkeycarJetsonNanoJP46/
+ 2001  ll
+ 2002  git status
+ 2003  ll
+ 2004  git add *
+ 2005  git commit -m "final changes for PoC JP 4.6 running donkeycar on Jetson Nano 4GB"
+ 2006  git push
+ 2007  gh auth login
+ 2008  git push
+ 2009  git pull
+ 2010  ll
+ 2011  git status
+ 2012  git add .
+ 2013  git commit -m "final changes for PoC JP 4.6 running donkeycar on Jetson Nano 4GB"
+ 2014  git status
+ 2015  git push
+ 2016  python -V
+ 2017  python
+ 2018  cd
+ 2019  vi .bashrc
+ 2020  ll
+ 2021  donkey
+ 2022  ll
+ 2023  cd env/
+ 2024  ll
+ 2025  pyvenv
+ 2026  :q!
+ 2027  ll
+ 2028  conda
+ 2029  venv
+ 2030  ll
+ 2031  cd
+ 2032  ll
+ 2033  history 
+ 2034  source env/bin/activate
+ 2035  donkey
+ 2036  python -V
+ 2037  python
+ 2038  history > history_jp46-n7.log
