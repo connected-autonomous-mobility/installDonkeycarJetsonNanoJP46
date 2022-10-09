@@ -1,8 +1,19 @@
+# *** DEPRECATED *** see new version (coming soon)
 # installDonkeycarJetsonNanoJP46
-Automates (partly) the installation described at [donkeycar.com](https://docs.donkeycar.com/guide/robot_sbc/setup_jetson_nano/) for a Jetson Nano JP 4.6.1
+Automates (partly) the installation described at [donkeycar.com](https://docs.donkeycar.com/guide/robot_sbc/setup_jetson_nano/) for a  Jetson Nano JP 4.6 BUT
+- together with lots of Autoware stuff tested 
+- see [logs](logs/history_jp46-n7.log)
 
-*128GB, jetsonautoware46n6
-![](media/jetsonautoware461_jtop.png)
+
+*128GB, jetsonautoware46n7
+![](media/2022-10-09_JetsonNanoJP46.png)
+
+## Versions
+- virtualenv 20.14.1
+- python 3.7.13
+- cv2 4.6.0
+- tensorflow <broken>
+- donkey v4.3.17
 
 ## Prerequisites
 
