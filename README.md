@@ -12,7 +12,7 @@ Automates (partly) the installation described at [donkeycar.com](https://docs.do
 - virtualenv 20.14.1
 - python 3.7.13
 - cv2 4.6.0
-- tensorflow <broken>
+- tensorflow *broken*
 - donkey v4.3.17
 
 ## Prerequisites
