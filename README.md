@@ -5,7 +5,7 @@ Automates (partly) the installation described at [donkeycar.com](https://docs.do
 - see [logs](logs/history_jp46-n7.log)
 
 
-*128GB, jetsonautoware46n7
+*128GB, jetsonautoware46n7*
 ![](media/2022-10-09_JetsonNanoJP46.png)
 
 ## Versions
