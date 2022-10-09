@@ -52,3 +52,6 @@ ioctl: VIDIOC_ENUM_FMT
 		Size: Discrete 1280x720
 			Interval: Discrete 0.017s (60.000 fps)
 ```
+=======
+## Solved
+Hardware error!
